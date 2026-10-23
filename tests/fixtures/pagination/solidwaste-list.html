@@ -1,0 +1,2768 @@
+﻿<!DOCTYPE HTML>
+
+<html lang="zh-cn">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!-- 移动端设备宽度适配 -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, minimum-scale=1">
+
+<title>新闻-中国固废网</title>
+
+<meta name="keywords" content="新闻"/>
+
+<meta name="description" content="新闻" />
+
+<link href="https://static.solidwaste.com.cn/css/public.css" rel="stylesheet" type="text/css">
+
+<link href="https://static.solidwaste.com.cn/css/main.css" rel="stylesheet" type="text/css">
+
+<link href="https://static.solidwaste.com.cn/css/txteditor.css" rel="stylesheet" type="text/css">
+
+<link href="https://static.solidwaste.com.cn/css/footer.css" rel="stylesheet" type="text/css">
+
+
+
+<link href="https://static.solidwaste.com.cn/css/news.css?v=20240914" rel="stylesheet" type="text/css">
+
+ <script type="text/javascript" src="https://static.solidwaste.com.cn/js/jquery/1.11.1/jquery.min.js" ></script><link href="/css/font-awesome-4.2.0/css/font-awesome.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://static.solidwaste.com.cn/js/artdialogv602/ui-dialog.css">
+
+<script src="https://static.solidwaste.com.cn/js/artdialogv602/dialog-plus.js"></script>
+
+<link rel="stylesheet" href="https://static.solidwaste.com.cn/news/js/element-ui/lib/theme-chalk/index.css">
+
+<script type="text/javascript" src="https://static.solidwaste.com.cn/js/jquery.SuperSlide.2.1.1.js"></script>
+
+<script type="text/javascript">
+
+</script>
+
+
+
+<link rel="stylesheet" href="https://static.solidwaste.com.cn/news/css/newsIndex.css">
+
+
+
+<!-- 微信分享 -->
+
+                <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+                <script>
+
+                    var imgUrl = "https://www.solidwaste.com.cn/images/share.png";
+
+                    var shareTitle = "";
+
+                    var descContent = "";
+
+                </script>
+
+                <script type="text/javascript" src="https://www.h2o-china.com/news/js/wxshare.js"></script>
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<header id="header2">
+
+  <!-- 通用头部开始 -->
+
+  <script type="text/javascript" src="https://static.solidwaste.com.cn/js/jquery.cookie.js"></script>
+
+
+
+<!-- 百度统计代码测试 -->
+
+<!-- <script>
+
+var _hmt = _hmt || [];
+
+(function() {
+
+  var hm = document.createElement("script");
+
+  hm.src = "https://hm.baidu.com/hm.js?fc2bbbab0e28acb2d45fc24008fbb254";
+
+  var s = document.getElementsByTagName("script")[0]; 
+
+  s.parentNode.insertBefore(hm, s);
+
+})();
+
+</script> -->
+
+
+
+
+
+<div id="topNav">
+
+    <div class="topBar">
+
+        <ul class="topColumn">
+
+            <li><a href="/">固废网首页</a></li>
+
+            <li><a href="/news">新闻</a></li>
+
+            <li><a href="/column/index">专栏</a></li>
+
+            <li><a href="/video">视频</a></li>
+
+            <li><a href="/research">研究院</a></li>
+
+            <li><a href="/policy/list">政策</a></li>
+
+            <li><a href="/law/list">法规</a></li>
+
+            <li><a href="/paper/home">论文</a></li>
+
+            <li><a href="/standard/list">标准</a></li>
+
+            <li><a href="/expert">专家</a></li>
+
+            <li><a href="/show">会展</a></li>
+
+            <!-- <li><a href="http://bbs.h2o-china.com" target="_blank">BBS</a></li> -->
+
+            <li><a href="https://www.qinghuan.com" target="_blank">企业</a></li>
+
+            <li><a href="https://www.qinghuan.com" target="_blank">案例</a></li>
+
+        </ul>
+
+        <div class="moreColumn"><span>更多</span>
+
+            <ul>
+
+                <li><a href="https://www.qinghuan.com" target="_blank">设备</a></li>
+
+                <li><a href="https://www.qinghuan.com" target="_blank">技术</a></li>
+
+                <li><a href="https://www.qinghuan.com" target="_blank">招标</a></li>
+
+                <li><a href="https://www.qinghuan.com/job/" target="_blank">人才</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="login">
+
+
+
+            <script type="text/javascript">
+
+               // document.write('<a href="https://www.qinghuan.com/member/login.php" >登录</a><a href="https://www.qinghuan.com/member/register.php" >注册</a><a href="https://www.qinghuan.com/member/" >会员中心</a>');
+
+
+
+            	// wxh 2020-10-26 add
+
+                //var host = "http://localhost:8000";
+
+            	var host = "https://www.qinghuan.com";
+
+        		var forward = encodeURIComponent(self.location.href);
+
+            	document.write('<scr'+'ipt src="'+host+'/api/sanwang.php?url='+forward+'"></scr'+'ipt>');
+
+
+
+                $(document).ready(function () {
+
+
+
+
+
+                    var model = 'news';
+
+                    var model_text = '';
+
+                    if (model == 'news')
+
+                        model_text = '新闻';
+
+                    else if (model == 'topic')
+
+                        model_text = '专题';
+
+                    else if (model == 'policy')
+
+                        model_text = '政策';
+
+                    else if (model == 'law')
+
+                        model_text = '法规';
+
+                    else if (model == 'standard')
+
+                        model_text = '标准';
+
+                    else if (model == 'paper')
+
+                        model_text = '论文';
+
+                    else if (model == 'expert')
+
+                        model_text = '专家';
+
+                    else if (model == 'research')
+
+                        model_text = '研究';
+
+                    else if (model == 'show')
+
+                        model_text = '会展';
+
+                    else if (model == '企业')
+
+                        model_text = '企业';
+
+                    else if (model == 'video')
+
+                        model_text = '视频';
+
+                    else
+
+                        model_text = '新闻';
+
+                    $('#fancyshow').text(model_text);
+
+
+
+                    $('#fancy').find('a').bind('click', function () {
+
+
+
+                        var text = $(this).text();
+
+                        $('#fancyshow').text(text);
+
+
+
+                        $('#searchform').attr('action', $(this).attr('title'));
+
+
+
+                    });
+
+
+
+                    $('#fancy>li>a').each(function (i) {
+
+                        if ($(this).text() == model_text)
+
+                            $('#searchform').attr('action', $(this).attr('title'));
+
+
+
+                    });
+
+
+
+
+
+                    $('#submitBtn').bind('click', function () {
+
+                        //
+
+                        if ($('#fancyshow').text() == 'BBS') {
+
+                            var schv = $('#schv').val();
+
+                            var schv = encodeURIComponent(schv);
+
+                            location.href = "http://www.baidu.com/s?ie=gbk&site=1&wd=site%3Abbs.h2o-china.com+" + schv + "&q=" + schv + "&sa=true";
+
+
+
+                            return false;
+
+                        }
+
+                        $('#searchform').submit();
+
+                    });
+
+
+
+                    // 固废网手机端新闻搜索
+
+                     $('#msubmitBtn').bind('click', function () {
+
+
+
+                            var mschv = $('#mschv').val();
+
+                           
+
+                            var mschv = encodeURIComponent(mschv);
+
+                            if(!mschv){
+
+                                 alert('请输入关键字');
+
+                                 return false;
+
+                                
+
+                            }else{
+
+                               
+
+                                //location.href = "https://www.solidwaste.com.cn/news/search2?start_time=&end_time=&stype=title&schv=" + mschv;
+
+                                location.href = "https://www.solidwaste.com.cn/news/search?start_time=&end_time=&stype=title&schv=" + mschv;
+
+                                return false;
+
+                                $('#msearchform').submit();
+
+                            }
+
+                            
+
+                    });
+
+
+
+
+
+
+
+                    $('#js-pagination-location').bind('click', function() {
+
+                        var page = parseInt($('#page-number').val());
+
+                        var lastPage = parseInt($('#page-number').attr('max'));
+
+                        if (page > lastPage) {
+
+                            page = lastPage;
+
+                        }
+
+
+
+                        var result = window.location.href.match(/page=(\d+)/);
+
+                        if (result == null) {
+
+                            if (page !== 1) {
+
+                                if (window.location.href.match(/\?/) == null) {
+
+                                    window.location.href = window.location.href + '?page=' + page;
+
+                                } else {
+
+                                    window.location.href = window.location.href + '&page=' + page;
+
+                                }
+
+                            }
+
+                        } else {
+
+                            if (page !== parseInt(result[1])) {
+
+                                window.location.href = window.location.href.replace(/page=(\d+)/, 'page=' + page)
+
+                            }
+
+                        }
+
+                    });
+
+
+
+                    // 移动端分页 wxh add
+
+                    $('#js-pagination-location-mobile').bind('click', function() {
+
+                        var page = parseInt($('#page-number-mobile').val());
+
+                        var lastPage = parseInt($('#page-number-mobile').attr('max'));
+
+                        if (page > lastPage) {
+
+                            page = lastPage;
+
+                        }
+
+
+
+                        var result = window.location.href.match(/page=(\d+)/);
+
+                        if (result == null) {
+
+                            if (page !== 1) {
+
+                                if (window.location.href.match(/\?/) == null) {
+
+                                    window.location.href = window.location.href + '?page=' + page;
+
+                                } else {
+
+                                    window.location.href = window.location.href + '&page=' + page;
+
+                                }
+
+                            }
+
+                        } else {
+
+                            if (page !== parseInt(result[1])) {
+
+                                window.location.href = window.location.href.replace(/page=(\d+)/, 'page=' + page)
+
+                            }
+
+                        }
+
+                    });
+
+                    
+
+                });
+
+
+
+            </script>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<div id="topAD">
+
+    <script language="javascript" src="/ggclick?id=165"></script>
+
+</div>
+
+
+
+<div id="branding">
+
+    <div class="logo">
+
+                <a href="/"><img src="/images/gf/logo2.jpg" alt="中国固废网" title="返回固废网首页"></a>
+
+                            <a href="/news/"><img src="/column/images/channel_logo.jpg"></a>
+
+            </div>
+
+    <form id="searchform" name="searchform" method="get" action="#" class="ssForm mt20" style="position: relative;">
+
+
+
+
+
+        <div style="position: absolute;left: -195px;line-height: 25px;width: 191px;border: 1px solid #e5e5e5;height: 26px;margin-top: -1px; ">
+
+            <div>
+
+                <div class="beginsj">
+
+                    <input style="float: left;width: 70px;line-height: 21px;border: 1px solid #fff;margin-left: 5px;outline: none;"
+
+                           onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" name="start_time" value=""
+
+                           placeholder="开始时间">
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <label style="float: left;">至</label>
+
+                <div class="finishjs">
+
+                    <input style="width: 70px;line-height: 16px;border: 1px solid #fff;margin-left: 5px;outline: none;"
+
+                           onclick="WdatePicker({dateFmt:'yyyy-MM-dd', maxDate: '2026-10-15'})"
+
+                           name="end_time" value="" placeholder="结束时间">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="ss_nav_boxa"><a id="fancyshow" href="javascript:void(0);" class="a1">新闻</a>
+
+            <ul id="fancy" class="ss_nav_ul">
+
+                <li><a href="javascript:void(0);" title="/news/search">新闻</a></li>
+
+                <li><a href="javascript:void(0);" title="/video/search">视频</a></li>
+
+                <li><a href="javascript:void(0);" title="/policy/search">政策</a></li>
+
+                <li><a href="javascript:void(0);" title="/law/search">法规</a></li>
+
+                <li><a href="javascript:void(0);" title="/standard/search">标准</a></li>
+
+                <li><a href="javascript:void(0);" title="/paper/search">论文</a></li>
+
+                <li><a href="javascript:void(0);" title="/expert/search">专家</a></li>
+
+                <li><a href="javascript:void(0);" title="/research">研究</a></li>
+
+                <li><a href="javascript:void(0);" title="/show/search">会展</a></li>
+
+                <li><a href="javascript:void(0);" title="/topic/list">专题</a></li>
+
+                <li><a href="javascript:void(0);" title="bbs">BBS</a></li>
+
+            </ul>
+
+            <input id="schtype" name="stype" value="title" type="hidden">
+
+        </div>
+
+        <p class="fl">
+
+            <input id="schv" name="schv" class="ss_nav_text w180" type="text" value="">
+
+        </p>
+
+        <p class="fr">
+
+            <input id="submitBtn" name="submitBtn" class="ss_nav_btn" type="button">
+
+        </p>
+
+    </form>
+
+</div>
+
+
+
+<script src="https://www.solidwaste.com.cn/js/datepicker/WdatePicker.js"></script>
+
+
+
+  <!-- 通用头部结束 -->
+
+  <!-- 频道导航   -->
+
+  <div id="navb" class="zcNav">
+
+	<ul>
+
+				<li class="li1"><a href="/news">新闻首页</a></li>
+
+				<li ><a href="/news/list?cid=86">综合</a></li>
+
+				<li ><a href="/news/list?cid=87">政策</a></li>
+
+				<li ><a href="/news/list?cid=88">市场</a></li>
+
+				<li ><a href="/news/list?cid=246">项目</a></li>
+
+				<li ><a href="/news/list?cid=89">技术</a></li>
+
+				<li ><a href="/news/list?cid=90">社会</a></li>
+
+				<li ><a href="/news/list?cid=92">上市公司</a></li>
+
+				<li ><a href="/news/list?cid=93">访谈</a></li>
+
+				<li ><a href="/topic">专题</a></li>
+
+			</ul>
+
+</div>  
+
+  <!-- 频道导航  -->
+
+  <div id="field" class="mt15">
+
+  <span>领域新闻</span>
+
+      <a href="/news/field?fid=26"  >垃圾焚烧</a>
+
+      <a href="/news/field?fid=20"  >危险废物</a>
+
+      <a href="/news/field?fid=76"  >环卫</a>
+
+      <a href="/news/field?fid=18"  >生活垃圾</a>
+
+      <a href="/news/field?fid=19"  >餐厨垃圾</a>
+
+      <a href="/news/field?fid=85"  >医疗废物</a>
+
+      <a href="/news/field?fid=78"  >垃圾分类</a>
+
+      <a href="/news/field?fid=61"  >建筑垃圾</a>
+
+      <a href="/news/field?fid=24"  >土壤修复</a>
+
+      <a href="/news/field?fid=79"  >垃圾填埋</a>
+
+      <a href="/news/field?fid=25"  >垃圾渗透液</a>
+
+    </div>
+
+
+
+</header>
+
+
+
+<!-- 手机端头部开始 -->
+
+
+
+    <div class="mHeader">
+
+        <div class="search content">
+
+            <div class="con">
+
+                <div>
+
+                    <div class="seek">
+
+                        <div class="seekLeft">
+
+                            <a href="https://www.solidwaste.com.cn">
+
+                                <img class="logo" src="./../images/mobile/header.png?v=20241206">
+
+                            </a>
+
+                        </div>
+
+                        <!-- 右侧搜索框 -->
+
+                        <div class="seekRight">
+
+                            <form id="msearchform" method="get" action="#">
+
+                                    <input class="restrain" id="mschv" type="text" name="mschv" value="" placeholder="请输入关键字">
+
+    
+
+                                    <input type="button" id="msubmitBtn">
+
+                            </form>
+
+                          
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- 手机端头部结束 -->
+
+
+
+<!-- 手机端导航 -->
+
+<ul class="nav">
+
+        <!--<li><a href="https://www.solidwaste.com.cn/news/list?cid=commend" class="active">要闻</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=3">市场</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=252">企业</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=2">政策</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=10">项目</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=5">技术</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=251">原创</a></li>-->
+
+
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=commend"   class="active">要闻</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=88"  >市场</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=253" >企业</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=87" >政策</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=246" >项目</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=89" >技术</a></li>
+
+        <li><a href="https://www.solidwaste.com.cn/news/list?cid=255" >原创</a></li>
+
+</ul>
+
+
+
+
+
+<!-- 手机端广告图 -->
+
+<div class="advertising">
+
+        <!-- 后端调取 -->
+
+        <script language="javascript" src="/ggclick?id=167">
+
+        </script>
+
+       
+
+</div>
+
+
+
+<!-- 内容开始   -->
+
+<div class="w1000 bc" >
+
+  <div class="w1000 bc mt20">
+
+
+
+    <!-- 头条1 -->
+
+    <div class="fl headlines w390 b-2-b">
+
+        <div class="zoom">
+
+            <h2 class="fl ml4">新闻头条</h2>
+
+            <span class="more fr mr15"><a href="/news/list?cid=head">更多</a></span>
+
+        </div>
+
+        <ul class="f14 headlines_ul1">
+
+        
+
+          <li class="li1" >
+
+            <p><a href="/news/365240.html" target="_blank" title="光从何处来？——易瀚光电「两山智联·易察」产品系列（二）">光从何处来？——易瀚光电「两山智联·...</a></p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365240.html" title="光从何处来？——易瀚光电「两山智联·易察」产品系列（二）"  ></div>
+
+            </div>
+
+          </li>
+
+                      <li>
+
+            <p><a href="/news/364941.html" target="_blank" title="为什么是光？——易瀚光电「两山智联·易察」产品系列首发">为什么是光？——易瀚光电「两山智联·易察」产品系列...</a></p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/364941.html" title="为什么是光？——易瀚光电「两山智联·易察」产品系列首发"  ></div>
+
+            </div>
+
+          </li>
+
+                      <li>
+
+            <p><a href="/news/364629.html" target="_blank" title="【产品名片】两山智联·易察 激光气体监测">【产品名片】两山智联·易察 激光气体监测</a></p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/364629.html" title="【产品名片】两山智联·易察 激光气体监测"  ></div>
+
+            </div>
+
+          </li>
+
+                  
+
+          <li class="li1" >
+
+            <p><a href="/news/365228.html" target="_blank" title="全球前2%顶尖科学家榜：中国710名环境学者入选“终身科学影响力榜”">全球前2%顶尖科学家榜：中国710名...</a></p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365228.html" title="全球前2%顶尖科学家榜：中国710名环境学者入选“终身科学影响力榜”"  ></div>
+
+            </div>
+
+          </li>
+
+                      <li>
+
+            <p><a href="/news/347245.html" target="_blank" title="2023年度全球高被引科学家“环境科学与生态学”学者汇总">2023年度全球高被引科学家“环境科学与生态学”学者...</a></p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/347245.html" title="2023年度全球高被引科学家“环境科学与生态学”学者汇总"  ></div>
+
+            </div>
+
+          </li>
+
+                      <li>
+
+            <p><a href="/news/364851.html" target="_blank" title="软科排名出炉！中国8校包揽环境科学与工程全球前8">软科排名出炉！中国8校包揽环境科学与工程全球前8</a></p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/364851.html" title="软科排名出炉！中国8校包揽环境科学与工程全球前8"  ></div>
+
+            </div>
+
+          </li>
+
+                        </ul>
+
+      <div class="clear"></div>
+
+    </div>
+
+    <!-- 头条结束 -->
+
+
+
+    <!-- 幻灯 -->
+
+    <div class="fr news_flash zoom w590" >
+
+      <div class="focus" style="margin:0 auto">
+
+        <div class="fl focusBox" >
+
+          <ul class="pic">
+
+                        <li><a href="/news/365218.html" target="_blank"><img src="https://imgs.h2o-china.com/news/2026/10/113_1791873689.png" ></a></li>
+
+                        <li><a href="/news/365075.html" target="_blank"><img src="https://imgs.h2o-china.com/news/2026/10/113_1791450367.png" ></a></li>
+
+                        <li><a href="/news/365182.html" target="_blank"><img src="https://imgs.h2o-china.com/news/2026/10/113_1791448721.png" ></a></li>
+
+                        <li><a href="/news/365049.html" target="_blank"><img src="https://imgs.h2o-china.com/news/2026/09/113_1790652763.png" ></a></li>
+
+                      </ul>
+
+          <a class="prev" href="javascript:void(0)"></a>
+
+          <a class="next" href="javascript:void(0)"></a>
+
+        </div>
+
+
+
+        <div  class="fr focusText l24">
+
+          <ul class="textblock">
+
+                        <li>
+
+              <h2 class="mt10"><a href="/news/365218.html" target="_blank">傅涛：从八五到十五五，三条线读懂环境产业的跃迁与重构</a></h2>
+
+              <p class="mt10">本文将三条主线并置对照，复盘从经济优先、末端治污，到减污降碳协同，再到 "十五五" 迈向生态价值实现、AI原生新范式的迭代历程，探寻规划换挡背后的底层规律，也为行业在...</p>
+
+            </li>
+
+                        <li>
+
+              <h2 class="mt10"><a href="/news/365075.html" target="_blank">《美丽山西建设“十五五”规划》印发</a></h2>
+
+              <p class="mt10">日前，山西省人民政府印发《美丽山西建设"十五五"规划》。</p>
+
+            </li>
+
+                        <li>
+
+              <h2 class="mt10"><a href="/news/365182.html" target="_blank">浙能锦江环境印尼巨港垃圾焚烧发电项目圆满完成72+24小...</a></h2>
+
+              <p class="mt10">10月7日，浙能锦江环境印度尼西亚巨港垃圾焚烧发电项目顺利完成72+24小时满负荷连续试运行，机组各项指标稳定达标，标志着项目取得重大阶段性成果，为正式商业运营奠定坚实基础...</p>
+
+            </li>
+
+                        <li>
+
+              <h2 class="mt10"><a href="/news/365049.html" target="_blank">注册资金5亿！南京资环公司正式成立</a></h2>
+
+              <p class="mt10">9月22日，江苏南京中江资源循环有限公司成立仪式暨中江国际集团与南京市城建集团深化合作大会在中江建筑智慧产业园举行。会上，中江国际集团董事长宋勤波、中江资环公司董事长...</p>
+
+            </li>
+
+                      </ul>
+
+          <ul class="hd">
+
+                        <li></li>
+
+                        <li></li>
+
+                        <li></li>
+
+                        <li></li>
+
+                      </ul>
+
+        </div>
+
+      </div>
+
+      <script type="text/javascript">
+
+        /*鼠标移过，左右按钮显示*/
+
+        // jQuery(".focusBox").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true)});
+
+        /*SuperSlide图片切换*/
+
+        jQuery(".focus").slide({ mainCell:".focusBox .pic",effect:"fold", autoPlay:true, delayTime:600, trigger:"click"});
+
+        jQuery(".focus").slide({ mainCell:".focusText .textblock", autoPlay:true, delayTime:600, trigger:"click"});
+
+
+
+      </script>
+
+    </div>
+
+    <!-- 幻灯结束 -->
+
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="news_main w1000 bc zoom mt20" id="app" v-cloak>
+
+    <div class="w690 fl">
+
+ <div class="fl w390 news_boxa ">
+
+        <div class="zoom mt5">
+
+          <h2 class="fl ml4">今日要闻</h2>
+
+          <span class="more fr mr15"><a href="/news/list?cid=commend">更多</a></span>
+
+        </div>
+
+
+
+        <ul class="f14 headlines_ul1 mt20">
+
+                    <li class="li1 li2" >
+
+            <p>
+
+                            <a href="/news/365240.html" target="_blank" title="光从何处来？——易瀚光电「两山智联·易察」产品系列（二）">光从何处来？——易瀚光电「两山智联·...</a>
+
+                          </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365240.html" title="光从何处来？——易瀚光电「两山智联·易察」产品系列（二）"  ></div>
+
+            </div>
+
+          </li>
+
+                              <li  >
+
+            <p>
+
+                            <a href="/news/365228.html" target="_blank" title="全球前2%顶尖科学家榜：中国710名环境学者入选“终身科学影响力榜”">全球前2%顶尖科学家榜：中国710名环境学者入选“...</a>
+
+                          </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365228.html" title="全球前2%顶尖科学家榜：中国710名环境学者入选“终身科学影响力榜”"  ></div>
+
+            </div>
+
+          </li>
+
+                              <li  >
+
+            <p>
+
+                            <a href="/news/365226.html" target="_blank" title="第三轮第七批中央生态环境保护督察全面启动">第三轮第七批中央生态环境保护督察全面启动</a>
+
+                          </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365226.html" title="第三轮第七批中央生态环境保护督察全面启动"  ></div>
+
+            </div>
+
+          </li>
+
+                              <li  >
+
+            <p>
+
+                            <a href="/news/365224.html" target="_blank" title="全文 | 碳排放权交易管理暂行条例">全文 | 碳排放权交易管理暂行条例</a>
+
+                          </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365224.html" title="全文 | 碳排放权交易管理暂行条例"  ></div>
+
+            </div>
+
+          </li>
+
+                      <li class="li_br1 overh"></li>
+
+                              <li class="li1 li2" >
+
+            <p>
+
+                            <a href="/news/365218.html" target="_blank" title="傅涛：从八五到十五五，三条线读懂环境产业的跃迁与重构">傅涛：从八五到十五五，三条线读懂环境...</a>
+
+                          </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365218.html" title="傅涛：从八五到十五五，三条线读懂环境产业的跃迁与重构"  ></div>
+
+            </div>
+
+          </li>
+
+                              <li  >
+
+            <p>
+
+                            <a href="/news/365217.html" target="_blank" title="上市环保企业讨债5年！诉讼追讨后，仍有3亿余元没着落">上市环保企业讨债5年！诉讼追讨后，仍有3亿余元没着落</a>
+
+                          </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365217.html" title="上市环保企业讨债5年！诉讼追讨后，仍有3亿余元没着落"  ></div>
+
+            </div>
+
+          </li>
+
+                              <li  >
+
+            <p>
+
+                            <a href="/news/365216.html" target="_blank" title="《福州市“十五五”生态文明建设专项规划》">《福州市“十五五”生态文明建设专项规划》</a>
+
+                          </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365216.html" title="《福州市“十五五”生态文明建设专项规划》"  ></div>
+
+            </div>
+
+          </li>
+
+                              <li  >
+
+            <p>
+
+                            <a href="/news/365215.html" target="_blank" title="山东省土壤、地下水和农业农村生态环境保护“十五五”规划">山东省土壤、地下水和农业农村生态环境保护“十五五”...</a>
+
+                          </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365215.html" title="山东省土壤、地下水和农业农村生态环境保护“十五五”规划"  ></div>
+
+            </div>
+
+          </li>
+
+                            </ul>
+
+        <div class="clear"></div>
+
+      </div>
+
+
+
+      <!-- 手机端新闻列表 -->
+
+      <div class="mnews_list_ul" >
+
+          <li v-for="item in mnewsList" :key="item.dateline">
+
+              <h3> 
+
+                 <a :href="'https://www.solidwaste.com.cn/news/' +item.id+ '.html'">{{item.title}}</a>
+
+              </h3>
+
+              <p class="zoom mt5">
+
+                <a :href="'https://www.solidwaste.com.cn/news/' +item.id+ '.html'">{{item.intro | filterTrim}}</a>
+
+                <span class="fr">{{item.dateline | formatDate}}</span>
+
+            </p>
+
+          </li>
+
+      </div>
+
+
+
+
+
+      <!-- 手机端加载更多 -->
+
+            <div class="loadMore2">
+
+                <!-- Elementui分页器 -->
+
+                <el-pagination
+
+                background
+
+                @size-change="handleSizeChange"
+
+                @current-change="handleCurrentChange"
+
+                
+
+                :current-page="page"
+
+                :page-size="12"
+
+                :total="total"
+
+                :pager-count="pageCount"
+
+                layout="total,prev,next"
+
+                >
+
+                </el-pagination>
+
+            </div>
+
+
+
+      <div class="fr w280 news_boxa">
+
+        <div class="zoom mt5">
+
+          <h2 class="fl ml4"><a href="/video/list?cid=120">新闻视频</a></h2>
+
+          <span class="more fr mr15"><a href="/video/list?cid=120">更多</a></span> </div>
+
+
+
+
+
+	  	  			  	  	    <h3 class="mt18"><a href="/video/2845.html"  target="_blank">两家环保上市公司接连更名+去环...</a></h3>
+
+        <div class="zoom mt12">
+
+          <div class="fl"><img src="https://imgs.h2o-china.com/video/2026/08/113_1786611374.png" width="100" height="75"></div>
+
+          <div class="fr w170 f14 l24"><a href="/video/2845.html"  target="_blank">短短一周，两家老牌环保上市公司接连官宣更名，集体开启“去环保...</a></div>
+
+        </div>
+
+        <ul class="f14 news_ul1">
+
+        	  	  		          <li><a href="/video/2838.html"  target="_blank">启迪环境预重整落地产业投资人 宜昌国...</a></li>
+
+         	  	  		          <li><a href="/video/2837.html"  target="_blank">中国再生资源开发集团原董事长邢宏伟被...</a></li>
+
+         	  	  		          <li><a href="/video/2834.html"  target="_blank">8 万亿，循环经济正式成为产业支柱</a></li>
+
+         	  	  		          <li><a href="/video/2833.html"  target="_blank">垃圾发电厂凭什么 成为 AI 新基建</a></li>
+
+         	  	  		          <li><a href="/video/2821.html"  target="_blank">【减污协同降碳 智能驱动进阶】 精彩...</a></li>
+
+         	  	  
+
+
+
+
+
+        </ul>
+
+      </div>
+
+      <div class=" clear"></div>
+
+
+
+      <div class="news_boxa mt30">
+
+        <div class="news_title1">
+
+          <h2><a href="/news/list?cid=86" >综合</a></h2>
+
+          <span class="more fr mt7 mr15"><a href="/news/list?cid=86" >更多</a></span></div>
+
+        <ul class="news_ul2 f14 l22">
+
+                    <li>
+
+                        <h3><a href="/news/365240.html" target="_blank">光从何处来？——易瀚光电「两山智联·易察」产品系列（二）</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365240.html">一束激光，诞生于实验室的物理观测，淬炼于航天军工的极端工况，冲破海外技术封锁，最终落地城市环境治理一线。TDLAS技术跨越四十载，完成了从仰望苍穹到守护城市的跨越。本文回溯这...</a>
+
+                              <span class="fr">10-14 09:21</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365240.html" title="光从何处来？——易瀚光电「两山智联·易察」产品系列（二）"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365237.html" target="_blank">康恒之声丨垃圾焚烧发电厂：从被容忍的工业设施，到美好共生的城市资产</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365237.html">近日，行业旗舰杂志《世界废物管理》最新一期聚焦中国企业康恒环境，向全球分享其通过融合先进技术、地域文化与建筑美学，将垃圾焚烧发电厂打造成连接环境基础设施与城市、社区及公众重要纽带这...</a>
+
+                              <span class="fr">10-13 15:56</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365237.html" title="康恒之声丨垃圾焚烧发电厂：从被容忍的工业设施，到美好共生的城市资产"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365236.html" target="_blank">北控水务与首创环保举办第七届“E2+峰会”</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365236.html">10月10日，由北控水务集团和首创环保集团共同发起的第七届E2+峰会在首创新大都成功举办，双方领导班子成员出席会议。开创环保和北创绿色基金作为双方生态圈企业，其...</a>
+
+                              <span class="fr">10-13 15:33</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365236.html" title="北控水务与首创环保举办第七届“E2+峰会”"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365234.html" target="_blank">切入污泥运输赛道 重庆环卫集团益渝江津分公司中标新项目</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365234.html">近日，重庆环卫集团所属益渝公司江津分公司成功中标重庆市中心城区城镇生活污水处理厂 2026—2029 年污泥运输服务项目，服务范围覆盖北碚区污水处理厂、北碚区长滩污水处理厂等共计 ...</a>
+
+                              <span class="fr">10-13 13:44</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365234.html" title="切入污泥运输赛道 重庆环卫集团益渝江津分公司中标新项目"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365228.html" target="_blank">全球前2%顶尖科学家榜：中国710名环境学者入选“终身科学影响力榜”</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365228.html">近日，美国斯坦福大学（Stanford University）John P.A.Ioannidis教授团队和爱思唯尔（Elsevier）共同发布2026年斯坦福全球前2%顶尖科学家...</a>
+
+                              <span class="fr">10-13 10:33</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365228.html" title="全球前2%顶尖科学家榜：中国710名环境学者入选“终身科学影响力榜”"  ></div>
+
+            </div>
+
+          </li>
+
+                  </ul>
+
+      </div>
+
+
+
+      <div class="news_boxa mt30">
+
+        <div class="news_title1">
+
+          <h2><a href="/news/list?cid=87" >政策</a></h2>
+
+          <span class="more fr mt7 mr15"><a href="/news/list?cid=87" >更多</a></span></div>
+
+        <ul class="news_ul2 f14 l22">
+
+                    <li>
+
+                        <h3><a href="/news/365224.html" target="_blank">全文 | 碳排放权交易管理暂行条例</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365224.html">碳排放权交易管理暂行条例　　(2024年1月25日中华人民共和国国务院令第775号公布　根据2026年8月8日《国务院关于修改和废止部分行政法规的决定》修订)第一条　为了规范碳排...</a>
+
+                              <span class="fr">10-12 11:51</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365224.html" title="全文 | 碳排放权交易管理暂行条例"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365216.html" target="_blank">《福州市“十五五”生态文明建设专项规划》</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365216.html">日前，福州市人民政府印发《福州市十五五生态文明建设专项规划》的通知。《规划》围绕推动经济社会发展全面绿色转型、提高资源能源利用效率、提升生态环境品质、...</a>
+
+                              <span class="fr">10-10 16:29</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365216.html" title="《福州市“十五五”生态文明建设专项规划》"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365215.html" target="_blank">山东省土壤、地下水和农业农村生态环境保护“十五五”规划</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365215.html">关于印发《山东省土壤、地下水和农业农村生态环境保护十五五规划》的通知鲁环发〔2026〕8号各市生态环境局、发展改革委、财政局、自然资源主管部门、住房城乡...</a>
+
+                              <span class="fr">10-10 16:19</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365215.html" title="山东省土壤、地下水和农业农村生态环境保护“十五五”规划"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365211.html" target="_blank">《上海市高标准推进“无废城市”建设工作方案》发布</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365211.html">上海市生态环境局印发《上海市高标准推进“无废城市”建设工作方案》。《方案》提出，到2030年，全市固体废物减量化基础全面筑牢，资源化利用充分高效，无害化处置体系全面提质...</a>
+
+                              <span class="fr">10-10 13:21</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365211.html" title="《上海市高标准推进“无废城市”建设工作方案》发布"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365208.html" target="_blank">国务院发文定调新质生产力！产业迎“绿色+数智”双风口</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/365208.html">中共中央、国务院印发《关于发展新质生产力的意见》，部署七大板块19项任务，为绿色环保产业发展提供顶层指引。文件提出以科技创新引领新质生产力发展，强化企业创新主体地位，全...</a>
+
+                              <span class="fr">10-10 11:22</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365208.html" title="国务院发文定调新质生产力！产业迎“绿色+数智”双风口"  ></div>
+
+            </div>
+
+          </li>
+
+                  </ul>
+
+      </div>
+
+
+
+      <div class="news_boxa mt30">
+
+        <div class="news_title1">
+
+          <h2><a href="/news/list?cid=88">市场</a></h2>
+
+          <span class="more fr mt7 mr15"><a href="/news/list?cid=88">更多</a></span></div>
+
+        <ul class="news_ul2 f14 l22">
+
+                    <li>
+
+                        <h3><a href="/news/365237.html" target="_blank">康恒之声丨垃圾焚烧发电厂：从被容忍的工业设施，到美好共生的城市资产</a></h3>
+
+            <p class="zoom mt5">
+
+                              <a href="/news/365237.html">近日，行业旗舰杂志《世界废物管理》最新一期聚焦中国企业康恒环境，向全球分享其通过融合先进技术、地域文化与建筑美学，将垃圾焚烧发电厂打造成连接环境基础设施与城市、社区及公众重要纽带这...</a>
+
+                              <span class="fr">10-13 15:56</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365237.html" title="康恒之声丨垃圾焚烧发电厂：从被容忍的工业设施，到美好共生的城市资产"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365236.html" target="_blank">北控水务与首创环保举办第七届“E2+峰会”</a></h3>
+
+            <p class="zoom mt5">
+
+                              <a href="/news/365236.html">10月10日，由北控水务集团和首创环保集团共同发起的第七届E2+峰会在首创新大都成功举办，双方领导班子成员出席会议。开创环保和北创绿色基金作为双方生态圈企业，其...</a>
+
+                              <span class="fr">10-13 15:33</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365236.html" title="北控水务与首创环保举办第七届“E2+峰会”"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365234.html" target="_blank">切入污泥运输赛道 重庆环卫集团益渝江津分公司中标新项目</a></h3>
+
+            <p class="zoom mt5">
+
+                              <a href="/news/365234.html">近日，重庆环卫集团所属益渝公司江津分公司成功中标重庆市中心城区城镇生活污水处理厂 2026—2029 年污泥运输服务项目，服务范围覆盖北碚区污水处理厂、北碚区长滩污水处理厂等共计 ...</a>
+
+                              <span class="fr">10-13 13:44</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365234.html" title="切入污泥运输赛道 重庆环卫集团益渝江津分公司中标新项目"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365220.html" target="_blank">瀚蓝环境：并购粤丰环保7.22%股权项目获广东省发改委备案</a></h3>
+
+            <p class="zoom mt5">
+
+                              <a href="/news/365220.html">近日，瀚蓝环境发布“瀚蓝环境关于并购粤丰环保7.22%股权项目收到广东省发展和改革委员会《境外投资项目备案通知书》的公告”。瀚蓝环境股份有限公司(以下简称“公司”)拟通...</a>
+
+                              <span class="fr">10-12 09:37</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365220.html" title="瀚蓝环境：并购粤丰环保7.22%股权项目获广东省发改委备案"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365218.html" target="_blank">傅涛：从八五到十五五，三条线读懂环境产业的跃迁与重构</a></h3>
+
+            <p class="zoom mt5">
+
+                              <a href="/news/365218.html">站在三十余年行业观察的时间轴上，从八五到十五五，八轮五年规划构成了理解中国环境治理与产业演进的完整坐标系。国民经济发展纲要划定国家发展节...</a>
+
+                              <span class="fr">10-12 09:24</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365218.html" title="傅涛：从八五到十五五，三条线读懂环境产业的跃迁与重构"  ></div>
+
+            </div>
+
+          </li>
+
+                  </ul>
+
+      </div>
+
+
+
+      <div class="news_boxa mt30">
+
+        <div class="news_title1">
+
+          <h2><a href="/news/list?cid=89" >技术</a></h2>
+
+          <span class="more fr mt7 mr15"><a href="/news/list?cid=89" >更多</a></span></div>
+
+        <ul class="news_ul2 f14 l22">
+
+                    <li>
+
+                        <h3><a href="/news/364941.html" target="_blank">为什么是光？——易瀚光电「两山智联·易察」产品系列首发</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/364941.html">气体隐患无形，监测责任有声。在固废处置、污水处理、沼气工艺等复杂工况中，传统监测方式易干扰、响应慢、运维繁琐，长期存在测不准、预警滞后的行业痛点。行业始终需要一套更精...</a>
+
+                              <span class="fr">09-23 09:26</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/364941.html" title="为什么是光？——易瀚光电「两山智联·易察」产品系列首发"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/364937.html" target="_blank">技术突围！高能环境布局半导体废液资源化项目</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/364937.html">近日，高能环境依托自有研发体系，经过近两年技术攻关，成功实现工业高值废液回收系统技术突破与项目落地，一举中标某半导体龙头企业两大资源化合同能源管理（EMC）项目，合同总额约7000...</a>
+
+                              <span class="fr">09-22 16:57</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/364937.html" title="技术突围！高能环境布局半导体废液资源化项目"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/364845.html" target="_blank">中环洁&极景强强联手，发布国内首台无人环境综合巡检车</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/364845.html">中环洁年度科技创新发布活动武汉AI+数智城服新模式九省通衢，创新潮涌。2026年9月16日，以中国车谷闻名的创新之城——武汉，再次迎来硬核科技的时刻。中环洁集团年...</a>
+
+                              <span class="fr">09-17 09:22</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/364845.html" title="中环洁&极景强强联手，发布国内首台无人环境综合巡检车"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/364794.html" target="_blank">不止获奖更是实战突围，安睿通解锁环卫、矿山数字化运营新路径</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/364794.html">近日，2026(第四届)智輅奖评选结果揭晓，宇通安睿通智能服务系统首次参评即获智能网联类金奖。作为国内智能汽车领域权威评选，这份荣誉既是行业认可，更是市场与客户对安睿通实战价...</a>
+
+                              <span class="fr">09-11 14:17</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/364794.html" title="不止获奖更是实战突围，安睿通解锁环卫、矿山数字化运营新路径"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/364643.html" target="_blank">【产品名片】两山智联·易新 设备智能运维</a></h3>
+
+            <p class="zoom mt5">
+
+                                <a href="/news/364643.html">1.产品简介两山智联·易新设备智能运维，是深耕环境领域的设施设备全生命周期智能运维解决方案。产品依托1+N+X整体架构，以国家级工业互联网平台为底座，融合物联网...</a>
+
+                              <span class="fr">09-01 16:42</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/364643.html" title="【产品名片】两山智联·易新 设备智能运维"  ></div>
+
+            </div>
+
+          </li>
+
+                  </ul>
+
+      </div>
+
+
+
+      <div class="news_boxa mt30">
+
+        <div class="news_title1">
+
+          <h2><a href="/news/list?cid=91">国际</a></h2>
+
+          <span class="more fr mt7 mr15"><a href="/news/list?cid=91">更多</a></span></div>
+
+        <ul class="news_ul2 f14 l22">
+
+                   <li>
+
+                        <h3><a href="/news/365237.html" target="_blank">康恒之声丨垃圾焚烧发电厂：从被容忍的工业设施，到美好共生的城市资产</a></h3>
+
+            <p class="zoom mt5">
+
+                               <a href="/news/365237.html">近日，行业旗舰杂志《世界废物管理》最新一期聚焦中国企业康恒环境，向全球分享其通过融合先进技术、地域文化与建筑美学，将垃圾焚烧发电厂打造成连接环境基础设施与城市、社区及公众重要纽带这...</a>
+
+                              <span class="fr">10-13 15:56</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365237.html" title="康恒之声丨垃圾焚烧发电厂：从被容忍的工业设施，到美好共生的城市资产"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365203.html" target="_blank">约220亿港币！三峰环境签下香港垃圾焚烧大单</a></h3>
+
+            <p class="zoom mt5">
+
+                               <a href="/news/365203.html">近日，重庆三峰环境集团股份有限公司（以下简称三峰环境）发布公告，香港特别行政区环境保护署继今年7月13日批出香港综合废物管理设施第二期（I·PARK2）项目中标通知书后，...</a>
+
+                              <span class="fr">10-10 09:12</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365203.html" title="约220亿港币！三峰环境签下香港垃圾焚烧大单"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365197.html" target="_blank">印尼环保部副部长Diaz Hendropriyono到浙能锦江环境印尼巨港垃圾发电项目考察</a></h3>
+
+            <p class="zoom mt5">
+
+                               <a href="/news/365197.html">10月7日，印尼环保部副部长DiazHendropriyono一行到浙能锦江环境印尼巨港垃圾发电项目（巨港项目）现场考察，重点了解项目建设推进进度、机组设备试运行及整体运行情...</a>
+
+                              <span class="fr">10-09 13:37</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365197.html" title="印尼环保部副部长Diaz Hendropriyono到浙能锦江环境印尼巨港垃圾发电项目考察"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365182.html" target="_blank">浙能锦江环境印尼巨港垃圾焚烧发电项目圆满完成72+24小时满负荷连续试运行</a></h3>
+
+            <p class="zoom mt5">
+
+                               <a href="/news/365182.html">10月7日，正值国庆假期尾声，浙能锦江环境印度尼西亚巨港垃圾焚烧发电项目顺利完成72+24小时满负荷连续试运行，机组各项指标稳定达标，标志着项目取得重大阶段性成果，为正式商业运营...</a>
+
+                              <span class="fr">10-08 10:36</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365182.html" title="浙能锦江环境印尼巨港垃圾焚烧发电项目圆满完成72+24小时满负荷连续试运行"  ></div>
+
+            </div>
+
+          </li>
+
+                    <li>
+
+                        <h3><a href="/news/365134.html" target="_blank">黄润秋出席中国环境与发展国际合作委员会2026年年会主题论坛并会见国合会外方副主席</a></h3>
+
+            <p class="zoom mt5">
+
+                               <a href="/news/365134.html">　9月28日上午，中国环境与发展国际合作委员会（以下简称国合会）2026年年会系列主题论坛在北京举行。生态环境部部长、国合会中方执行副主席黄润秋出席“全球绿色转型进程中的中...</a>
+
+                              <span class="fr">09-29 14:08</span>
+
+            </p>
+
+            <div class="share_btn">
+
+              <em class="icons1"></em>
+
+              <div class="share" url="http://www.solidwaste.com.cn/news/365134.html" title="黄润秋出席中国环境与发展国际合作委员会2026年年会主题论坛并会见国合会外方副主席"  ></div>
+
+            </div>
+
+          </li>
+
+                  </ul>
+
+      </div>
+
+
+
+      <!--
+
+      <div class="news_boxa mt30">
+
+        <div class="news_title1">
+
+          <h2>新闻图集</h2>
+
+          <span class="more fr mt7 mr15"><a href="#" target="_blank">更多</a></span></div>
+
+        <ul class="news_ul3 f12 l18 mt20 zoom">
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+          <li>
+
+            <p><img src="/news/images/img1.jpg"width="100" height="75"></p>
+
+            <p class="mt7"><a href="#">我水水水资源利用我国海水资源利用</a></p>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      -->
+
+
+
+    </div>
+
+    <div class="w280 fr">
+
+      <div class="news_boxa r_news_boxa pb10 ie7_1">
+
+        <div class="zoom mt5">
+
+          <h2 class="fl ml4"><a href="/topic/">新闻专题</a></h2>
+
+          <span class="more fr mr15"><a href="/topic/" >更多</a></span> </div>
+
+        <h3 class="mt18"><a href="https://zt.h2o-china.com/meeting/2026/2026_shanghaiSolidwaste_pc/index.html" title="2026（第十三届）上海固废热点论坛">2026（第十三届）上海固废热点...</a></h3>
+
+        <div class="zoom mt12 pl7 pr7">
+
+          <div class="fl"><a href="https://zt.h2o-china.com/meeting/2026/2026_shanghaiSolidwaste_pc/index.html"><img src="https://imgs.h2o-china.com/topic/2026/05/113_1779849495.jpg"width="100" height="75"></a></div>
+
+          <div class="fr w160 f14 l24">
+
+            “十五五”蓝图加速铺展，绿色低碳与高质量发展重塑产业逻辑，“...</div>
+
+        </div>
+
+        <ul class="f14 news_r_ul1 mt14 l26">
+
+                    <li><a href="https://zt.h2o-china.com/meeting/2025/2025SanitationPeak/index.html" target="_blank" title="2025（第三届）AI+环卫高峰论坛">2025（第三届）AI+环卫高峰论坛</a></li>
+
+                    <li><a href="https://zt.h2o-china.com/meeting/2025/2025gflt/index.html" target="_blank" title="2025（第十九届）固废战略论坛">2025（第十九届）固废战略论坛</a></li>
+
+                    <li><a href="https://forum.h2o-china.com/2025/2025_hwpx_pc/index.html" target="_blank" title="2025年度(第九届)环卫企业评选">2025年度(第九届)环卫企业评选</a></li>
+
+                    <li><a href="https://forum.h2o-china.com/2025/2025_gfpx_pc/index.html" target="_blank" title="2025年度(第十七届)固废企业评选">2025年度(第十七届)固废企业评选</a></li>
+
+                    <li><a href="https://zt.h2o-china.com/meeting/newsTeam/week-420/index.html" target="_blank" title="第420期100秒扫描环保行业大势 (2025年7月7日~7月13日）">第420期100秒扫描环保行业...</a></li>
+
+                  </ul>
+
+      </div>
+
+      <div class="rBlock syzl mt10 pb10 ie7_2">
+
+      <div class="title">
+
+        <h2><a href="/column"><img src="/images/r_title_img1.jpg" class="mt10"></a></h2>
+
+        <span class="more"><a href="/column">更多</a></span>
+
+        <div class="clear"></div>
+
+      </div>
+
+      <div class="con">
+
+          <ul>
+
+		            <li class="txtPic mt15">
+
+          <div class="fl w80 pic">
+
+          <a href="/column/writer?uid=118" target="_blank">
+
+          <img src="https://imgs.h2o-china.com/column/2026/07/113_1782976571.jpg">
+
+          <div class="zlName">曹斌</div>
+
+          </a>
+
+          </div>
+
+          <div class="fr w180">
+
+			<em><a href="/column/2001.html" target="_blank" title="“世界模型”落地污水厂，智驾系统开启L4自主运行新时代">“世界模型”落地污水厂，智驾系...</a></em>
+
+			<p>当前，我国水务行业正处在由规模扩张向...</p>
+
+          </div>
+
+          <div class="clear"></div>
+
+          </li>
+
+                    <li class="txtPic mt15">
+
+          <div class="fl w80 pic">
+
+          <a href="/column/writer?uid=41" target="_blank">
+
+          <img src="https://imgs.h2o-china.com/column/2015/09/37_1442460248.jpg">
+
+          <div class="zlName">张辰</div>
+
+          </a>
+
+          </div>
+
+          <div class="fr w180">
+
+			<em><a href="/column/1999.html" target="_blank" title="张辰大师眼中的韧性城市建设路线图">张辰大师眼中的韧性城市建设路线...</a></em>
+
+			<p>城市内涝，是城镇化进程中始终绕不开的...</p>
+
+          </div>
+
+          <div class="clear"></div>
+
+          </li>
+
+                  </ul>
+
+      </div>
+
+    </div>
+
+      <!-- 锵锵三人行 -->
+
+      <!-- <div class="news_boxa r_news_boxa pb10 mt20 ie7_2">
+
+        <div class="zoom mt10">
+
+	<p class="fl ml5"><img style="border-radius:5px;" src="/news/images/update/threePeoples.jpg"></p>
+
+	<span class="more fr mr15 mt5"><a href="/topic/list?cid=14" >更多</a></span> 
+
+</div>
+
+<p class="mt10">
+
+	<a href="/topic/.html" title="" target="_blank"><img src="https://imgs.h2o-china.com/topic/" width="280" height="120"></a>
+
+</p>
+
+<div class="news_r_con1 f12 l18 mt15 pl7 pr7">
+
+	<h4><a href="/topic/.html" target="_blank"></a></h4>
+
+	<p class="mt10"><a href="/topic/.html" target="_blank"></a></p>
+
+</div>      </div> -->
+
+      <!-- 品牌故事 -->
+
+      <!--<div class="news_boxa r_news_boxa pb10 mt20 ie7_2">
+
+       <div class="zoom mt10">
+
+  <p class="fl ml5"><img src="/news/images/r_title_img3.jpg"></p>
+
+  <span class="more fr mr15 mt5"><a href="/topic/list?cid=60" >更多</a></span> </div>
+
+<p class="mt10">
+
+  <a href="/topic/.html" title="" target="_blank"><img src="https://imgs.h2o-china.com/topic/" width="280" height="120"></a>
+
+  </p>
+
+<ul class="news_r_ul2 f14 l24 mt10">
+
+    <li><a href="/topic/129500.html" target="_blank" title="“特斯拉”背后的桑德营销大智慧">“特斯拉”背后的桑德营销大智慧</a></li>
+
+  </ul>      </div>-->
+
+      <!-- 上市公司 -->
+
+      <div class="news_boxa r_news_boxa pb10 mt20 ie7_2">
+
+        <div class="zoom mt10">
+
+          <p class="fl ml5"><img src="/news/images/r_title_img4.jpg"></p>
+
+          <span class="more fr mr15 mt5"><a href="/news/list?cid=8" >更多</a></span> </div>
+
+        <ul class="f14 news_r_ul1 mt14 l26">
+
+                    <li><a href="/news/365236.html" target="_blank" title="北控水务与首创环保举办第七届“E2+峰会”">北控水务与首创环保举办第七届“E...</a></li>
+
+                    <li><a href="/news/365234.html" target="_blank" title="切入污泥运输赛道 重庆环卫集团益渝江津分公司中标新项目">切入污泥运输赛道 重庆环卫集团益...</a></li>
+
+                    <li><a href="/news/365220.html" target="_blank" title="瀚蓝环境：并购粤丰环保7.22%股权项目获广东省发改委备案">瀚蓝环境：并购粤丰环保7.22%...</a></li>
+
+                    <li><a href="/news/365219.html" target="_blank" title="瀚蓝环境并购粤丰环保7.22%股权项目获备案">瀚蓝环境并购粤丰环保7.22%股...</a></li>
+
+                    <li><a href="/news/365217.html" target="_blank" title="上市环保企业讨债5年！诉讼追讨后，仍有3亿余元没着落">上市环保企业讨债5年！诉讼追讨后...</a></li>
+
+                  </ul>
+
+      </div>
+
+      <!-- 热点排行 -->
+
+        <div class="mt30 hot_news">
+
+<div class="zoom" id="hitsort_tab">
+
+  <h3 class="fl">热点</h3>
+
+  <ul class="zoom fl hot_news_tab f14">
+
+    <li><a href="javascript:void(0);">一周</a></li>
+
+    <li><a href="javascript:void(0);">一月</a></li>
+
+    <!-- <li><a href="#">热评</a></li> -->
+
+  </ul>
+
+</div>
+
+<div>
+
+<ul class="f14 l28 hot_news_ul mt15">
+
+            
+
+  <li>
+
+    <p><a href="/news/365168.html" target="_blank" title="数据质量，是生态环境监测的“生命线”">数据质量，是生态环境监测的“生命...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365173.html" target="_blank" title="5.4亿环卫大单结果出炉！当地国资中标">5.4亿环卫大单结果出炉！当地国...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365176.html" target="_blank" title="还款计划之后：存量PPP真正缺的是增信">还款计划之后：存量PPP真正缺的...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365177.html" target="_blank" title="山西出台PPP存量细则：在建防烂尾、运营化欠款、资产重盘活">山西出台PPP存量细则：在建防烂...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365170.html" target="_blank" title="厦门城市更新集团有限公司揭牌成立">厦门城市更新集团有限公司揭牌成立</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365175.html" target="_blank" title="中科环保：拟出资不超7亿元参与浙能锦江私有化项目">中科环保：拟出资不超7亿元参与浙...</a></p>
+
+  </li>
+
+  </ul>
+
+<ul class="f14 l28 hot_news_ul mt15">
+
+            
+
+  <li>
+
+    <p><a href="/news/365144.html" target="_blank" title="首创环境都昌焚烧公司供汽项目蒸汽管道下穿衢九铁路技术方案获通过">首创环境都昌焚烧公司供汽项目蒸汽...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365138.html" target="_blank" title="济南产发集团与光大环保（中国）有限公司签署战略合作框架协议">济南产发集团与光大环保（中国）有...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365140.html" target="_blank" title="中科环保：拟投资不超过7亿元参与浙能锦江私有化">中科环保：拟投资不超过7亿元参与...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365145.html" target="_blank" title="西北小焚烧再落一子！光大环境联合体中标2.04亿焚烧发电项目">西北小焚烧再落一子！光大环境联合...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/364995.html" target="_blank" title="浙能锦江环境首个飞灰资源化项目成功投产试运行">浙能锦江环境首个飞灰资源化项目成...</a></p>
+
+  </li>
+
+            
+
+  <li>
+
+    <p><a href="/news/365128.html" target="_blank" title="总金额约2.9亿！重庆环卫集团中标市外两大项目">总金额约2.9亿！重庆环卫集团中...</a></p>
+
+  </li>
+
+  </ul>
+
+</div>
+
+</div>
+
+
+
+      <!-- 热点排行 -->
+
+
+
+      <div class="submission mt15 f14">
+
+        <p>010-88480329 </p>
+
+        <p class="submission_email"><a href="mailto:news@e20.com.cn">news@e20.com.cn</a></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--<div class="w1000 bc links mt20">
+
+    <div class="news_title1">
+
+      <h2>合作媒体</h2>
+
+      <span class="more fr mt5 mr15"><a href="#" target="_blank">更多</a></span></div>
+
+    <ul class="links_logo_ul zoom mt25 ml25">
+
+      <li><img src="/news/images/links_logo1.jpg"></li>
+
+      <li><img src="/news/images/links_logo2.jpg"></li>
+
+      <li><img src="/news/images/links_logo3.jpg"></li>
+
+      <li><img src="/news/images/links_logo4.jpg"></li>
+
+      <li><img src="/news/images/links_logo5.jpg"></li>
+
+      <li><img src="/news/images/links_logo6.jpg"></li>
+
+    </ul>
+
+    <ul class="zoom links_ul1 f12 l24 mt20">
+
+      <li>中华人民共和国住房和城乡建设部</li>
+
+      <li>中华人民共和国环境保护部</li>
+
+      <li>中华人民共和国水利部</li>
+
+      <li>北京市市政工程设计研究总院</li>
+
+      <li>中国市政工程华北设计研究院</li>
+
+      <li>上海市政工程设计研究总院</li>
+
+      <li>人民网环保频道</li>
+
+      <li>慧聪水工业网</li>
+
+      <li>搜狐公益</li>
+
+      <li>中国给水排水</li>
+
+    </ul>
+
+  </div>-->
+
+</div>
+
+<!-- 内容结束   -->
+
+
+
+<!-- footer -->
+
+<div class="backtop_btn bc"><div class="backtop"><a href="javascript:void(0);"></a></div></div>
+
+<div class="QRcode"><img src="/images/rightCode.png"></div>
+
+<div class="footer mt40">
+
+  <div class="w1000 bc zoom">
+
+    <div class="fl w360 ml10">
+
+      <p class="tc"><a href="http://www.e20.net.cn/"><img src="/images/footer/footer_e20.png" alt="E20环境平台"></a></p>
+
+      <p class=" mt35 footer_logo">
+
+        <a href="https://www.h2o-china.com"><img src="/images/footer/footer_logo1.png" alt="中国水网"></a>
+
+        <a href="https://www.solidwaste.com.cn"><img src="/images/footer/footer_logo2.png" alt="中国固废网"></a>
+
+        <a href="https://www.chndaqi.com"><img src="/images/footer/footer_logo3.png" alt="中国大气网"></a></p>
+
+    </div>
+
+    <div class="fr w620 l24 f12 zoom">
+
+      <p class="footer_p2"><img src="/images/footer/footer_bg1.jpg"></p>
+
+      <p class="footer_p1"><a href="https://www.h2o-china.com/single?id=190" target="_blank">联系我们</a>|<a href="https://www.e20.com.cn/about-lc.html" target="_blank">大事记</a>|<a href="https://www.h2o-china.com/allianceunits" target="_blank">联盟单位</a>|<a href="https://www.solidwaste.com.cn/link/index?sid=2" target="_blank">友情链接</a>|<a href="https://www.h2o-china.com/single?id=6" target="_blank">版权声明</a>|<a href="https://zt.h2o-china.com/meeting/ad_services/" target="_blank">广告服务</a></p>
+
+      <p class="mt10">Copyright © 2000-<script> var myDate=new Date();document.write(myDate.getFullYear());</script> https://www.h2o-china.com All rights reserved. 中国水网 版权所有 </p>
+
+      <p>传真：010-88480301</p>
+
+      <p>E-mail：<a href="mailto:webmaster@e20.com.cn">hjf@e20.com.cn</a> </p>
+
+      <p>本站常年法律顾问：北京市康达律师事务所刘文义律师 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备10040015号-8</a><span style="margin-left:5px;"><img src="https://www.h2o-china.com/images/gongan.png"></span>京公网安备：11010802035285</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/click" ></script>
+
+<script src="https://static.solidwaste.com.cn/js/jquery.gotop.js" type="text/javascript"></script>
+
+<!-- <div style="display:none">
+
+<script src="https://s4.cnzz.com/stat.php?id=1253507075&web_id=1253507075" language="JavaScript"></script>
+
+</div> -->
+
+
+
+<!-- 百度统计代码测试 -->
+
+<!-- <script>
+
+var _hmt = _hmt || [];
+
+(function() {
+
+  var hm = document.createElement("script");
+
+  hm.src = "https://hm.baidu.com/hm.js?fc2bbbab0e28acb2d45fc24008fbb254";
+
+  var s = document.getElementsByTagName("script")[0]; 
+
+  s.parentNode.insertBefore(hm, s);
+
+})();
+
+</script> -->
+
+<script src="https://static.solidwaste.com.cn/js/jquery.newsshare.js" type="text/javascript"></script>
+
+<script src="https://static.solidwaste.com.cn/js/jquery.tabs.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function () 
+
+{
+
+    $(".share").info_share();
+
+    $(".mshare").mshare();
+
+    $("#hitsort_tab").newstabs({"switchingMode":"mouseover"});
+
+});
+
+</script>
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+
+	<script src="https://v1.cnzz.com/stat.php?id=1253514445&web_id=1253514445" language="JavaScript"></script>
+
+</div> --><!-- footer -->
+
+
+
+<!-- 手机端底部 -->
+
+<div class="mFooter">
+
+        <p>Copyright © 2000-2020 https://www.solidwaste.com.cn All rights reserved. </p>
+
+        <p>中国固废网 版权所有</p>
+
+</div>
+
+
+
+<script src="https://static.solidwaste.com.cn/news/js/vue.js"></script>
+
+<script src="https://static.solidwaste.com.cn/news/js/axios.min.js"></script>
+
+
+
+<script src="https://static.solidwaste.com.cn/news/js/element-ui/lib/index.js"></script>
+
+
+
+
+
+<script>
+
+    var mschv = $('#mschv').val();                   
+
+    var mschv = encodeURIComponent(mschv);
+
+
+
+    new Vue({
+
+    el: '#app',
+
+    data() {
+
+      return {
+
+            currentPage:1,   //当前页
+
+            page:1,      //传递的第几页
+
+            total:'',
+
+            pageSize:12,
+
+            mnewsList:[],
+
+            pageCount:''
+
+        }
+
+    },
+
+    created() {
+
+        this.getList();
+
+    },
+
+    filters:{
+
+          //内容空格过滤器
+
+          filterTrim: function (value){
+
+                 return value.trim()
+
+           },
+
+         //字符串时间戳过滤器
+
+         formatDate: function (dataStr) {
+
+
+
+                var time = new Date(JSON.parse(dataStr) * 1000);
+
+    
+
+                function timeAdd0(str) {
+
+                  if (str < 10) {
+
+                    str = '0' + str;
+
+                  }
+
+                  return str
+
+                }
+
+                var y = time.getFullYear();
+
+                var m = time.getMonth() + 1;
+
+                var d = time.getDate();
+
+                var h = time.getHours();
+
+                var mm = time.getMinutes();
+
+                var s = time.getSeconds();
+
+                return y + '-' + timeAdd0(m) + '-' + timeAdd0(d) + ' ' + timeAdd0(h) + ':' + timeAdd0(mm);
+
+
+
+          }
+
+
+
+    },
+
+    methods: {
+
+        //elementui分页器
+
+        handleSizeChange(size) {
+
+            this.pageSize = size;
+
+          },
+
+
+
+        handleCurrentChange(page) {
+
+            //console.log(page);  //点击第几页
+
+            this.page = page;
+
+            //点击上下叶回到顶部
+
+            $('html ,body').animate({ scrollTop: 0 }, 1000);
+
+             //分页传参，点击到第几页请求第几页的数据
+
+             this.getList(this.page);
+
+            
+
+          },
+
+          getList(page){
+
+
+
+            var mpage = this.page;
+
+
+
+          //当点击到最后一页时，内容显示为最后一页内容
+
+            if(page >= this.pageCount){
+
+                page = this.pageCount;
+
+                
+
+                 this.$message({
+
+                    message: '已经是最后一页了!!!',
+
+                    type: 'warning',
+
+                    center:true,
+
+                    offset:top
+
+                  });
+
+                
+
+                 
+
+             }
+
+
+
+             //当点击到第一页时，内容显示为第一页内容
+
+            if(page <= 1){
+
+                page = 1; 
+
+                 
+
+             }
+
+            //根据传递过来的页码，请求对应的后端数据
+
+            axios.get(" https://www.solidwaste.com.cn/news/list?cid=commend&page=1&format=json&page="+mpage,{
+
+        
+
+            },{emulateJSON: true},
+
+            {
+
+                headers:{"Content-Type": "application/json;charset=UTF-8",}
+
+            }
+
+            ).then(result=>{
+
+               
+
+               //console.log(result.data.data);
+
+               //给新闻列表绑定数据，总页数
+
+               this.mnewsList = result.data.data;
+
+
+
+              this.pageCount = parseInt(result.data.pageCount);
+
+              this.total = parseInt(result.data.total); 
+
+              
+
+            
+
+
+
+            })
+
+            
+
+            }
+
+
+
+       
+
+        
+
+    }
+
+  })
+
+
+
+ 
+
+</script>
+
+
+
+</body>
+
+</html>
+

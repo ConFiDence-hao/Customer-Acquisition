@@ -1,0 +1,29 @@
+services:
+  radar:
+    build: .
+    image: tender-radar:2.2.1
+    container_name: tender-radar
+    restart: unless-stopped
+    # Reaps exited browser subprocesses; without it uvicorn (PID 1) leaves Chromium zombies until pids_limit is hit.
+    init: true
+    network_mode: bridge
+    env_file: .env
+    ports:
+      - "127.0.0.1:18088:8000"  # 部署时改为服务器网卡地址
+    volumes:
+      - ./data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 1g
+    cpus: 1.5
+    pids_limit: 100
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

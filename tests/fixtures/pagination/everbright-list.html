@@ -1,0 +1,3421 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+	<head>
+
+		  <meta charset="utf-8" />
+
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″ />
+
+    <title>光大环境招标采购电子交易平台</title>
+
+    <link rel="stylesheet" type="text/css" href="https://zcpt.cebenvironment.com.cn/resource/gd_environment/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/gd_environment/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/gd_environment/css/public.css">
+
+    <link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/gd_environment/css/nav.css">
+
+    <link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/gd_environment/css/index.css">
+
+    <link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/gd_environment/css/liMarquee.css">
+
+   <style>
+
+        .index-nav-frame-line {width: 14%;}
+
+        .slideTxtBox .hd ul li {  padding: 0 24px;}
+
+		.index-nav-frame-line a{color:#fff;}
+
+    </style>
+
+ 
+
+		<style type="text/css">
+
+			/* css 重置 */
+
+			*{margin:0; padding:0; list-style:none; }
+
+			body{ background:#fff; font:normal 12px/22px 宋体;  }
+
+			img{ border:0;  }
+
+			a{ text-decoration:none; color:#333;  }
+
+			a:hover{ color:#1974A1;  }
+
+
+
+			/* 本例子css */
+
+			.txtMarquee-left{ position:relative;  border:1px solid #ccc;   }
+
+			.txtMarquee-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+
+			.txtMarquee-left .hd .prev,.txtMarquee-left .hd .next{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden; cursor:pointer; 			 cursor:pointer; background:url("../images/arrow.png") no-repeat;}
+
+			.txtMarquee-left .hd .next{ background-position:0 -50px;  }
+
+			.txtMarquee-left .hd .prevStop{ background-position:-60px 0; }
+
+			.txtMarquee-left .hd .nextStop{ background-position:-60px -50px; }
+
+			.txtMarquee-left .bd{ padding:10px; }
+
+			.txtMarquee-left .bd .tempWrap{ height:20px;width:100% !important; }/* 用 !important覆盖SuperSlide自动生成的宽度，这样就可以手动控制可视宽度。 */
+
+			.txtMarquee-left .bd ul{ overflow:hidden; zoom:1; }
+
+			.txtMarquee-left .bd ul li{ margin-right:20px;  float:left; height:24px; line-height:24px;  text-align:left; _display:inline; width:auto !important;  }/* 用 width:auto !important 覆盖SuperSlide自动生成的宽度，解决文字不衔接问题 */
+
+
+
+
+
+			.txtMarquee-left .bd ul li span{ color:#999;  }
+
+			
+
+			.floatLogin {
+
+				z-index: 100;}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="container-fluid bgWhite">
+
+			<div class="logobox">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="pull-left" style="width: 45%;"><img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/logo.png"></div>
+
+                <div class="pull-right" style="width: 50%;">
+
+                    <div class="pull-left" style="width: 55%;">
+
+                        <div class="input-group topsearch">
+
+                            <input type="text"  id="search" class="form-control" value="请输入关键词" onfocus="if (value =='请输入关键词'){value =''}" onblur="if (value ==''){value='请输入关键词'}" />
+
+                            <span class="input-group-btn">
+
+										<button class="btn btn-default" type="button"  onclick="overallSearch();">
+
+											搜索
+
+										</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="pull-right" style="width: 42%;">
+
+                    		     <div class="toptel">咨询热线<b   style="margin-top:-50px;">400-0809-508</b><br></div>
+
+						        <div class="toptel">CA咨询热线<b>400-1123-838</b><br></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> 
+
+		</div>
+
+		<div class="container-fluid headbox2">
+
+    <div>
+
+        <div class="row">
+
+            <div class="index-nav">
+
+                <div class="index-nav-frame clearfix">
+
+                    <div class="index-nav-frame-line " tabindex="-1">
+
+                       <a href="https://zcpt.cebenvironment.com.cn/index.html"> 首&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+
+                    </div>
+
+                    <div class="index-nav-frame-line" tabindex="-1">
+
+                   	<a href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=2&tabName=招标公告&page=1" >采购项目信息</a>	
+
+                        <div class="index-nav-frame-line-center">
+
+                            <div class="index-nav-frame-line-li"><a href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=2&tabName=招标公告&page=1"  title="">采购公告</a></div>
+
+                            <div class="index-nav-frame-line-li"><a href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=3&tabName=变更公告&page=1"  title="">变更公告</a></div>
+
+                            <div class="index-nav-frame-line-li"><a href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=4&tabName=中标候选人公告&page=1"  title="">中标候选人公告</a></div>
+
+                            <div class="index-nav-frame-line-li"><a href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=5&tabName=采购结果公示&page=1"  title="">采购结果公示</a></div>
+
+                            <div class="index-nav-frame-line-li"><a href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=6&tabName=终止公告&page=1"  title="">终止公告</a></div>
+
+								    <div class="index-nav-frame-line-li"><a href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=17&tabName=物资处置公告&page=1"  title="">物资处置公告</a></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="index-nav-frame-line" tabindex="-1">
+
+                    			<a href="https://zcpt.cebenvironment.com.cn/cms/category/policies.html?dates=300&categoryId=14&page=1">政策法规</a>
+
+                    </div>
+
+                    <div class="index-nav-frame-line" tabindex="-1">
+
+                 		<a href="https://zcpt.cebenvironment.com.cn/cms/servicesCenter.html?service=1">服务中心</a>
+
+                    </div>
+
+                    <div class="index-nav-frame-line" tabindex="-1">
+
+                    	<a href="https://zcpt.cebenvironment.com.cn/caHandle.html">CA办理</a>
+
+                    </div>
+
+                    <div class="index-nav-frame-line" tabindex="-1">
+
+                  	<a href="https://zcpt.cebenvironment.com.cn/cms/servicesCenter.html?service=6">关于我们</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+ 
+
+		<div class="relative">
+
+				<ul class="absolute floatLogin" >
+
+        <li>
+
+            <div></div>
+
+            <a href="https://zcpt.cebenvironment.com.cn/dzzb/" style=" background: url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/1.png) no-repeat center center;"></a>
+
+        </li>
+
+        <li>
+
+            <div></div>
+
+            <a href="https://zcpt.cebenvironment.com.cn/dzzb/" style=" background: url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/2.png) no-repeat center center;"></a>
+
+        </li>
+
+        <li>
+
+            <div></div>
+
+            <a href="https://zcpt.cebenvironment.com.cn/dzzb/" style=" background: url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/3.png) no-repeat center center;"></a>
+
+        </li>
+
+        <li>
+
+            <div></div>
+
+            <a href="https://zcpt.cebenvironment.com.cn/dzzb/" style=" background: url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/4.png) no-repeat center center;"></a>
+
+        </li>
+
+    </ul> 
+
+			<div class="fullSlide">
+
+	<div class="bd">
+
+		<ul>
+
+			<li style="background:url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/b3.jpg) center 0px no-repeat "></li>
+
+			<li style="background:url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/1.jpg) center 0px no-repeat "></li>
+
+			<li style="background:url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/2.jpg) center 0px no-repeat "></li>
+
+			<li style="background:url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/3.jpg) center 0px no-repeat "></li>
+
+			<li style="background:url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/4.jpg) center 0px no-repeat "></li>
+
+			<li style="background:url(https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/6.jpg) center 0px no-repeat "></li>
+
+
+
+		</ul>
+
+	</div>
+
+	<div class="hd">
+
+		<ul>
+
+			<li class="">1</li>
+
+			<li class="">2</li>
+
+			<li class="">3</li>
+
+			<li class="">4</li>
+
+			<li class="">5</li>
+
+			<li class="">6</li>
+
+			<li class="">7</li>
+
+		</ul>
+
+	</div>
+
+</div> 
+
+		</div>
+
+
+
+		<div class="txtMarquee-left" style="background:#eef7f9;color:red;">
+
+
+
+			<div class="bd">
+
+				<div class="tempWrap" ><ul class="infoList"   style="font-size:15px;font-weight:bold"><li class="clone" >
+
+					欢迎社会各界具有环保设备类资深水平的专业人士加入光大环境外部评审专家库，具体入库要求详见右侧公告栏，有意向的请在“评审专家登录”界面注册申请。</li><li class="clone" >欢迎社会各界具有环保设备类资深水平的专业人士加入光大环境外部评审专家库，具体入库要求详见右侧公告栏，有意向的请在“评审专家登录”界面注册申请。</li>
+
+					</ul></div>
+
+			</div>
+
+		</div>
+
+
+
+		<div class="container ">
+
+			<div class="row">
+
+				<div class="pull-left" style="width:65%">
+
+					<div style="background:#fff;margin-top:20px;border:1px #eee solid;">
+
+						<div class="linetitle">
+
+							<h1 >采购项目信息</h1>
+
+
+
+							<a id="infos" href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=2&tabName=招标公告&page=1" class="more">更多&nbsp;<i class="fa fa-angle-right"></i></a>
+
+						</div>
+
+						<div id="myTabContent" class="tab-content">
+
+							<div class="tab-pane fade in active" id="zhaobiao">
+
+    <div class="slideTxtBox">
+
+        <div class="hd">
+
+            <ul id="bid">
+
+                <li id="2">采购公告</li>
+
+                <li id="3">变更公告</li>
+
+                <li id="4">中标候选人公示</li>
+
+                <li id="5">采购结果公示</li>
+
+                <li id="6">终止公告</li>
+
+                <li id="17">废旧物资处置公告</li>
+
+            </ul>
+
+        </div>
+
+        <div class="bd">
+
+            <ul class="infolist">
+
+
+
+                   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561728.html" title="光大水务（南通海门）有限公司硫酸询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大水务（南通海门）有限公司硫酸询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561725.html" title="光大环保能源（永州）有限公司2026年-2027年公务车辆年度保险服务询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大环保能源（永州）有限公司2026年-2027年公务车辆年度保险服务询价公告...
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561724.html" title="光水（郑州）水务运营有限公司食堂物资配送服务询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光水（郑州）水务运营有限公司食堂物资配送服务询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561717.html" title="光大环保能源（宁海）有限公司厂区屋面维修、现场钢平台及设备安装施工询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大环保能源（宁海）有限公司厂区屋面维修、现场钢平台及设备安装施工询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561715.html" title="光大环保能源（献县）有限公司绩效创A（烟气提标改造）EPC项目车辆清洗装置询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大环保能源（献县）有限公司绩效创A（烟气提标改造）EPC项目车辆清洗装置询价...
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561706.html" title="光大环保能源（新化）有限公司2026年10月仪控专业备件询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大环保能源（新化）有限公司2026年10月仪控专业备件询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561705.html" title="光大环保能源（新化）有限公司全厂有毒有害气体报警器日常调校用标准气体询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大环保能源（新化）有限公司全厂有毒有害气体报警器日常调校用标准气体询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561703.html" title="德州水务职工健康体检服务询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        德州水务职工健康体检服务询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561702.html" title="德州水务年度车辆维修及保养服务询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        德州水务年度车辆维修及保养服务询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561701.html" title="光大环保能源（惠东）有限公司大门口简易车棚及膜处理车间卷闸门修复服务询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大环保能源（惠东）有限公司大门口简易车棚及膜处理车间卷闸门修复服务询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561700.html" title="光大环保能源（玉林）有限公司综合管理部液晶拼接屏询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大环保能源（玉林）有限公司综合管理部液晶拼接屏询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561697.html" title="光大生物能源（涟水）有限公司叉车租赁服务询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大生物能源（涟水）有限公司叉车租赁服务询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561696.html" title="光大生物能源（涟水）有限公司10月份安环物资询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大生物能源（涟水）有限公司10月份安环物资询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561695.html" title="光大生物能源（涟水）有限公司10月份固废炉备品备件询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大生物能源（涟水）有限公司10月份固废炉备品备件询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+   
+
+                <li>
+
+                    <a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561694.html" title="光大生物能源（涟水）有限公司冷干机维修服务询价公告" >
+
+
+
+                        <div class="title">
+
+                            <b>【
+
+								公开询比价
+
+								
+
+                        】</b>
+
+                        光大生物能源（涟水）有限公司冷干机维修服务询价公告
+
+                        <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+        </div>
+
+        <div class="data">2026-10-14</div>
+
+        </a>
+
+        </li>
+
+</ul>
+
+
+
+<ul class="infolist">
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561711.html" title="光大水务运营（新沂）有限公司车辆维修服务变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大水务运营（新沂）有限公司车辆维修服务变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561698.html" title="光水运营环保（涟水）有限公司磁悬浮鼓风机屏幕更换变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光水运营环保（涟水）有限公司磁悬浮鼓风机屏幕更换变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561691.html" title="光大环保能源（陵水）有限公司飞灰填埋场车辆（叉车、汽车起重机、挖掘机）装载机及洒水车维修服务变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（陵水）有限公司飞灰填埋场车辆（叉车、汽车起重机、挖掘机）装载机及...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561690.html" title="光环江东环保能源（马鞍山）有限公司2026年至2028年电梯维保服务变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光环江东环保能源（马鞍山）有限公司2026年至2028年电梯维保服务变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561689.html" title="光大环保技术装备〔常州〕有限公司益阳飞灰项目科创保变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保技术装备〔常州〕有限公司益阳飞灰项目科创保变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561681.html" title="光大环保能源（衡南）有限公司工业气体变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（衡南）有限公司工业气体变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561676.html" title="光大环保能源（杭州）有限公司生产区空调委外维修保养变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（杭州）有限公司生产区空调委外维修保养变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561673.html" title="光水环保（黄骅）有限公司2027-2028年度在线设备季度比对服务变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光水环保（黄骅）有限公司2027-2028年度在线设备季度比对服务变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561672.html" title="丹东光水水务有限公司污泥干化车间絮凝剂上料平台及真空吸料机改造变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            丹东光水水务有限公司污泥干化车间絮凝剂上料平台及真空吸料机改造变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561649.html" title="光大绿色环保固废处置（黄石）有限公司10月机电仪备件变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大绿色环保固废处置（黄石）有限公司10月机电仪备件变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561648.html" title="光大绿色环保城乡再生能源（临洮）有限公司DCS系统（浙大中控ECS700）优化服务变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大绿色环保城乡再生能源（临洮）有限公司DCS系统（浙大中控ECS700）优化...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561644.html" title="光大绿色环保固废处置（黄石）有限公司电梯维修服务变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大绿色环保固废处置（黄石）有限公司电梯维修服务变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561643.html" title="光大环保能源（鹰潭）有限公司2026-2029年度电动机年度委外维修变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（鹰潭）有限公司2026-2029年度电动机年度委外维修变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561637.html" title="光大城乡再生能源（凤阳）有限公司2026年流量计维修变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大城乡再生能源（凤阳）有限公司2026年流量计维修变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_changeBulletin/2026-10-14/561634.html" title="光大环保能源（乐山）有限公司3台雾化器参数通讯优化变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（乐山）有限公司3台雾化器参数通讯优化变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+</ul>
+
+
+
+<ul class="infolist">
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561731.html" title="天津光大兴辰环保能源有限公司垃圾仓渗沥液回喷系统优化技改服务中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            天津光大兴辰环保能源有限公司垃圾仓渗沥液回喷系统优化技改服务中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561730.html" title="光大环保能源（吉安）有限公司渗滤液#1#2#3超滤膜系统大修服务中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            光大环保能源（吉安）有限公司渗滤液#1#2#3超滤膜系统大修服务中标候选人公示...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561726.html" title="鲁东区域管理中心（滨州水务、淄博水务）次氯酸钠溶液采购中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            鲁东区域管理中心（滨州水务、淄博水务）次氯酸钠溶液采购中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561722.html" title="环保能源杭州及宁波项目物业服务中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            环保能源杭州及宁波项目物业服务中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561721.html" title="山东省E02466501项目仪表设备采购中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            山东省E02466501项目仪表设备采购中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561708.html" title="光大环保技术装备（常州）有限公司售后NJ项目一次风管及给水平台保温修复工程施工中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            光大环保技术装备（常州）有限公司售后NJ项目一次风管及给水平台保温修复工程施工...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561669.html" title="光大水务北京区域管理中心（北京、咸阳）物业服务中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            光大水务北京区域管理中心（北京、咸阳）物业服务中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561668.html" title="海外ZBWB26117项目燃烧器采购中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            海外ZBWB26117项目燃烧器采购中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561614.html" title="江苏通环化工有限公司（莒县水务）硫酸亚铁药剂采购中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            江苏通环化工有限公司（莒县水务）硫酸亚铁药剂采购中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561610.html" title="济南水务各厂水下设备潜水维修作业年度服务中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            济南水务各厂水下设备潜水维修作业年度服务中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561607.html" title="光大绿色环保固废处置（张家港）有限公司食堂食材配送服务中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            光大绿色环保固废处置（张家港）有限公司食堂食材配送服务中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-14/561545.html" title="光大环保能源（淳安）有限公司2026-2027年度备件采购中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            光大环保能源（淳安）有限公司2026-2027年度备件采购中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-13/561470.html" title="淳安县生活垃圾环保处理超低排放改造项目湿法脱酸及GGH成套设备采购中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            淳安县生活垃圾环保处理超低排放改造项目湿法脱酸及GGH成套设备采购中标候选人公...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-13/561455.html" title="夏邑项目生物质燃料破碎加工服务中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            夏邑项目生物质燃料破碎加工服务中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_candidation/2026-10-13/561432.html" title="光大城乡再生能源（绵竹）有限公司生物质锅炉炉前水冷套大修服务中标候选人公示" >
+
+            <div class="title">
+
+
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            光大城乡再生能源（绵竹）有限公司生物质锅炉炉前水冷套大修服务中标候选人公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+</ul>
+
+
+
+<ul class="infolist">
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561723.html" title="光大水务（济南章丘）有限公司四厂曝气管路酸洗维护成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大水务（济南章丘）有限公司四厂曝气管路酸洗维护成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561719.html" title="光大环保技术装备〔常州〕有限公司EB20260819-068、072、073、074、075、076、080-密封件、软管、销轴等备件成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保技术装备〔常州〕有限公司EB20260819-068、072、073、...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561718.html" title="光大生物能源（定远）有限公司灰渣处置服务（第二次）成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大生物能源（定远）有限公司灰渣处置服务（第二次）成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561716.html" title="光大城乡再生能源（萧县）有限公司2026年9月份脱泥机（HS）（第二次发标）成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大城乡再生能源（萧县）有限公司2026年9月份脱泥机（HS）（第二次发标）成...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561714.html" title="光大环保能源（纳曼干）有限公司临建办公区VI制作服务成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（纳曼干）有限公司临建办公区VI制作服务成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561713.html" title="光大环保能源（丹阳）有限公司10月安环易制毒成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（丹阳）有限公司10月安环易制毒成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561712.html" title="光大环保技术装备〔常州〕有限公司EB20260907-074-WW-便携式气体检测仪成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保技术装备〔常州〕有限公司EB20260907-074-WW-便携式气体...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561709.html" title="乐陵光大环保能源有限公司2026年10月水处理备件成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            乐陵光大环保能源有限公司2026年10月水处理备件成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561707.html" title="光大生物热电（六安）有限公司2026年10月安环物资成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大生物热电（六安）有限公司2026年10月安环物资成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561704.html" title="光大环保能源（太康）有限公司道路清扫车成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（太康）有限公司道路清扫车成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561699.html" title="无锡锡东环保能源有限公司水处理中心巡检仪维修成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            无锡锡东环保能源有限公司水处理中心巡检仪维修成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561693.html" title="光大环保能源（天津）有限公司400V低压变频器年度维修服务成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（天津）有限公司400V低压变频器年度维修服务成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561692.html" title="光大环保能源（无锡）有限公司2027年汽轮机润滑油、EH油、三台锅炉液压油油质委外检测成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（无锡）有限公司2027年汽轮机润滑油、EH油、三台锅炉液压油油质...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561688.html" title="光大绿色环保城乡再生能源（丰县）有限公司9月份生产物资成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大绿色环保城乡再生能源（丰县）有限公司9月份生产物资成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_resultBulletin/2026-10-14/561685.html" title="光大绿色环保城乡再生能源（丰县）有限公司液压油管、油缸年度采购成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大绿色环保城乡再生能源（丰县）有限公司液压油管、油缸年度采购成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+</ul>
+
+
+
+<ul class="infolist">
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561729.html" title="光大环保能源（昭通）有限公司2026年10月机务备件终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（昭通）有限公司2026年10月机务备件终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561720.html" title="光大绿色环保生物能源（宿州）有限公司生活水和直饮水化验终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大绿色环保生物能源（宿州）有限公司生活水和直饮水化验终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561710.html" title="光大环保能源（日照）有限公司2026年9月压缩空气管道带压开孔服务终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（日照）有限公司2026年9月压缩空气管道带压开孔服务终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561675.html" title="光大环保能源（东方）有限公司液化气终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（东方）有限公司液化气终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561674.html" title="光大环保能源（昭通）有限公司机动车辆保险购买服务终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（昭通）有限公司机动车辆保险购买服务终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561657.html" title="光大环保能源（辽阳）有限公司易制毒药剂终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（辽阳）有限公司易制毒药剂终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561651.html" title="光大环保能源（永新）有限公司2026年水处理中心旋转挤压污泥脱水机减速机委外维修终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（永新）有限公司2026年水处理中心旋转挤压污泥脱水机减速机委外维...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561568.html" title="济南水务四厂大金厂、唐冶厂设备控制柜遮阳设施安装终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            济南水务四厂大金厂、唐冶厂设备控制柜遮阳设施安装终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561505.html" title="光大生物能源（定远）有限公司生物质料场燃料堆高服务终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大生物能源（定远）有限公司生物质料场燃料堆高服务终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561504.html" title="光大生物热电（六安）有限公司2026年9月运行物资（第二次）终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大生物热电（六安）有限公司2026年9月运行物资（第二次）终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561503.html" title="光大生物能源（六安）有限公司2026年10月（第二批）物资终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大生物能源（六安）有限公司2026年10月（第二批）物资终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-14/561498.html" title="光大环保能源（益阳）有限公司3.5万吨/年生活垃圾焚烧飞灰资源化利用项目工程预付款保证保险终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保能源（益阳）有限公司3.5万吨/年生活垃圾焚烧飞灰资源化利用项目工程预...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-13/561490.html" title="光大环境科技（中国）有限公司药剂委托加工终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环境科技（中国）有限公司药剂委托加工终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-13/561489.html" title="光大环保技术装备〔常州〕有限公司EB20260825-070-NY-打包带、透明胶带等终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开询比价
+
+            】</b>
+
+            光大环保技术装备〔常州〕有限公司EB20260825-070-NY-打包带、透...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/ebi_parseBulletin/2026-10-13/561488.html" title="环保能源2026-2028年度财务报表审计服务终止公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            环保能源2026-2028年度财务报表审计服务终止公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+</ul>
+
+			
+
+			<ul class="infolist">
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-14/561727.html" title="光大环保餐厨处理（益阳）有限公司2026年10月餐厨废弃油脂（泔水油）销售竞价公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大环保餐厨处理（益阳）有限公司2026年10月餐厨废弃油脂（泔水油）销售竞价...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-14/561683.html" title="光大环保能源（南阳）有限公司移动储能蒸汽供热服务中标结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开招标
+
+            】</b>
+
+            光大环保能源（南阳）有限公司移动储能蒸汽供热服务中标结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-14/561663.html" title="光大再生资源（鹰潭）有限公司再生骨料变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大再生资源（鹰潭）有限公司再生骨料变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-14/561653.html" title="光大环保能源（修水）有限公司2026年10月餐厨废弃油脂（泔水油）竞价公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大环保能源（修水）有限公司2026年10月餐厨废弃油脂（泔水油）竞价公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-14/561621.html" title="光大天易环保能源（湘潭）有限公司2026年第二批废旧物资处置服务竞价公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大天易环保能源（湘潭）有限公司2026年第二批废旧物资处置服务竞价公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-14/561534.html" title="邹城光大环保能源有限公司10月份废铁物资处置变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            邹城光大环保能源有限公司10月份废铁物资处置变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-14</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561435.html" title="光大环保餐厨处理（蓝田）有限公司10月餐厨废弃油脂（泔水油、地沟油）销售成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大环保餐厨处理（蓝田）有限公司10月餐厨废弃油脂（泔水油、地沟油）销售成交结...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561408.html" title="光大再生资源（鹰潭）有限公司再生骨料变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大再生资源（鹰潭）有限公司再生骨料变更公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561389.html" title="光大环保能源（南京）有限公司10月餐厨废弃油脂(泔水油)出售竞价公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大环保能源（南京）有限公司10月餐厨废弃油脂(泔水油)出售竞价公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561381.html" title="光大环保能源（丹阳）有限公司10月餐厨废弃油脂（泔水油）竞价公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大环保能源（丹阳）有限公司10月餐厨废弃油脂（泔水油）竞价公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561359.html" title="苏州吴江光大环保餐厨处理有限公司2026年10月份餐厨废弃油脂（地沟油、泔水油）出售变更公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            苏州吴江光大环保餐厨处理有限公司2026年10月份餐厨废弃油脂（地沟油、泔水油...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561356.html" title="苏州吴江光大环保餐厨处理有限公司2026年10月份餐厨废弃油脂（地沟油、泔水油）出售竞价公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            苏州吴江光大环保餐厨处理有限公司2026年10月份餐厨废弃油脂（地沟油、泔水油...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561266.html" title="乐陵光大环保能源有限公司2026年10月餐厨废弃油脂（泔水油）成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            乐陵光大环保能源有限公司2026年10月餐厨废弃油脂（泔水油）成交结果公示
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561263.html" title="光大绿色环保生物科技（新沂）有限公司病死动物残渣竞价公告" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            光大绿色环保生物科技（新沂）有限公司病死动物残渣竞价公告
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+    <li>
+
+        <a href="https://zcpt.cebenvironment.com.cn/wasteStatus/2026-10-13/561212.html" title="嘉祥光大环保能源有限公司2026年10月份餐厨废弃油脂（泔水油）销售成交结果公示" >
+
+            <div class="title">
+
+                <b>【
+
+                    公开竞价
+
+            】</b>
+
+            嘉祥光大环保能源有限公司2026年10月份餐厨废弃油脂（泔水油）销售成交结果公...
+
+            <img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/new.png"/>
+
+    </div>
+
+    <div class="data">2026-10-13</div>
+
+    </a>
+
+    </li>
+
+</ul>
+
+			
+
+</div>
+
+</div>
+
+</div> 
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="pull-right mt-20" style="width:34%">
+
+					<div class="fa-border clearfix notic " style="height: 435px;">
+
+	<div class=" clearfix title"> <span class="pull-left">网站公告</span><span class="pull-right more "><a href="https://zcpt.cebenvironment.com.cn/cms/category/list.html?dates=300&categoryId=13&tabName=网站公告&page=1" title="">更多&nbsp;<i class="fa fa-angle-right"></i></a></span> </div>
+
+	<ul class="list">
+
+
+
+			<li  	>
+
+
+
+		<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2026-10-14/561585.html" title="中国光大环境（集团）有限公司关于供应商不良行为处理情况的通报（2026年10月）" style="color:red;font-weight:bold;"  target="_blank"  >
+
+				中国光大环境（集团）有限公司关于供应商不良行为处理情况... 
+
+			</a> 
+
+			<span class="pull-right">2026-10-14</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2026-07-16/543236.html" title="中国光大环境（集团）有限公司关于供应商不良行为处理情况的通报（2026年7月）"  target="_blank"  >
+
+				中国光大环境（集团）有限公司关于供应商不良行为处理情况... 
+
+			</a> 
+
+			<span class="pull-right">2026-07-16</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2026-07-08/541656.html" title="光大环境算法升级操作指南"  target="_blank"  >
+
+				 光大环境算法升级操作指南 
+
+			</a> 
+
+			<span class="pull-right">2026-07-08</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2026-07-08/541655.html" title="光大环境电子招投标平台数字证书国密算法升级公告"  target="_blank"  >
+
+				 光大环境电子招投标平台数字证书国密算法升级公告 
+
+			</a> 
+
+			<span class="pull-right">2026-07-08</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2022-04-15/183263.html" title="违规供应商处理原则"  target="_blank"  >
+
+				 违规供应商处理原则 
+
+			</a> 
+
+			<span class="pull-right">2026-04-29</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2025-12-19/499559.html" title="关于征集环保领域外部专家的公告"  target="_blank"  >
+
+				 关于征集环保领域外部专家的公告 
+
+			</a> 
+
+			<span class="pull-right">2025-12-19</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2025-08-29/475295.html" title="关于系统9月10日部分时间段暂停使用网站门户查看的通知"  target="_blank"  >
+
+				关于系统9月10日部分时间段暂停使用网站门户查看的通知... 
+
+			</a> 
+
+			<span class="pull-right">2025-08-29</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2024-09-14/198566.html" title="投标保证金缴纳注意事项"  target="_blank"  >
+
+				 投标保证金缴纳注意事项 
+
+			</a> 
+
+			<span class="pull-right">2024-09-14</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2024-07-04/379714.html" title="关于委托代收平台服务费的说明"  target="_blank"  >
+
+				 关于委托代收平台服务费的说明 
+
+			</a> 
+
+			<span class="pull-right">2024-07-04</span>
+
+		</li>
+
+
+
+			<li  	>
+
+
+
+			<a href="https://zcpt.cebenvironment.com.cn/ebi_siteBulletin/2024-01-24/343356.html" title="关于中标服务费缴纳功能维护的通知"  target="_blank"  >
+
+				 关于中标服务费缴纳功能维护的通知 
+
+			</a> 
+
+			<span class="pull-right">2024-01-24</span>
+
+		</li>
+
+	</ul>
+
+</div>
+
+
+
+ 
+
+					<div class="fa-border clearfix notic mt-20" style="height: 220px;">
+
+						<div class=" clearfix title"> <span class="pull-left">供应商服务大厅</span><span class="pull-right more "><a href="https://zcpt.cebenvironment.com.cn/cms/servicesCenter.html?service=1" title="">更多&nbsp;<i class="fa fa-angle-right"></i></a></span> </div>
+
+						<ul class="servicelist">
+
+							<li>
+
+								<a href="https://zcpt.cebenvironment.com.cn/resource/downTools/光大投标人视频.7z">投标人操作指引</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://zcpt.cebenvironment.com.cn/resource/downTools/光大环境招标采购电子交易平台-供应商操作手册.docx">供应商操作手册</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://zcpt.cebenvironment.com.cn/resource/downTools/光大环境投标管家ver5.5.0.2022012102.exe">投标管家工具</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://zcpt.cebenvironment.com.cn/caHandle.html">办理CA</a>
+
+							</li>
+
+
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			
+
+		<div class="container">
+
+			<div class="row">
+
+	<div class="douban mt-20">
+
+		<div class="bd">
+
+			<div class="tempWrap">
+
+				<ul>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f1.jpg" alt=""   /></a>
+
+					</li>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f2.jpg" alt=""  /></a>
+
+					</li>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f3.jpg" alt=""  /></a>
+
+					</li>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f4.jpg" alt=""   /></a>
+
+					</li>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f5.jpg" alt=""  /></a>
+
+					</li>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f6.jpg" alt=""  /></a>
+
+					</li>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f7.jpg" alt=""  /></a>
+
+					</li>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f8.jpg" alt=""  /></a>
+
+					</li>
+
+					<li >
+
+						<a href="https://www.ebchinaintl.com/tc/global/home.php" target="_blank"><img src="https://zcpt.cebenvironment.com.cn/resource/images/f9.jpg" alt=""  /></a>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+ 
+
+		</div>
+
+		<footer id="footer">
+
+			<footer id="footer">
+
+	<div class="footer-copyright">
+
+		<div class="container">
+
+				<div class="row">
+
+				<p class="col-sm-1" style="margin-left:-15px;"><img src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/images/ebs.png" width="50"></p>
+
+	<div class="col-sm-8" style="margin-top:20px;" >
+
+				
+
+					<p>©  中国光大环境(集团)有限公司
+
+						<span>版权所有，不得转载&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402004849" target="_blank">粤公网安备 44030402004849号</a></span>
+
+							<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">粤ICP备15076859号-3</a></span>
+
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;光大环境招标采购电子交易平台V1.0</span>
+
+						
+
+				</div> 
+
+				
+
+		
+
+				<div class="col-sm-3" style="margin-top:20px;" >
+
+					<nav id="sub-menu">
+
+						<ul>
+
+							<li>
+
+								<a href="https://zcpt.cebenvironment.com.cn/contact.html">联络我们</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://zcpt.cebenvironment.com.cn/sitemap.html">网站地图</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://zcpt.cebenvironment.com.cn/disclaimer.html">免责声明</a>
+
+							</li>
+
+						</ul>
+
+					</nav>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</footer> 
+
+		</footer>
+
+
+
+		
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/bootstrap.js" ></script>
+
+
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.liMarquee.js"></script>
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.SuperSlide.2.1.3.source.js"></script>
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.SuperSlide.2.1.3.js"></script>
+
+<script type="text/javascript">
+
+    jQuery(".fullSlide").slide({
+
+        titCell: ".hd ul",
+
+        mainCell: ".bd ul",
+
+        effect: "fold",
+
+        autoPlay: true,
+
+        autoPage: true,
+
+        trigger: "click",
+
+        interTime: 5000
+
+    });
+
+    jQuery(".slideBox").slide({
+
+        mainCell: ".bd ul",
+
+        autoPlay: true
+
+    });
+
+    jQuery(".picScroll-left").slide({
+
+        titCell: ".hd ul",
+
+        mainCell: ".bd ul",
+
+        autoPage: true,
+
+        effect: "top",
+
+        autoPlay: true,
+
+        vis: 1,
+
+        trigger: "click"
+
+    });
+
+    jQuery(".douban").slide({
+
+        titCell: ".hd ul",
+
+        mainCell: ".bd ul",
+
+        autoPage: true,
+
+        effect: "left",
+
+        autoPlay: true,
+
+        vis: 5,
+
+        trigger: "click"
+
+    });
+
+</script>
+
+<script type="text/javascript">
+
+    jQuery(".slideTxtBox").slide();
+
+    jQuery(".slideTxtBox2").slide();
+
+</script>
+
+
+
+<script type="text/javascript">
+
+    $(function() {
+
+        $('.listbox').liMarquee({
+
+            direction: 'up',
+
+            scrollamount:30,
+
+        });
+
+    });
+
+</script> 
+
+		<script type="text/javascript">
+
+			$().ready(function(){
+
+				bulletinList();
+
+				otherBulletinList();
+
+			});
+
+
+
+			function bulletinList(){
+
+				$("#bid").on("mouseout","li",function(){
+
+					$("#bid").find("li").each(function(){
+
+						if($(this).attr("class")=="on"){
+
+							var categoryid = $(this).attr("id");
+
+							var tabName = $(this).text();
+
+							if(categoryid=='3'){
+
+								$("#infos").attr('href','https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId='+categoryid+'&tabName=招标类变更公告&tenderflag=00&page=1');
+
+							}else if (categoryid=='6') {
+
+								$("#infos").attr('href','https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId='+categoryid+'&tabName=招标类终止公告&tenderflag=00&page=1');
+
+							}else{
+
+								$("#infos").attr('href','https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId='+categoryid+'&tabName='+tabName+'&page=1');
+
+							}
+
+
+
+						}
+
+					});
+
+				});
+
+			}
+
+			function otherBulletinList(){
+
+				$("#hd_ul").on("mouseout","li",function(){
+
+					$("#hd_ul").find("li").each(function(){
+
+						if($(this).attr("class")=="on"){
+
+							var categoryid = $(this).attr("id");
+
+							var tabName = $(this).text();
+
+							if(categoryid=='3'){
+
+								$("#fzxx").attr('href','https://zcpt.cebenvironment.com.cn/cms/category/otherBulletinList.html?dates=300&categoryId='+categoryid+'&tabName=非招标类变更公告&tenderflag=01&page=1');
+
+							}else if (categoryid=='6') {
+
+								$("#fzxx").attr('href','https://zcpt.cebenvironment.com.cn/cms/category/otherBulletinList.html?dates=300&categoryId='+categoryid+'&tabName=非招标类终止公告&tenderflag=01&page=1');
+
+							}else{
+
+								$("#fzxx").attr('href','https://zcpt.cebenvironment.com.cn/cms/category/otherBulletinList.html?dates=300&categoryId='+categoryid+'&tabName='+tabName+'&page=1');
+
+							}
+
+
+
+						}
+
+					});
+
+				});
+
+			}
+
+		</script>
+
+
+
+		<script id="jsID" type="text/javascript">
+
+			var ary = location.href.split("&");
+
+			jQuery(".txtMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click"});
+
+		</script>
+
+
+
+
+
+		<script>
+
+function overallSearch(){
+
+		var goSearch = $("#search").val();
+
+		if(goSearch=="请输入关键词"){
+
+		   goSearch="";
+
+		 }
+
+		 window.location.href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinNewList3.html?dates=300&categoryId=2&tabName=招标公告&overallSearch="+goSearch+"&page=1";  	
+
+}
+
+</script>
+
+ 
+
+
+
+
+
+	</body>
+
+
+
+</html>
+
+
+
+<script type="text/javascript">
+
+
+
+	window.onload = function () {
+
+		let node = document.getElementsByClassName('udesk-client-btn')[0]
+
+
+
+		let mouseMoveFlag = false
+
+		let nodeClick = node.onclick
+
+
+
+		let _this = this;
+
+
+
+		node.onmousedown = function(event) {
+
+
+
+			var event = event || window.event;
+
+			let disX = event.clientX - node.offsetLeft; //计算出节点左上角到点击位置的距离
+
+			let disY = event.clientY - node.offsetTop; //计算出节点上边缘到点击位置的距离
+
+
+
+			document.onmousemove = function(event) {
+
+				var event = event || window.event;
+
+				var iL = event.clientX - disX; //用点击位置的x坐标值减去之前计算出来的disX
+
+				var iT = event.clientY - disY; //用点击位置的y坐标值减去之前计算出来的disY
+
+				var maxL = document.documentElement.clientWidth - node.offsetWidth; //最大x坐标值
+
+				var maxT = document.documentElement.clientHeight - node.offsetHeight; //最大y坐标值
+
+				iL <= 0 && (iL = 0);
+
+				iT <= 0 && (iT = 0);
+
+				iL >= maxL && (iL = maxL);
+
+				iT >= maxT && (iT = maxT);
+
+				node.style.left = iL + "px";
+
+				node.style.top = iT + "px";
+
+				mouseMoveFlag = true
+
+				return false;
+
+			};
+
+
+
+			document.onmouseup = function() {
+
+				document.onmousemove = null;
+
+				document.onmouseup = null;
+
+				if(mouseMoveFlag){
+
+					node.onclick = null
+
+					mouseMoveFlag = false
+
+				}else{
+
+					node.onclick = nodeClick
+
+				}
+
+			};
+
+
+
+			return false;
+
+
+
+		}
+
+
+
+		document.onmouseup = function() {
+
+			document.onmousemove = null;
+
+			document.onmouseup = null;
+
+		};
+
+	}
+
+
+
+</script>

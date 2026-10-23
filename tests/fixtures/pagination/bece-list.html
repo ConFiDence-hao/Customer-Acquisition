@@ -1,0 +1,3325 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+		
+
+		<title>首创环保电子商务平台</title>
+
+		<meta name="format-detection" content="telephone=no" />
+
+<link rel="stylesheet" type="text/css" href="https://ecp.capitaleco-pro.com//static/css/bootstrap.css">
+
+<link rel="stylesheet" href="https://ecp.capitaleco-pro.com//static/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://ecp.capitaleco-pro.com//static/css/public.css">
+
+<link rel="stylesheet" href="https://ecp.capitaleco-pro.com//static/css/index.css">
+
+<link rel="stylesheet" href="https://ecp.capitaleco-pro.com//static/css/animate.min.css">
+
+<link rel="stylesheet" href="https://ecp.capitaleco-pro.com//static/css/banner.css"/>
+
+
+
+<script type="text/javascript" src="https://ecp.capitaleco-pro.com//static/js/jquery-3.7.1.min.js"></script>
+
+<script type="text/javascript" src="https://ecp.capitaleco-pro.com//static/js/jquery-migrate-3.0.1.min.js"></script>
+
+<script type="text/javascript" src="https://ecp.capitaleco-pro.com//static/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://ecp.capitaleco-pro.com//static/js/bootstrap-ie.js"></script>
+
+<script type="text/javascript" src="https://ecp.capitaleco-pro.com//static/js/SuperSlide.2.1.js"></script>
+
+<script type="text/javascript" src="https://ecp.capitaleco-pro.com//resource/js/flexpaper_flash.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="https://ecp.capitaleco-pro.com//static/js/js.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="https://ecp.capitaleco-pro.com//static//layer/layer.js"></script>
+
+<script>	
+
+	Date.prototype.Format = function(fmt){
+
+		var o =
+
+			{
+
+				"M+" : this.getMonth() + 1, //月份
+
+				"d+" : this.getDate(), //日
+
+				"H+" : this.getHours(), //小时
+
+				"m+" : this.getMinutes(), //分
+
+				"s+" : this.getSeconds(), //秒
+
+				"q+" : Math.floor((this.getMonth() + 3) / 3), //季度
+
+				"S" : this.getMilliseconds() //毫秒
+
+			};
+
+		if (/(y+)/.test(fmt))
+
+			fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+
+		for (var k in o)
+
+			if (new RegExp("(" + k + ")").test(fmt))
+
+			fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+
+		return fmt;
+
+	}
+
+
+
+	Date.prototype.addDays = function(d){
+
+		this.setDate(this.getDate() + d);
+
+	};
+
+
+
+	Date.prototype.minusDays = function(d){
+
+		if(d==3||d==7){
+
+			this.setDate(this.getDate() - d+1);
+
+		}else{
+
+			this.setDate(this.getDate() - d);
+
+		}
+
+	};	
+
+
+
+	Date.prototype.addWeeks = function(w){
+
+		this.addDays(w * 7);
+
+	};
+
+
+
+	Date.prototype.addMonths= function(m){
+
+		var d = this.getDate();
+
+		this.setMonth(this.getMonth() + m);
+
+		if (this.getDate() < d)
+
+		this.setDate(0);
+
+	};
+
+
+
+	Date.prototype.minusMonths= function(m){
+
+		var d = this.getDate();
+
+		this.setMonth(this.getMonth() - m);
+
+		if (this.getDate() < d)
+
+		this.setDate(0);
+
+	};
+
+
+
+	Date.prototype.addYears = function(y){
+
+		var m = this.getMonth();
+
+		this.setFullYear(this.getFullYear() + y);
+
+		if (m < this.getMonth())
+
+		{
+
+		this.setDate(0);
+
+		}
+
+	};
+
+	
+
+	function search(){
+
+		var word = $("#search").val();
+
+		if(word=="请输入关键词"){
+
+		   word="";
+
+		 }else{
+
+		 	window.location.href="https://ecp.capitaleco-pro.com/sccms//category/list.html?dates=300&categoryIds=2,3,4,10,13,14&tabName=招标非招标公告&word="+word+"&page=1";
+
+		 }
+
+	}
+
+</script>
+
+<SCRIPT LANGUAGE=javascript>
+
+function openBottom(w,h,url)
+
+{
+
+var para;
+
+para='width=';
+
+para+=w;
+
+para+=',height=';
+
+para+=h;
+
+para+=',left=';
+
+para+= screen.availWidth-w-10 ;//10是减去浏览器的横向边
+
+para+=', top=';
+
+para+= screen.availHeight-h-28 ;//28是减去浏览器的纵向边和win任务栏
+
+window.open(url,null,para) ;
+
+}
+
+
+
+</SCRIPT>
+
+<style>
+
+.telNew span {
+
+  
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    font-family: "helvLinda" ,"helvetica","arial, helvetica, sans-serif";
+
+    color: #2f54a3;
+
+    display: block;
+
+}
+
+.telNew {
+
+    color: #2f54a3;
+
+    margin-top: 20px;
+
+ 
+
+}
+
+		</style> 
+
+						<style>.fixed_img{
+
+    bottom:20px;
+
+    display:block;
+
+    height:200px;
+
+    position:fixed;
+
+			z-index:999;
+
+    right:20px;
+
+    width:190px;
+
+}
+
+		
+
+		
+
+
+
+		</style>
+
+		
+
+		
+
+		
+
+			
+
+				<style>
+
+/* linkbox */
+
+.linkbox { margin: 0 auto; border: 0px solid #e0e0e0; text-align: left; width: 1170px; }
+
+.linkbox .hd { height: 50px; padding: 0 10px 0 20px; position: relative; line-height: 50px; color: #0657a4; background: #eee; }
+
+.linkbox .hd ul { float: left; position: absolute; left: 0px; top: 0px; height: 35px; }
+
+.linkbox .hd ul li { float: left; padding: 0 15px; cursor: pointer; font-size: 18px; }
+
+.linkbox .hd ul li.on { height: 40px; color: #2988e3; font-weight: bold; margin-right: 30px; }
+
+.linkbox .hd ul li.on:before { width: 6px; height: 20px; background: #2988e3; border-radius: 2px; margin-right: 15px; float: left; content: ""; vertical-align: middle; margin-top: 16px; margin-left: 10px; }
+
+.linkbox >.bd >ul { padding: 5px; zoom: 1; height: 120px; border: 1px solid #e0e0e0; }
+
+.linkbox .bd li { }
+
+.picScroll {margin: 10px auto 20px auto;position: relative;border: 0px solid #eee;width: 1150px;padding: 0px 0 10px 0px;overflow: hidden;}
+
+.picScroll .prev, .picScroll .next { display: block; position: absolute; top: 35px; left: 0px; width: 23px; height: 23px; background: url(../images/btns.png) no-repeat; }
+
+.picScroll .next { left: auto; right: 5px; background-position: -25px 0; }
+
+.tempWrap { }
+
+.picScroll .prev:hover { background-position: 0 -30px; }
+
+.picScroll .next:hover { background-position: -25px -30px; }
+
+.picScroll ul { overflow: hidden; zoom: 1; }
+
+.picScroll ul li { width: 290px; float: left; overflow: hidden; margin: 0 7px; }
+
+.picScroll ul li img { width: 220px; height: 120px;display: block;background: url(images/loading.gif) center center no-repeat;}
+
+.friendlink { background: #212324; line-height: 50px }
+
+.friendlink ul { width: 70%; margin: 0 auto; }
+
+.friendlink ul li { float: left; width: 33%; text-align: center }
+
+.friendlink ul li select { border: 0; line-height: 30px; height: 30px; border: 0; border-radius: 3px; width: 220px; background: #3d424b; color: #969899; font-size: 14px; text-align: center; }
+
+
+
+			
+
+    .linkbox { margin: 0 auto; border: 0px solid #e0e0e0; text-align: left; width: 1170px;background: url("/expoNew/images/logo/shadow.png");background-color:#fff;margin-left: -35px;margin-top: 40px;height:166px;}
+
+.linkbox .hd { height: 50px; padding: 0 10px 0 20px; position: relative; line-height: 50px; color: #0657a4; background: #eee; }
+
+.linkbox .hd ul { float: left; position: absolute; left: 0px; top: 0px; height: 35px; }
+
+.linkbox .hd ul li { float: left; padding: 0 15px; cursor: pointer; font-size: 18px; }
+
+.linkbox .hd ul li.on { height: 40px; color: #2988e3; font-weight: bold; margin-right: 30px; }
+
+.linkbox .hd ul li.on:before { width: 6px; height: 20px; background: #2988e3; border-radius: 2px; margin-right: 15px; float: left; content: ""; vertical-align: middle; margin-top: 16px; margin-left: 10px; }
+
+.linkbox >.bd >ul { padding: 5px; zoom: 1; height: 140px; border: 0px solid #e0e0e0; }
+
+    
+
+	
+
+			
+
+			.list-group > li{ height:30px; line-height:15px;   }
+
+	
+
+			.kbdt{width: 320px; background:#fff;border:1px #eee solid;border-left:0;height: 353px;}
+
+    </style>
+
+	
+
+		
+
+	</head>
+
+
+
+	<body style="background:#f9f9f9">
+
+		
+
+		
+
+			<script src="https://g.alicdn.com/alime/dialog/alicare-dialog.js"></script>
+
+        <script>
+
+        var ad = new AlicareDialog({
+
+            from: 'DEFeTNqdt4NuMZScxBQ3u5EjYdT',
+
+            sourceType: 'ding_talk'
+
+        });
+
+        </script>
+
+		
+
+<!--侧边栏-->
+
+<div class="slides" id="app" >
+
+	<ul class="slideul">
+
+		
+
+		<style>
+
+
+
+	
+
+
+
+		</style>
+
+		<li class="down" >
+
+		
+
+	<a href="#"  onclick="openBottom()"	
+
+  target="_self"  >	<b>在线</b><br />客服</a>
+
+	
+
+		</li>
+
+		
+
+		<li class="down">
+
+			<a href="https://ecp.capitaleco-pro.com//servicesCenter.html#lc4">下载<br />中心</a>
+
+		</li>
+
+		<li>
+
+			<div id="return-top">
+
+				<a href="#">&nbsp;</a>
+
+			</div>
+
+		</li>
+
+	</ul>
+
+</div>
+
+ 
+
+		<div style="background: #fff;">
+
+			<div class="header  container-fluid" id="ha-header">
+
+	<div class="container">
+
+		<div class="left">欢迎访问首创环保电子商务平台V2.0
+
+
+
+		</div>
+
+		<div class="right">
+
+			<a href="https://ecp.capitaleco-pro.com/servicesCenter.html#lc5">常见问题</a>
+
+			<b>|</b>
+
+			<a href="https://ecp.capitaleco-pro.com/servicesCenter.html#lc8">关于我们</a>
+
+			<b>|</b>
+
+			<a href="https://ecp.capitaleco-pro.com/contact.html">联系我们</a>
+
+		</div>
+
+	</div>
+
+</div>
+
+ 
+
+
+
+			<div class="headbox2 container">
+
+	<div class="headbox ">
+
+		<div class="pull-left logo">
+
+			<span>
+
+				<img src="https://ecp.capitaleco-pro.com//static/images/logo.png"></span>
+
+			<span style="padding:15px 0 0 15px;display: inline-block;">
+
+				<img src="https://ecp.capitaleco-pro.com//upload/2019/04-26/11-20-4005791531507510.png">
+
+			</span>
+
+		</div>
+
+		<div class="pull-right">
+
+			<div class="input-group topsearch pull-left" style="width:260px;">
+
+				<input type="text" id="search" class="form-control" value="请输入关键词" onFocus="if(value=='请输入关键词') {value=''}" onBlur="if(value==''){value='请输入关键词'}" style="color: #a09e9e;font-size: 12px;">
+
+				<span class="input-group-btn">
+
+					<button class="btn btn-default" type="button" onclick="search();">
+
+						搜索
+
+					</button>
+
+				</span>
+
+			</div>
+
+			<div class="pull-right telNew">
+
+        <span><b style="
+
+    /* font-size: 16px; */
+
+    /* color: #999; */
+
+    padding-right: 10px;
+
+    /* font-weight: normal; */
+
+    line-height: 30px;
+
+">平台咨询电话</b>010-81136388</span>
+
+        <span><b style="
+
+    /* font-size: 16px; */
+
+    /* color: #999; */
+
+    padding-right: 10px;
+
+    /* font-weight: normal; */
+
+    line-height: 35px;
+
+    display: inline-block;
+
+ 
+
+    text-align: left;
+
+">C   A</b><b  style="
+
+    /* font-size: 16px; */
+
+    /* color: #999; */
+
+    padding-right: 10px;
+
+    /* font-weight: normal; */
+
+    line-height: 35px;
+
+    display: inline-block;
+
+ 
+
+    text-align: left;">客服电话     </b>400-666-4230</span>
+
+          
+
+      </div>
+
+			
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+	<style>
+
+.telNew span {
+
+  
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    font-family: "helvLinda" ,"helvetica","arial, helvetica, sans-serif";
+
+    color: #2f54a3;
+
+    display: block;
+
+}
+
+.telNew {
+
+    color: #2f54a3;
+
+    margin-top: 20px;
+
+ 
+
+}
+
+		</style> 
+
+						<style>.fixed_img{
+
+    bottom:20px;
+
+    display:block;
+
+    height:220px;
+
+    position:fixed;
+
+			z-index:999;
+
+    right:20px;
+
+    width:190px;
+
+}</style>
+
+ 
+
+		<div class="container-fluid navbg ">
+
+	<ul class="navtop">
+
+		<li style="width:14%">
+
+			<a href="https://ecp.capitaleco-pro.com/" class="on">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+
+		</li>
+
+		<li style="width:14%">
+
+			<a href="https://ecp.capitaleco-pro.com/sccms//category/list.html?dates=300&categoryIds=2,3,4,5,10&tabName=招标公告&page=1">招标采购</a>
+
+		</li>
+
+		<li style="width:14%">
+
+			<a href="https://ecp.capitaleco-pro.com/sccms/category/list.html?dates=300&categoryIds=12,13,14,2678&tabName=非招标公告&page=1" >非招标采购</a>
+
+		</li>
+
+		<li style="width:14%;display:none;" >
+
+			<a href="https://ecp.capitaleco-pro.com/market.html">电子超市</a>
+
+		</li>
+
+		<li style="width:14%">
+
+			<a href="https://ecp.capitaleco-pro.com/sccms/category/otherList.html?dates=300&categoryIds=17,2679,2680,2681&tabName=供应商管理&page=1">供应商管理</a>
+
+		</li>
+
+		<li style="width:14%">
+
+			<a href="https://ecp.capitaleco-pro.com/servicesCenter.html">服务中心</a>
+
+		</li>
+
+		<li style="width:14%">
+
+			<a href="https://ecp.capitaleco-pro.com/policies.html">政策法规</a>
+
+		</li>
+
+
+
+	</ul>
+
+
+
+</div>
+
+ 
+
+		</div>
+
+		<style>
+
+	.bannerbox ul li.six-li{
+
+		background: url("https://ecp.capitaleco-pro.com/static/images/banner6.png") center no-repeat;
+
+		background-size: cover;
+
+	}
+
+	.bannerbox ul li.seven-li{
+
+		background: url("https://ecp.capitaleco-pro.com/static/images/banner7.jpg") center no-repeat;
+
+		background-size: cover;
+
+	}
+
+</style>
+
+<div class="bannerbox">
+
+	<div class="nav">
+
+		<dl style="width:200px">
+
+
+
+
+
+			<dd class=""></dd>
+
+			<dd class=""></dd>
+
+			<dd class=""></dd>
+
+			<dd class=""></dd>
+
+			<dd class=""></dd>
+
+			<dd class=""></dd>
+
+			<dd class=""></dd>
+
+
+
+
+
+		</dl>
+
+	</div>
+
+
+
+
+
+	<ul>
+
+
+
+		<li class="six-li">
+
+			<div class="containt-div">
+
+				<div class="banner5-01"></div>
+
+				<div class="banner5-02"></div>
+
+			</div>
+
+		</li>
+
+		<li class="fst-li">
+
+			<div class="containt-div">
+
+				<div class="baner-01-a"></div>
+
+				<div class="baner-01-b"></div>
+
+			</div>
+
+		</li>
+
+		<li class="sec-li">
+
+			<div class="containt-div">
+
+				<div class="banner2-02"></div>
+
+				<div class="banner2-01"></div>
+
+
+
+			</div>
+
+		</li>
+
+		<li class="third-li">
+
+			<div class="containt-div">
+
+				<div class="banner3-01"></div>
+
+				<div class="banner3-02"></div>
+
+
+
+			</div>
+
+		</li>
+
+		<li class="forth-li">
+
+			<div class="containt-div">
+
+				<div class="banner4-01"></div>
+
+				<div class="banner4-02"></div>
+
+
+
+			</div>
+
+		</li>
+
+
+
+		<li class="six-li">
+
+			<div class="containt-div">
+
+				<div class="banner4-01"></div>
+
+				<div class="banner4-02"></div>
+
+
+
+			</div>
+
+		</li>
+
+
+
+	</ul>
+
+</div>
+
+ 
+
+<img src="https://ecp.capitaleco-pro.com//static/images/qrcode.png" class="fixed_img" />
+
+		<div class="container">
+
+			<div class="pull-left">
+
+
+
+				<style>
+
+					.infolist li .title {
+
+						width: 550px;
+
+					}
+
+					.infolist li .method {
+
+						width: 75px;
+
+					}
+
+
+
+				</style>
+
+				
+
+				<style>
+
+.infolist li .method {
+
+    float: left;
+
+    display: table-cell;
+
+    margin-left: 0px;
+
+    width: 125px;
+
+    text-align: center;
+
+    color: #b3b3b3;
+
+    font-size: 12px;
+
+    line-height: 42px;
+
+}
+
+</style>
+
+
+
+
+
+	<style>
+
+					.infolist li .title {
+
+						width: 550px;
+
+					}
+
+				
+
+				</style>
+
+				
+
+<div class="list_box_border" style="height: 445px;">
+
+	<div class="slideTxtBox">
+
+		<div class="title_list"><i class="zhaobiao"></i>招标采购 <span></span>
+
+			<div class="more">
+
+				<a href="https://ecp.capitaleco-pro.com/sccms/category/list.html?dates=300&categoryId=2&tabName=招标公告&page=1" class="more" id="bid_more">
+
+					更多<i class="fa fa-angle-right"></i>
+
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="hd">
+
+			<ul  id="bid">
+
+				<li id="2">招标公告</li>
+
+				<li id="3">变更公告</li>
+
+				<li id="10">中标候选公告</li>
+
+				<li id="4">中标结果公告</li>
+
+				<li id="5">废标/终止公告</li>
+
+			</ul>
+
+		</div>
+
+		<div class="bd">
+
+			<ul class="infolist">
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_bulletin/2026-10-14/158793.html" title="【荣誉华府（一期）项目供水工程】招标公告">
+
+								<div class="title">
+
+									【荣誉华府（一期）项目供水工程】招标公告
+
+								</div>
+
+								 <div class="method">公开招标</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_bulletin/2026-10-14/158792.html" title="【新沂首创 2026-2027年酸碱药剂采购项目】招标公告">
+
+								<div class="title">
+
+									【新沂首创 2026-2027年酸碱药剂采购项目】招标公告
+
+								</div>
+
+								 <div class="method">公开招标</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_bulletin/2026-10-14/158791.html" title="【新沂首创 2026-2027年偏铝、次钠采购项目】招标公告">
+
+								<div class="title">
+
+									【新沂首创 2026-2027年偏铝、次钠采购项目】招标公告
+
+								</div>
+
+								 <div class="method">公开招标</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_bulletin/2026-10-14/158790.html" title="【新沂首创 2026-2027年甲醇采购项目】招标公告">
+
+								<div class="title">
+
+									【新沂首创 2026-2027年甲醇采购项目】招标公告
+
+								</div>
+
+								 <div class="method">公开招标</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_bulletin/2026-10-14/158783.html" title="【邛崃污水厂配电房改造及扩容项目（一期配电房扩容）】询比公告">
+
+								<div class="title">
+
+									【邛崃污水厂配电房改造及扩容项目（一期配电房扩容）】询比公告
+
+								</div>
+
+								 <div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_bulletin/2026-10-14/158753.html" title="【董志塬水厂厂区路灯节能改造项目采购】询比公告">
+
+								<div class="title">
+
+									【董志塬水厂厂区路灯节能改造项目采购】询比公告
+
+								</div>
+
+								 <div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_bulletin/2026-10-14/158748.html" title="【二十二标段-定州市老旧小区户表改造和供水管网改造EPC项目劳务分包（都府新城）】询比公告">
+
+								<div class="title">
+
+									【二十二标段-定州市老旧小区户表改造和供水管网改造EPC项目劳务分包（都府...
+
+								</div>
+
+								 <div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_bulletin/2026-10-14/158741.html" title="【谢家河加药系统信息化技改项目】询比公告">
+
+								<div class="title">
+
+									【谢家河加药系统信息化技改项目】询比公告
+
+								</div>
+
+								 <div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+			</ul>
+
+			<ul class="infolist">
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_changeBulletin/2026-10-13/158634.html" title="【东城水厂围墙升级改造工程】变更公告">
+
+								<div class="title">
+
+									【东城水厂围墙升级改造工程】变更公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_changeBulletin/2026-10-10/158468.html" title="【淮南区域公司常年法律顾问服务】变更公告">
+
+								<div class="title">
+
+									【淮南区域公司常年法律顾问服务】变更公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-10</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_changeBulletin/2026-09-17/157302.html" title="【深州焚烧公司-压力管道改造工程】变更公告">
+
+								<div class="title">
+
+									【深州焚烧公司-压力管道改造工程】变更公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-09-17</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_changeBulletin/2026-09-14/156988.html" title="【首创环保集团2026-2027可持续发展管理提升咨询服务】变更公告">
+
+								<div class="title">
+
+									【首创环保集团2026-2027可持续发展管理提升咨询服务】变更公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-09-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_changeBulletin/2026-09-11/156926.html" title="【客服大厅标准化建设形象提升工程】变更公告">
+
+								<div class="title">
+
+									【客服大厅标准化建设形象提升工程】变更公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-09-11</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_changeBulletin/2026-09-11/156883.html" title="【2026-2027年度石河子首创水务有限公司污泥运输服务公开招标】变更公告">
+
+								<div class="title">
+
+									【2026-2027年度石河子首创水务有限公司污泥运输服务公开招标】变更公...
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-09-11</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_changeBulletin/2026-09-08/156684.html" title="【危废回转窑窑尾护铁和冷风套更换采购项目】变更公告">
+
+								<div class="title">
+
+									【危废回转窑窑尾护铁和冷风套更换采购项目】变更公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-09-08</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_changeBulletin/2026-09-08/156608.html" title="【官庄污水厂在线监测设备运营服务采购】变更公告">
+
+								<div class="title">
+
+									【官庄污水厂在线监测设备运营服务采购】变更公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-09-08</div>
+
+							</a>
+
+						</li>
+
+			</ul>
+
+
+
+			<ul class="infolist">
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_winningperson/2026-10-14/158787.html" title="【睢县焚烧公司#1汽轮发电机组大修服务采购项目】中标候选人公示">
+
+								<div class="title">
+
+									【睢县焚烧公司#1汽轮发电机组大修服务采购项目】中标候选人公示
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_winningperson/2026-10-13/158694.html" title="【义安区供水能力提升项目-技术服务01分包采购】中标候选人公示">
+
+								<div class="title">
+
+									【义安区供水能力提升项目-技术服务01分包采购】中标候选人公示
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_winningperson/2026-10-13/158646.html" title="【义安区供水能力提升项目-勘察工程技术服务采购】中标候选人公示">
+
+								<div class="title">
+
+									【义安区供水能力提升项目-勘察工程技术服务采购】中标候选人公示
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_winningperson/2026-10-13/158624.html" title="【水厂水处理剩余物清运处置服务】中标候选人公示">
+
+								<div class="title">
+
+									【水厂水处理剩余物清运处置服务】中标候选人公示
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_winningperson/2026-10-13/158623.html" title="【鲁山首创环保能源有限公司炉渣处理服务项目】中标候选人公示">
+
+								<div class="title">
+
+									【鲁山首创环保能源有限公司炉渣处理服务项目】中标候选人公示
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_winningperson/2026-10-13/158622.html" title="【濉溪群众喝上引调水工程松林水库涵闸道路附属工程专业分包】中标候选人公示">
+
+								<div class="title">
+
+									【濉溪群众喝上引调水工程松林水库涵闸道路附属工程专业分包】中标候选人公示
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_winningperson/2026-10-12/158585.html" title="【灾备云系统采购项目】中标候选人公示">
+
+								<div class="title">
+
+									【灾备云系统采购项目】中标候选人公示
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-10-12</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_winningperson/2026-10-12/158573.html" title="【株洲首创2026年4月至12月污泥运输服务采购】中标候选人公示">
+
+								<div class="title">
+
+									【株洲首创2026年4月至12月污泥运输服务采购】中标候选人公示
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-12</div>
+
+							</a>
+
+						</li>
+
+			</ul>
+
+			
+
+			<ul class="infolist">
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_resultBulletin/2026-10-14/158795.html" title="【宁河污水厂区房顶防水服务项目】中标结果公告">
+
+								<div class="title">
+
+									【宁河污水厂区房顶防水服务项目】中标结果公告
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_resultBulletin/2026-10-14/158794.html" title="【谢家河再生水厂大修重置及更新改造项目】中标结果公告">
+
+								<div class="title">
+
+									【谢家河再生水厂大修重置及更新改造项目】中标结果公告
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_resultBulletin/2026-10-13/158695.html" title="【南乐焚烧公司2026-2027年度厂区物业管理服务采购】中标结果公告">
+
+								<div class="title">
+
+									【南乐焚烧公司2026-2027年度厂区物业管理服务采购】中标结果公告
+
+								</div>
+
+								<div class="method">公开招标</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_resultBulletin/2026-10-13/158653.html" title="【潘集区棚户区改造项目给水管网工程】中标结果公告">
+
+								<div class="title">
+
+									【潘集区棚户区改造项目给水管网工程】中标结果公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_resultBulletin/2026-10-13/158619.html" title="【2027年供水管道及附属设施防腐防寒保暖工程】中标结果公告">
+
+								<div class="title">
+
+									【2027年供水管道及附属设施防腐防寒保暖工程】中标结果公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_resultBulletin/2026-10-13/158607.html" title="【湖北省黄梅县城区生活污水处理设备降碳节能更新改造项目（一期）EPC项目纤维转盘滤池设备改造】中标结果公告">
+
+								<div class="title">
+
+									【湖北省黄梅县城区生活污水处理设备降碳节能更新改造项目（一期）EPC项目纤...
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_resultBulletin/2026-10-12/158604.html" title="【马鞍山市中心城区市政供水管道及附属设施更新改造工程-一期项目工程总承包(EPC)（第六标段）】中标结果公告">
+
+								<div class="title">
+
+									【马鞍山市中心城区市政供水管道及附属设施更新改造工程-一期项目工程总承包(...
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-12</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_resultBulletin/2026-10-12/158603.html" title="【雄安首创污水管网及配套设施运维服务项目2026劳务分包】中标结果公告">
+
+								<div class="title">
+
+									【雄安首创污水管网及配套设施运维服务项目2026劳务分包】中标结果公告
+
+								</div>
+
+								<div class="method">公开询比(综合评分)</div>
+
+								<div class="data">2026-10-12</div>
+
+							</a>
+
+						</li>
+
+			</ul>
+
+			<ul class="infolist">
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_failBulletin/2026-10-14/158777.html" title="【2027年食堂食材副食品采购】废标公告">
+
+								<div class="title">
+
+									【2027年食堂食材副食品采购】废标公告
+
+								</div>
+
+								 <div class="method"></div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_failBulletin/2026-10-14/158776.html" title="【节能型泵站控制阀采购项目】废标公告">
+
+								<div class="title">
+
+									【节能型泵站控制阀采购项目】废标公告
+
+								</div>
+
+								 <div class="method"></div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_failBulletin/2026-10-14/158720.html" title="【北京首创环卫有限公司开封分公司环卫车辆维修服务采购】废标公告">
+
+								<div class="title">
+
+									【北京首创环卫有限公司开封分公司环卫车辆维修服务采购】废标公告
+
+								</div>
+
+								 <div class="method"></div>
+
+								<div class="data">2026-10-14</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_failBulletin/2026-10-13/158655.html" title="【玉田首创环保能源有限公司SCR脱硝系统改造反应器声波吹灰器设备采购项目】废标公告">
+
+								<div class="title">
+
+									【玉田首创环保能源有限公司SCR脱硝系统改造反应器声波吹灰器设备采购项目】...
+
+								</div>
+
+								 <div class="method"></div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_failBulletin/2026-10-13/158637.html" title="【首创环境2026-2028年余热锅炉备件框架采购】废标公告">
+
+								<div class="title">
+
+									【首创环境2026-2028年余热锅炉备件框架采购】废标公告
+
+								</div>
+
+								 <div class="method"></div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_failBulletin/2026-10-13/158615.html" title="【2026年滤布耗材采购项目】废标公告">
+
+								<div class="title">
+
+									【2026年滤布耗材采购项目】废标公告
+
+								</div>
+
+								 <div class="method"></div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_failBulletin/2026-10-13/158610.html" title="【2026年度员工体检服务采购】废标公告">
+
+								<div class="title">
+
+									【2026年度员工体检服务采购】废标公告
+
+								</div>
+
+								 <div class="method"></div>
+
+								<div class="data">2026-10-13</div>
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="https://ecp.capitaleco-pro.com/sdny_failBulletin/2026-10-12/158536.html" title="【网络安全重保服务项目】废标公告">
+
+								<div class="title">
+
+									【网络安全重保服务项目】废标公告
+
+								</div>
+
+								 <div class="method"></div>
+
+								<div class="data">2026-10-12</div>
+
+							</a>
+
+						</li>
+
+			</ul>
+
+		</div>
+
+
+
+	</div>
+
+
+
+</div>
+
+ 
+
+				<div class="list_box_border" style="height: 488px;">
+
+	<div class="slideTxtBox">
+
+		<div class="title_list"><i class="feizhao"></i>非招标采购 <span></span>
+
+			<div class="more">
+
+				<a  href="https://ecp.capitaleco-pro.com/sccms/category/list.html?dates=300&categoryId=13&tabName=采购公告&page=1" class="more" id="a_more">
+
+					更多<i class="fa fa-angle-right"></i>
+
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="hd">
+
+			<ul id="hd_ul">
+
+				<li id="13">采购公告</li>
+
+				<li id="14">采购结果</li>
+
+				<li id="12">变更公告</li>
+
+				<li id="2678">废标/终止公告</li>
+
+			</ul>
+
+		</div>
+
+		<div class="bd">
+
+			<ul class="infolist">
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158796.html" title="【水泥口球墨铸铁管件】询比公告">
+
+						<div class="title">
+
+								【水泥口球墨铸铁管件】询比公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158775.html" title="【设施更新改造JX028配套无功补偿等采购项目】询比公告">
+
+						<div class="title">
+
+								【设施更新改造JX028配套无功补偿等采购项目】询比公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158774.html" title="【CGSQ261009006项目配套水泵物资采购项目】询比公告">
+
+						<div class="title">
+
+								【CGSQ261009006项目配套水泵物资采购项目】询比公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158773.html" title="【供水生产中心进行2026年11月一2028年10月 (两年)次氯酸钠溶液公开询比 (最低价法)招标】询比公告">
+
+						<div class="title">
+
+								【供水生产中心进行2026年11月一2028年10月 (两年)次氯酸钠溶液...
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158772.html" title="【铜陵市城市排水一体化PPP项目 全过程合规性审查咨询服务】询比公告">
+
+						<div class="title">
+
+								【铜陵市城市排水一体化PPP项目 全过程合规性审查咨询服务】询比公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158757.html" title="【2026年PLC站技改】询比公告">
+
+						<div class="title">
+
+								【2026年PLC站技改】询比公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158755.html" title="【通许环卫项目保洁工器具采购项目】询比公告">
+
+						<div class="title">
+
+								【通许环卫项目保洁工器具采购项目】询比公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158747.html" title="【天津宁河首创供水2026年职工健康体检项目】询比公告">
+
+						<div class="title">
+
+								【天津宁河首创供水2026年职工健康体检项目】询比公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_competeAndresult/2026-10-14/158743.html" title="【垃圾仓屋面大修】询比公告">
+
+						<div class="title">
+
+								【垃圾仓屋面大修】询比公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+			</ul>
+
+			<ul class="infolist">
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158788.html" title="【水务制水厂取水口桥式起重机大修】中标结果公示">
+
+						<div class="title">
+
+								【水务制水厂取水口桥式起重机大修】中标结果公示
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158786.html" title="【水源制水厂增设监控设备】中标结果公示">
+
+						<div class="title">
+
+								【水源制水厂增设监控设备】中标结果公示
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158784.html" title="【首创大气用电企业调研安装及餐饮企业治理服务】中标结果公示">
+
+						<div class="title">
+
+								【首创大气用电企业调研安装及餐饮企业治理服务】中标结果公示
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158778.html" title="【磴口制水厂高效池刮泥机大修人工费】中标结果公示">
+
+						<div class="title">
+
+								【磴口制水厂高效池刮泥机大修人工费】中标结果公示
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158759.html" title="【威县水厂化验室设备采购】中标结果公示">
+
+						<div class="title">
+
+								【威县水厂化验室设备采购】中标结果公示
+
+						</div>
+
+						<div class="method">直接采购</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158756.html" title="【瑞金焚烧公司2026年8月份设备备品备件采购项目】中标结果公示">
+
+						<div class="title">
+
+								【瑞金焚烧公司2026年8月份设备备品备件采购项目】中标结果公示
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158746.html" title="【柳台大道、双新路与 DN900 供水管道连通工程】中标结果公示">
+
+						<div class="title">
+
+								【柳台大道、双新路与 DN900 供水管道连通工程】中标结果公示
+
+						</div>
+
+						<div class="method">直接采购</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158745.html" title="【温泉大道（中消防-杨柳河）给水管道工程】中标结果公示">
+
+						<div class="title">
+
+								【温泉大道（中消防-杨柳河）给水管道工程】中标结果公示
+
+						</div>
+
+						<div class="method">直接采购</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_askAndresult/2026-10-14/158744.html" title="【五福路管道改造工程】中标结果公示">
+
+						<div class="title">
+
+								【五福路管道改造工程】中标结果公示
+
+						</div>
+
+						<div class="method">直接采购</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+			</ul>
+
+			<ul class="infolist">
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-10-12/158503.html" title="【市二厂污泥运输服务】变更公告">
+
+						<div class="title">
+
+								【市二厂污泥运输服务】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-12</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-10-02/158197.html" title="【首创大气空气质量预报数据服务】变更公告">
+
+						<div class="title">
+
+								【首创大气空气质量预报数据服务】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-02</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-09-30/158173.html" title="【2026年常用工具采购】变更公告">
+
+						<div class="title">
+
+								【2026年常用工具采购】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-09-30</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-09-30/158170.html" title="【2026年劳保品及低值易耗品采购】变更公告">
+
+						<div class="title">
+
+								【2026年劳保品及低值易耗品采购】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-09-30</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-09-30/158162.html" title="【2026年二类电气配件采购】变更公告">
+
+						<div class="title">
+
+								【2026年二类电气配件采购】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-09-30</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-09-24/157861.html" title="【起重设备维修、维护保养项目】变更公告">
+
+						<div class="title">
+
+								【起重设备维修、维护保养项目】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-09-24</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-09-24/157859.html" title="【水厂及各加压泵站防护措施维护更新项目】变更公告">
+
+						<div class="title">
+
+								【水厂及各加压泵站防护措施维护更新项目】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-09-24</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-09-17/157301.html" title="【2026年大气监测车改装服务项目】变更公告">
+
+						<div class="title">
+
+								【2026年大气监测车改装服务项目】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-09-17</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_noChangeBulletin/2026-09-15/157170.html" title="【运城首创物业服务(供水)】变更公告">
+
+						<div class="title">
+
+								【运城首创物业服务(供水)】变更公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-09-15</div>
+
+					</a>
+
+				</li>
+
+			</ul>
+
+			<ul class="infolist">
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-14/158782.html" title="【2026-2027年厂区绿化维护保养服务】终止公告">
+
+						<div class="title">
+
+								【2026-2027年厂区绿化维护保养服务】终止公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-14/158735.html" title="【通许环卫项目保洁工器具采购项目】废标公告">
+
+						<div class="title">
+
+								【通许环卫项目保洁工器具采购项目】废标公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-14/158734.html" title="【应急预案编制服务】废标公告">
+
+						<div class="title">
+
+								【应急预案编制服务】废标公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-14/158708.html" title="【文件加密软件采购项目】废标公告">
+
+						<div class="title">
+
+								【文件加密软件采购项目】废标公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-14</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-13/158672.html" title="【南阳首创环境科技有限公司栾川分公司2026年车辆商业险采购项目】废标公告">
+
+						<div class="title">
+
+								【南阳首创环境科技有限公司栾川分公司2026年车辆商业险采购项目】废标公告...
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-13</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-13/158630.html" title="【县城污水厂机修间及库房新建项目】终止公告">
+
+						<div class="title">
+
+								【县城污水厂机修间及库房新建项目】终止公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-13</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-13/158618.html" title="【杭州餐厨浙江省级绿色低碳工厂申报采购项目】终止公告">
+
+						<div class="title">
+
+								【杭州餐厨浙江省级绿色低碳工厂申报采购项目】终止公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-13</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-12/158602.html" title="【攸县首创食堂改造项目】废标公告">
+
+						<div class="title">
+
+								【攸县首创食堂改造项目】废标公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-12</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/fail_nobulletin/2026-10-12/158601.html" title="【2026-2027年厂区绿化维护保养服务】终止公告">
+
+						<div class="title">
+
+								【2026-2027年厂区绿化维护保养服务】终止公告
+
+						</div>
+
+						<div class="method">公开询比(最低价)</div>
+
+						<div class="data">2026-10-12</div>
+
+					</a>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</div>
+
+ 
+
+			</div>
+
+			<div class="pull-right" style="width:355px;">
+
+				<div class="userBtn">
+
+	<button class="loginBtn pull-left" onclick="login();">登录</button>
+
+	<button class="regiteBtn pull-right" onclick="register();">注册</button>
+
+</div>
+
+
+
+<script>	
+
+	function login(){
+
+		window.location.href="https://ecp.capitaleco-pro.com/scdzzb/loginController.do?login";
+
+	};
+
+	function register(){
+
+		window.location.href="https://ecp.capitaleco-pro.com/scdzzb/departExtController.do?registrationfirst";
+
+	};
+
+</script>
+
+ 
+
+				<div class="list_box_border_right">
+
+	<div class="slideTxtBox">
+
+		<div class="title_list_other"><i class="wangzhan"></i>网站公告
+
+			<div class="more">
+
+				<a href="https://ecp.capitaleco-pro.com/sccms//category/list.html?dates=300&categoryId=8&tabName=网站公告&page=1" class="more">更多<i class="fa fa-angle-right"></i></a>
+
+			</div>
+
+		</div>
+
+		<div class="bd">
+
+			<ul class="infolist" style="height:331px;">
+
+				<li>
+
+					<a href="https://ecp.capitalwater.cn/sdny_siteBulletin/2026-01-10/140053.html">					
+
+								<div class="title">推广：京津发展新腹地 产业协同首选地
+
+								<img src="http://ecp.capitalwater.cn/resource/site_1/scdzzb/img/new1.gif" id=2026-01-10 >	
+
+								</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/sdny_siteBulletin/2026-09-14/157019.html">					
+
+								<div class="title">关于召开碳源药剂、石英砂、臭氧发生器系统...
+
+								<img src="http://ecp.capitalwater.cn/resource/site_1/scdzzb/img/new1.gif" id=2026-09-14 >	
+
+								</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitalwater.cn/sdny_siteBulletin/2022-02-17/55088.html">					
+
+								<div class="title">中招互联APP用户使用手册及常见问题解答...
+
+								<img src="http://ecp.capitalwater.cn/resource/site_1/scdzzb/img/new1.gif" id=2022-02-17 >	
+
+								</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitalwater.cn/sdny_siteBulletin/2021-05-24/41131.html">					
+
+								<div class="title">招标代理平台使用手册
+
+								<img src="http://ecp.capitalwater.cn/resource/site_1/scdzzb/img/new1.gif" id=2021-05-24 >	
+
+								</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitalwater.cn/sdny_siteBulletin/2019-12-19/21755.html">					
+
+								<div class="title">供应商学习手册（更新）
+
+								<img src="http://ecp.capitalwater.cn/resource/site_1/scdzzb/img/new1.gif" id=2019-12-19 >	
+
+								</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitalwater.cn/sdny_siteBulletin/2019-08-21/18555.html">					
+
+								<div class="title">忘记账户找回处理单
+
+								<img src="http://ecp.capitalwater.cn/resource/site_1/scdzzb/img/new1.gif" id=2019-08-21 >	
+
+								</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitalwater.cn/sdny_siteBulletin/2020-08-06/29046.html">					
+
+								<div class="title">首创环保电商平台供应商操作培训视频
+
+								<img src="http://ecp.capitalwater.cn/resource/site_1/scdzzb/img/new1.gif" id=2020-08-06 >	
+
+								</div>
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="https://ecp.capitalwater.cn/sdny_siteBulletin/2020-01-10/22296.html">					
+
+								<div class="title">招标代理机构注册流程
+
+								<img src="http://ecp.capitalwater.cn/resource/site_1/scdzzb/img/new1.gif" id=2020-01-10 >	
+
+								</div>
+
+					</a>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</div> 
+
+			<div class="userCenter">
+
+	<div class="download">
+
+		<a href="https://ecp.capitaleco-pro.com//servicesCenter.html#lc4">
+
+			<img src="https://ecp.capitaleco-pro.com//static/images/d.png">
+
+			<span>下载中心</span>
+
+		</a>
+
+
+
+	</div>
+
+
+
+	<div class="ca">
+
+		<a href="https://ecp.capitaleco-pro.com/caLogin.html">
+
+			<img src="https://ecp.capitaleco-pro.com//static/images/c.png">
+
+			<span>CA介绍</span>
+
+		</a>
+
+	</div>
+
+</div> 
+
+		        <div class="list_box_border_right_top">
+
+	<div class="slideTxtBox">
+
+		<div class="title_list_other"><i class="g"></i>供应商公告
+
+			<div class="more">
+
+				<a href="https://ecp.capitaleco-pro.com/sccms//category/list.html?dates=300&categoryId=17&tabName=供应商公告&page=1" class="more">更多<i class="fa fa-angle-right"></i></a>
+
+			</div>
+
+		</div>
+
+		<div class="bd" style="background: white;">
+
+			<ul class="infolist" style="height:372px;">
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158789.html" title="湖南菌方未来环境科技有限公司入网公示">
+
+							<div class="title">湖南菌方未来环境科技有限公司入网公示</div>
+
+					</a>
+
+				</li>			
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158785.html" title="平顶山市喜洋洋物流有限公司入网公示">
+
+							<div class="title">平顶山市喜洋洋物流有限公司入网公示</div>
+
+					</a>
+
+				</li>			
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158781.html" title="国众联建设工程管理顾问有限公司入网公示">
+
+							<div class="title">国众联建设工程管理顾问有限公司入网公示</div>
+
+					</a>
+
+				</li>			
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158780.html" title="郑州洁普智能环保技术有限公司入网公示">
+
+							<div class="title">郑州洁普智能环保技术有限公司入网公示</div>
+
+					</a>
+
+				</li>			
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158779.html" title="扬州市固源安全防护用品有限责任公司入网公示">
+
+							<div class="title">扬州市固源安全防护用品有限责任公司入网公...</div>
+
+					</a>
+
+				</li>			
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158771.html" title="广东华旺检测科技有限公司入网公示">
+
+							<div class="title">广东华旺检测科技有限公司入网公示</div>
+
+					</a>
+
+				</li>			
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158770.html" title="四川双森环保科技有限责任公司入网公示">
+
+							<div class="title">四川双森环保科技有限责任公司入网公示</div>
+
+					</a>
+
+				</li>			
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158769.html" title="西安华陆建设集团有限公司入网公示">
+
+							<div class="title">西安华陆建设集团有限公司入网公示</div>
+
+					</a>
+
+				</li>			
+
+				<li>
+
+					<a href="https://ecp.capitaleco-pro.com/netPublicity/2026-10-14/158768.html" title="徐州电网管家电力科技有限公司入网公示">
+
+							<div class="title">徐州电网管家电力科技有限公司入网公示</div>
+
+					</a>
+
+				</li>			
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</div> 
+
+			</div>
+
+
+
+		</div>
+
+		<div class="bgWhite mt-20">
+
+	<div class="container">
+
+		<div class="flink_box">
+
+			<div>
+
+				<a href="https://www.bjcapital.com/" target="_blank">
+
+					<img src="https://ecp.capitaleco-pro.com//static/images/b1.png">
+
+				</a>
+
+
+
+			</div>
+
+
+
+			<div>
+
+				<a  href="https://www.capitaleco-pro.com/" target="_blank">
+
+					<img src="https://ecp.capitaleco-pro.com//static/images/b3.png">
+
+				</a>
+
+
+
+			</div>
+
+
+
+			<div>
+
+				<a href="https://www.chinabidding.cn/" target="_blank">
+
+					<img src="https://ecp.capitaleco-pro.com//static/images/b2.png">
+
+				</a>
+
+
+
+			</div>
+
+
+
+			<div>
+
+				<a href="http://www.cebpubservice.com/" target="_blank">
+
+					<img src="https://ecp.capitaleco-pro.com//static/images/b4.png">
+
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>	 
+
+		
+
+		
+
+		<div class=" container mt-20">
+
+			<div class="tongytitle ">
+
+			</div>
+
+			<div class="clearfix mt-20">
+
+				<ul style="padding: 5px 0px;">
+
+					<div class="picScroll" style="width:100%;background:#fff;">
+
+						<div class="tempWrap">
+
+							
+
+							<ul >
+
+								<li class="clone"  style="width:220px;margin-top:10px;" > 
+
+													<a  href="https://ecp.capitalwater.cn/advertisement/2023-12-21/89901.html" title="位置一" target="_blank" >
+
+										<img  style="margin:0 auto;" src="https://ecp.capitaleco-pro.com/upload/2026/02-12/16-50-300677-578597961.png" ></a></li>
+
+								<li class="clone"  style="width:220px;margin-top:10px;" > 
+
+													<a  href="https://ecp.capitalwater.cn/advertisement/2023-10-31/86154.html" title="位置二" target="_blank" >
+
+										<img  style="margin:0 auto;" src="https://ecp.capitaleco-pro.com/upload/2026/02-12/17-13-170090-1620478480.jpg" ></a></li>
+
+							</ul>
+
+
+
+						</div>
+
+					</div>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+
+
+		
+
+		
+
+		
+
+		<div class="footer">
+
+	<div class="container">
+
+		<div class="pull-left">
+
+
+
+			<div>
+
+				<ul class="footHelp">
+
+					<li><b>新手入门</b>
+
+						<div>
+
+							<a href="https://ecp.capitaleco-pro.com/servicesCenter.html">平台操作流程</a>
+
+							<a href="https://ecp.capitaleco-pro.com/servicesCenter.html#lc2">投标人指南</a>
+
+							<a href="#">CA办理流程</a>
+
+						</div>
+
+					</li>
+
+					<li><b>常见问题</b>
+
+						<div>
+
+							<a href="https://ecp.capitaleco-pro.com/servicesCenter.html#lc5">常见问题</a>
+
+
+
+							<a href="#">CA办理常见问题</a>
+
+							<a href="#">投标操作流程</a>
+
+						</div>
+
+					</li>
+
+					<li><b>关于我们</b>
+
+						<div>
+
+							<a href="https://ecp.capitaleco-pro.com/servicesCenter.html#lc8">关于我们</a>
+
+							<a href="https://ecp.capitaleco-pro.com/servicesCenter.html#lc9">市场合作</a>
+
+
+
+						</div>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+
+
+		</div>
+
+		<div class="pull-right">
+
+			<div class="code">
+
+					 <img src="https://ecp.capitaleco-pro.com//static/images/edTwo.png" style="margin-bottom:10px"><br>
+
+					 <img src="https://ecp.capitaleco-pro.com//static/images/ed.png" width="80">
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="icp container-fluid">
+
+		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502030310">
+
+			<div>北京首创生态环保集团股份有限公司 版权所有&nbsp;&nbsp;&nbsp;&nbsp;京ICP备06018296号&nbsp;&nbsp;&nbsp;&nbsp;京公网安备11010202009487号</div>
+
+		</a>
+
+	</div>
+
+</div>
+
+ 
+
+		<script src="https://ecp.capitaleco-pro.com//static/js/wow.min.js"></script>
+
+		
+
+		
+
+			
+
+		  <script type="text/javascript">
+
+	jQuery(".txtMarquee-top").slide({ mainCell: ".bd ul", autoPlay: true, effect: "topMarquee", vis: 8, interTime: 50 });
+
+	jQuery(".linkbox").slide({});
+
+jQuery(".picScroll").slide({ autoPlay: true, mainCell: "ul", effect: "leftMarquee", vis: 6, scroll: 2, autoPage: true,interTime:50 });
+
+		</script>
+
+		
+
+		
+
+		<script>
+
+			if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+
+				new WOW().init();
+
+			};
+
+		</script>
+
+		<script>
+
+$().ready(function(){
+
+	bulletinList();
+
+	otherBulletinList();
+
+});
+
+
+
+	function bulletinList(){
+
+		$("#bid").on("mouseout","li",function(){
+
+			$("#bid").find("li").each(function(){
+
+				if($(this).attr("class")=="on"){
+
+					var categoryid = $(this).attr("id");	
+
+					var tabName = $(this).text();	
+
+					$("#bid_more").attr('href','https://ecp.capitaleco-pro.com/sccms/category/list.html?dates=300&categoryId='+categoryid+'&tabName='+tabName+'&page=1'); 
+
+				}
+
+			});
+
+		});
+
+	}
+
+	function otherBulletinList(){
+
+		$("#hd_ul").on("mouseout","li",function(){
+
+			$("#hd_ul").find("li").each(function(){
+
+				if($(this).attr("class")=="on"){
+
+					var categoryid = $(this).attr("id");	
+
+					var tabName = $(this).text();	
+
+					$("#a_more").attr('href','https://ecp.capitaleco-pro.com/sccms/category/list.html?dates=300&categoryId='+categoryid+'&tabName='+tabName+'&page=1'); 
+
+				}
+
+			});
+
+		});
+
+	}
+
+</script>
+
+ 
+
+		<script type="text/javascript">
+
+			jQuery(".fullSlide").slide({
+
+				titCell: ".hd ul",
+
+				mainCell: ".bd ul",
+
+				effect: "fold",
+
+				autoPlay: true,
+
+				autoPage: true,
+
+				trigger: "click"
+
+			});
+
+			jQuery(".slideBox").slide({
+
+				mainCell: ".bd ul",
+
+				autoPlay: true
+
+			});
+
+			jQuery(".picScroll-left").slide({
+
+				titCell: ".hd ul",
+
+				mainCell: ".bd ul",
+
+				autoPage: true,
+
+				effect: "top",
+
+				autoPlay: true,
+
+				vis: 1,
+
+				trigger: "click"
+
+			});
+
+			jQuery(".douban").slide({
+
+				titCell: ".hd ul",
+
+				mainCell: ".bd ul",
+
+				autoPage: true,
+
+				effect: "left",
+
+				autoPlay: true,
+
+				vis: 5,
+
+				trigger: "click"
+
+			});
+
+		</script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				$(".windows li").hover(function() {
+
+					$(this).find("em").animate({opacity: "show", top: "0"}, "slow");
+
+				}, function() {
+
+					$(this).find("em").animate({opacity: "hide", top: "0"}, "fast");
+
+				});
+
+			});
+
+		</script>
+
+		<script type="text/javascript">
+
+			jQuery(".slideTxtBox").slide();
+
+			jQuery(".slideTxtBox2").slide();
+
+		</script>
+
+		<script type="text/javascript">
+
+			$(function() {
+
+				//Sldie
+
+				$(".slides .kefu1").mouseenter(function() {
+
+					$(this).find(".kefulist").fadeIn();
+
+				});
+
+				$(".slides .kefu1").mouseleave(function() {
+
+					$(this).find(".kefulist").fadeOut();
+
+				});
+
+			});
+
+		</script>
+
+		<script>
+
+			//返回顶部
+
+			$(function() {
+
+				getRTime();
+
+				$('#return-top').hide();
+
+				$(function() {
+
+					$(window).scroll(function() {
+
+						if($(window).scrollTop() > 300) {
+
+							$('#return-top').fadeIn(300);
+
+						} else {
+
+							$('#return-top').fadeOut(200);
+
+						}
+
+
+
+					});
+
+					$('#return-top').click(function() {
+
+
+
+						$('body,html').animate({
+
+							scrollTop: 0
+
+						}, 300);
+
+						return false;
+
+
+
+					})
+
+
+
+				})
+
+
+
+			});
+
+			
+
+						/*弹出通知1*/
+
+		function openBottom(){
+
+		layer.open({
+
+					type: 2,
+
+					title:'',
+
+					maxmin: false,
+
+					area: ['800px', '620px'],
+
+					content: 'https://ecp.capitalwater.cn/bidweb/#/serviceDialogue',
+
+					end: function() {
+
+						layer.tips('Hi', '#about', {
+
+							tips: 1
+
+						})
+
+					}
+
+				});
+
+			};
+
+			
+
+			/*弹出通知1*/
+
+	
+
+			$().ready(function(){
+
+				console.info("apple");
+
+				checkIsApple();
+
+			});
+
+			
+
+			function checkIsApple(){
+
+				if(!isApple()){
+
+					console.info("anid");
+
+					$("#app").show();
+
+		   		}
+
+			}
+
+			
+
+			function isApple(){
+
+				var u = navigator.userAgent;
+
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1 || u.indexOf('XiaoMi') > -1 || u.indexOf('HUAWEI') > -1; //android终端
+
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+				return isiOS;
+
+			}
+
+			function getRTime(){ 			
+
+				var divs= $("ul[class='infolist'] li img");
+
+				var length = divs.length;
+
+				var frontOneHour = new Date().getTime() - 3 * 24 * 60 * 60 * 1000;
+
+				$(divs, this).each(function(){
+
+					var times=$(this).attr('id');
+
+					var credate=new Date(times).getTime();
+
+					if(frontOneHour<credate){
+
+						$(this).show(); 
+
+					}else{
+
+						$(this).hide(); 
+
+					}
+
+				});
+
+			}	
+
+		</script>
+
+		
+
+			<script src="https://g.alicdn.com/alime/dialog/alicare-dialog.js"></script>
+
+        <script>
+
+        var ad = new AlicareDialog({
+
+            from: 'DEFeTNqdt4NuMZScxBQ3u5EjYdT',
+
+            sourceType: 'ding_talk'
+
+        });
+
+        </script>
+
+	</body>
+
+
+
+</html>

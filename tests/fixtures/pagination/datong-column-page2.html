@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="SiteName" content="山西省大同市公共资源交易平台">
+    <meta name="SiteDomain" content="ggzyjy.dt.gov.cn">
+    <meta name="SiteIDCode" content="1402000038">
+            <meta name="ColumnName" content="工程建设">
+        <meta name="ColumnDescription" content="工程建设">
+        <meta name="ColumnKeywords" content="工程建设">
+        <meta name="ColumnType" content="工程建设">
+    <meta name="ContentSource" content="山西省大同市公共资源交易平台">    
+    <title>山西省大同市公共资源交易平台</title>
+	<link rel="stylesheet" href="/r/cms/com.dtggzy.www/com.dtggzy.www/layui/css/layui.css">
+    <script src="/r/cms/com.dtggzy.www/com.dtggzy.www/layui/layui.js"></script>
+	<script type="text/javascript" src="/r/cms/com.dtggzy.www/com.dtggzy.www/js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="/r/cms/com.dtggzy.www/com.dtggzy.www/css/reset.css">
+    <link rel="stylesheet" href="/r/cms/com.dtggzy.www/com.dtggzy.www/css/allCss.css">
+    <link rel="stylesheet" href="/r/cms/com.dtggzy.www/com.dtggzy.www/css/twoC.css">
+    <script src="/r/cms/front.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="cs_topBack">
+      <!-- top1 -->
+      <div class="cs_head_top">
+        <div class="cs_middle">
+          <span class="sx_logo">欢迎来到山西省大同市公共资源交易平台！</span>
+          <span class="week_TQ"></span>
+        </div>
+      </div>
+      <div class="cs_middle cs_divInline_block cs_box_1" style="padding-top: 35px;">
+        <a href="javascript:voild(0)" class="cs_logo">
+          <p>全国公共资源交易平台（山西省·大同市）</p>
+          <p></p>
+        </a>
+      </div>
+      <!-- 导航 -->
+      <div class="cs_nav_back">
+        <div class="cs_middle">
+          <div class="cs_nav_a">
+	          <a href="/" [#if !channel??&&!content??]class="active"[/#if]>首页</a>
+	          <a href="/xwzx/index.jhtml" [#if channel??&&channel.path?contains('xwzx')]class="active"[/#if]>综合动态</a>
+              <a href="/zwgk/index.jhtml" [#if channel??&&channel.path?contains('zwgk')]class="active"[/#if]>政策法规及解读</a>
+	          <a href="/jyxx/index.jhtml" [#if channel??&&channel.path?contains('jyxx')]class="active"[/#if]>交易信息</a>
+	          <a href="/xzzx/index.jhtml" [#if channel??&&channel.path?contains('xzzx')]class="active"[/#if]>服务指南</a>
+              <a href="https://dt.sxzwfw.gov.cn/icity/public/index" target="_blank">政务服务</a>
+              <a href="http://www.dt.gov.cn/dt12345/" target="_blank">互动交流</a>
+              <a href="/jggk/index.jhtml" [#if channel??&&channel.path?contains('jggk')]class="active"[/#if]>机构职能概况</a>
+              <a href="/ldxx/index.jhtml" [#if channel??&&channel.path?contains('ldxx')]class="active"[/#if]>领导信息</a>
+	      <a href="/gywmlx/index.jhtml" [#if channel??&&channel.path?contains('gywm')]class="active"[/#if]>联系我们</a>    
+	  </div>
+        </div>
+      </div>
+    </div>
+<div class="cs_twoC_box">
+      <div class="cs_two_box">
+        <div class="cs_two_nav active_nav">
+	                <div class="cs_jyxx_1 active" onclick="location.href='https://ggzyjy.dt.gov.cn:443/jyxxgc/index.jhtml'">工程建设</div>
+	                <div class="cs_jyxx_2" onclick="location.href='https://ggzyjy.dt.gov.cn:443/jyxxzc/index.jhtml'">政府采购</div>
+	                <div class="cs_jyxx_3" onclick="location.href='https://ggzyjy.dt.gov.cn:443/jyxxtd/index.jhtml'">土地使用权</div>
+	                <div class="cs_jyxx_4" onclick="location.href='https://ggzyjy.dt.gov.cn:443/jyxxcq/index.jhtml'">国有产权</div>
+	                <div class="cs_jyxx_5" onclick="location.href='https://ggzyjy.dt.gov.cn:443/jyxxpw/index.jhtml'">排污权</div>
+	                <div class="cs_jyxx_6" onclick="location.href='https://ggzyjy.dt.gov.cn:443/jyxxsf/index.jhtml'">行政执法部...</div>
+	                <div class="cs_jyxx_7" onclick="location.href='https://ggzyjy.dt.gov.cn:443/jyxxncjtcq/index.jhtml'">农村集体产权</div>
+        </div>
+        <div class="cs_two_cont active_box">
+          <div class="cs_show">
+            <div class="cs_two_title">
+              <span>工程建设</span>
+          	  <form action="/queryContent-jyxx.jspx" id="qform" method="POST">
+              <div class="cs_two_search">
+                <input type="text" name="title" id="title" value="" placeholder="请输入标题名称">
+                <input type="hidden" id="channelId" name="channelId" value="111" />
+	           	<input type="hidden" id="origin" name="origin" value="大同"/>
+                <input type="hidden" id="dates" name="inDates" value="4000"/>
+	           	<input type="hidden" id="beginTime" name="beginTime" value=""/>
+	           	<input type="hidden" id="endTime" name="endTime" value=""/>
+                <span class="cs_bz_button" onclick="searchdata(this)"></span>
+              </div>
+              </form>
+            </div>
+            <div class="cs_two_line"></div>
+            <div class="cs_optionsK">
+              <div class="cs_optionsK_c">
+                <div class="cs_optionsK_MK">
+                  <span>时间筛选：</span>
+                  <div id="inDates_span">
+                    <span val="4000" class="active">全部</span>
+                    <span val="1" >当天</span>
+                    <span val="4" >近三天</span>
+                    <span val="8" >近一周</span>
+                    <span val="31" >近一个月</span>
+                  </div>
+                </div> 
+
+                <div class="cs_optionsK_MK">
+                  <span>时间区间：</span>
+                  <div id="date_bt">
+                    <div class="layui-input-inline">
+                      <input type="text" class="layui-input cs_layui_time" id="test1_time_1" placeholder="">
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              
+                  <div class="cs_optionsK_c">
+                    <div class="cs_optionsK_MK">
+                      <span>信息类型：</span>
+                      <div id="channel_span">
+                            <span class="active" val="111">全部</span>
+                                <span  val="198">招标计划</span>
+                                <span  val="112">招标/资审公告</span>
+                                <span  val="113">更正公告</span>
+                                <span  val="114">中标候选人公示</span>
+                                <span  val="115">中标结果公示</span>
+                                <span  val="165">控制价</span>
+                                <span  val="196">合同公示</span>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+            <div>
+	              <div class="cs_two_content">
+	                <a href="/jyxxgchxr/382782.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	浑源县集中供热管线基础设施改造工程热力站换热设备采购(1标段)中标候选人公示
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgchxr/382781.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	灵丘县大燕集中供水管路配套工程施工(1标段)中标候选人公示
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgcgz/382780.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	浑源县住建局永安东街北侧线材厂周边地段棚户区改造项目二期电梯采购及安装(1标段)中标候选人公示更正公告
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgczb/382779.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	阳高县2026年高标准农田建设项目施工(1,2标段)招标公告
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgcyc/382778.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	灵丘县城供水管网漏损治理改造工程（老城区）项目--智慧水务平台建设设备采购终止公告
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgchxr/382777.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	山西华北重要生态屏障阴山东段长城文化带（大同）历史遗留废弃矿山生态修复示范工程西洋河流域矿山生态修复项目施工(1标段)中标候选人公示
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgcgs/382776.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	大同市寺儿村棚户区改造项目配套二路（开源街南二路-开源街南一路）道路建设工程(1标段)中标结果公示
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgcht/382775.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	大同市马市角老旧街区城市更新项目配套设施设备合同公示
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgcgs/382774.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	卅里铺乡设施蔬菜产业砂石路及水渠配套工程改造项目(1标段)中标结果公示
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	                <a href="/jyxxgcgz/382773.jhtml" target="_blank" class="cs_two_c_2">
+	                  <p class="cs_bz_cont">
+	                  	2026年灵丘青背山羊屠宰加工生产线建设项目设备采购(1标段)招标公告延期公告
+	                  </p>
+	                  <p class="cs_bz_cont_1">
+	                    <span>交易场所：大同市</span>
+	                    <span class="cs_bz_cont_1_time">2026/10/13</span>
+	                  </p>
+	                </a>
+	              </div>
+              
+	              <div class="sd_page_box">
+<link rel="stylesheet" href="/r/cms/com.dtggzy.www/com.dtggzy.www/layui/css/layui.css">
+
+<script src="/r/cms/com.dtggzy.www/com.dtggzy.www/layui/layui.js"></script>
+
+<div id="page"></div>
+
+<script>
+
+var channelId = null;
+
+	channelId = 111;
+
+var first = true;
+
+layui.use(['laypage', 'layer'], function(){
+
+	var laypage = layui.laypage
+
+	,layer = layui.layer;
+
+	//完整功能
+
+	laypage.render({
+
+		elem: 'page'
+
+		,count: 15237
+
+		,limit: 10
+
+		,curr: 2
+
+		//,layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
+
+		,layout: ['count', 'prev', 'page', 'next', 'skip']
+
+		,urlPre: "index"
+
+		,urlSuf: ".jhtml"
+
+		,jump: function(pg){
+
+			if(!first){
+
+				var urlinfo = window.location.href;
+
+				var pageNo = pg.curr;
+
+				if(urlinfo.indexOf("queryContent")>0||channelId){
+
+					if(pageNo==1){
+
+						url=pg.urlPre+pg.urlSuf;
+
+					}else{
+
+						url=pg.urlPre+"_"+pageNo+pg.urlSuf
+
+					}
+
+					if(pg.urlSuf=='.jhtml'){
+
+						url=pg.urlPre+"_"+pageNo+pg.urlSuf;
+
+						location.href=url;
+
+					}else{
+
+						$("#qform").attr("action",url).submit();
+
+					}
+
+				}else{
+
+					//全文检索
+
+					var url_arr = urlinfo.split("?");
+
+					if(url_arr.length>1){
+
+						var href_latter = url_arr[1];
+
+						location.href=pg.urlPre+"_"+pageNo+".jspx?"+href_latter;
+
+						return;
+
+					}else{
+
+						url=pg.urlPre+"_"+pageNo+href_latter;
+
+						location.href=url;
+
+					}
+
+				}
+
+		    }
+
+			first = false;
+
+		}
+
+	});
+
+
+
+  });
+
+</script>
+
+
+
+	              </div>
+            </div>
+          </div>
+       
+        </div>  
+      </div>
+    </div>
+	<script type="text/javascript">
+		function searchdata() {
+			$("#qform").submit();
+		}
+		$("#title").on("keyup", function(e) {
+			var ev = document.all ? window.event : e;
+			if (ev.keyCode == 13) {
+				searchdata();
+			}
+		});
+	
+		//日期按钮
+		$("#inDates_span span").on("click", function() {
+			$("#inDates_span .active").removeClass(".active");
+			$(this).addClass(".active");
+			$("#dates").val($(this).attr("val"));
+			$("#beginTime").val("");
+			$("#endTime").val("");
+			searchdata();
+		})
+		//地区
+		$("#origin_span span").on("click", function() {
+			$("#origin_span .active").removeClass(".active");
+			$(this).addClass(".active");
+			$("#origin").val($(this).attr("val"));
+			searchdata();
+		})
+		//channel检索
+		$("#channel_span span").on("click", function() {
+			$("#channel_span .active").removeClass(".active");
+			$(this).addClass(".active");
+			$("#channelId").val($(this).attr("val"));
+			searchdata();
+		})
+	
+		var bt = "";
+		var et = "";
+		var initValue = "";
+		if (bt && et) {
+			initValue = bt.substring(0,7) + " 至 " + et.substring(0,7);
+			$(".cs_layui_time").val(initValue);
+		}
+		layui.use([ 'layer', 'laydate' ], function() {
+			var layer = layui.layer;
+			var pageDom_1 = document.querySelectorAll('.cs_layui_time');
+			var laydate = layui.laydate;
+			for (var i = 0; i < pageDom_1.length; i++) {
+				console.log(pageDom_1[i].id)
+				//完整功能
+				laydate.render({
+					elem : '#' + pageDom_1[i].id,
+					type : 'month',
+					range : '至',
+					format : 'yyyy-M',
+					isInitValue:false,
+              	    value:initValue,
+              	    theme: '#4A9CFF',
+					done : function(value, st, et) {
+						if(value){
+							var stMonth = st.month;
+							if (stMonth < 10) {
+								stMonth = "0" + stMonth;
+							}
+							var etMonth = et.month;
+							if (etMonth < 10) {
+								etMonth = "0" + etMonth;
+							}
+							$("#beginTime").val(st.year + "-" + stMonth + "-01");
+							$("#endTime").val(et.year + "-" + etMonth + "-01");
+							$("#dates").val("");
+							searchdata();
+						}else{
+							$("#beginTime").val("");
+							$("#endTime").val("");
+							$(".cs_layui_time").val("");
+						}
+					}
+				});
+			}
+		});
+	</script>
+<div class="cs_bottomBack cs_white_back">
+    <div class="cs_selectNav">
+      <div class="cs_middle cs_text_center">
+        <div class="cs_select">
+          <span >各地公共资源交易服务平台</span>
+          <div>
+            	<a href="http://www.ggzy.gov.cn/" target="_blank">全国公共资源交易平台</a>
+            	<a href="http://prec.sxzwfw.gov.cn/" target="_blank">山西省公共资源交易平台</a>
+            	<a href="https://ggzy.xzspglj.taiyuan.gov.cn/#/" target="_blank">太原市公共资源交易平台</a>
+            	<a href="http://ggzy.yq.gov.cn/" target="_blank">阳泉市公共资源交易平台</a>
+            	<a href="http://ggzy.changzhi.gov.cn/" target="_blank">长治市公共资源交易平台</a>
+            	<a href="https://ggzy.jcgov.gov.cn/" target="_blank">晋城市公共资源交易平台</a>
+            	<a href="http://szggzy.shuozhou.gov.cn" target="_blank">朔州市公共资源交易平台</a>
+            	<a href="http://ggzy.sxjz.gov.cn/" target="_blank">晋中市公共资源交易平台</a>
+            	<a href="https://ggzyjyzx.yuncheng.gov.cn/" target="_blank">运城市公共资源交易平台</a>
+            	<a href="http://ggzyjy.sxxz.gov.cn:7620/cmsController.do?goPage&page=index" target="_blank">忻州市公共资源交易平台</a>
+            	<a href="http://lfggzyjy.linfen.gov.cn/cmsController.do?goPage&page=index" target="_blank">临汾市公共资源交易平台</a>
+            	<a href="http://ggzyjyzx.lvliang.gov.cn/" target="_blank">吕梁市公共资源交易平台</a>
+            	<a href="https://zonggai.jcebid.com/" target="_blank">山西省综改区公共资源交易平台</a>
+          </div>
+        </div>
+
+        <div class="cs_select">
+          <span>行业监管部门</span>
+          <div>
+	            	<a href="http://www.shanxi.gov.cn/" target="_blank">山西省政府网</a>
+	            	<a href="http://www.sxzwfw.gov.cn/" target="_blank">山西省政务服务网</a>
+	            	<a href="http://fgw.shanxi.gov.cn/" target="_blank">山西省发改委</a>
+	            	<a href="http://czt.shanxi.gov.cn/" target="_blank">山西省财政厅</a>
+	            	<a href="http://zjt.shanxi.gov.cn/" target="_blank">山西省住建厅</a>
+	            	<a href="http://zrzyt.shanxi.gov.cn/" target="_blank">山西省自然资源厅</a>
+	            	<a href="http://gzw.shanxi.gov.cn/" target="_blank">山西省国资委</a>
+	            	<a href="http://jtyst.shanxi.gov.cn/" target="_blank">山西省交通运输厅</a>
+	            	<a href="http://slt.shanxi.gov.cn/" target="_blank">山西省水利厅</a>
+	            	<a href="http://swt.shanxi.gov.cn" target="_blank">山西省商务厅</a>
+          </div>
+        </div>
+
+        <div class="cs_select">
+          <span>其他相关网站</span>
+          <div>
+	            	<a href="http://www.sxcqjy.cn/" target="_blank">山西省产权交易中心</a>
+	            	<a href="http://www.sxbid.com.cn/" target="_blank">山西省招标投标公共服务平台</a>
+	            	<a href="http://www.sxyxcg.com/" target="_blank">山西省药械集中招标采购中心</a>
+	            	<a href="http://creditsx.fgw.shanxi.gov.cn/" target="_blank">信用山西</a>
+	            	<a href="http://www.ccgp-shanxi.gov.cn/" target="_blank">山西省政府采购网</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="cs_bottom_box">
+      <div class="cs_bottom cs_middle">
+        <span id='_span_jiucuo'>
+          <img onclick="Link(1402000038)" style="margin:0;border:0;cursor:pointer;" src="https://zfwzgl.www.gov.cn/exposure/images/jiucuo.png?v=1408000056"/>
+        </span>
+        <a href="http://bszs.conac.cn/sitename?method=show&id=5F7AA86716B98ADCE053022E1AACF4ED" target="_blank" class="sydw"></a>
+        <div>
+          <p>主办：大同市公共资源交易中心（大同市政府采购中心）  <a href="/gywmlx/index.jhtml" style="font-size: 14px; color: rgba(255, 255, 255, 1);text-align: left;line-height: 30px;" >联系我们</a> </p>
+          <p>
+            <span onclick="window.open('https://beian.miit.gov.cn/#/Integrated/index')">ICP备案：晋 ICP 备 2021012871 号</span>
+            <span>网站标识码 1402000038</span>
+          </p>
+          <p style="cursor: pointer;" onclick="window.open('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=14020202000132')">晋公网安备：14020202000132 号</p>
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- 浮动按钮 -->
+    <div class="cs_FD_button">
+      <div class="go_top" onclick="goTop(this)"></div>
+      <br/>
+      <!-- <div class="go_VX"></div>
+      <div class="go_mobile">
+        <a href="/ts/index.jhtml" target="_blank">专项整治投诉举报热线</a>
+      </div> -->
+      <div class="go_barrier_free">
+      	<a id="toolbarSwitch" href="javascript:void(0);">开启辅助</br>工具</a>
+      </div>
+    </div>
+
+  </body>
+</html>
+<script>
+  function slideFn(the,key){
+    // tab样式
+    the.parentNode.querySelector('.active').classList.remove('active');
+    the.classList.add('active');
+    //内容
+    the.parentNode.parentNode.querySelector('.cs_tab_box>.cs_show').classList.remove('cs_show');
+    the.parentNode.parentNode.querySelectorAll('.cs_tab_box>.cs_tab_box_cont')[key].classList.add('cs_show');
+
+    var moreUrl = $(the).attr("data-url");
+    if(moreUrl){
+	    $(the).parent().children(".cs_more").attr("href",moreUrl)
+    }
+  }
+
+  function selectFn(the){
+    if (the.parentNode.classList.value.indexOf('active')>-1) {
+      the.parentNode.classList.remove('active')
+    }else{
+      the.parentNode.classList.add('active')
+    }
+  }
+
+  $(".cs_select a").on("click",function(){
+	  selectFn(this.parentNode.previousSibling);
+  })
+
+  $(document).click(function(event){
+      //footer
+      var fooSelect = $(".cs_select span");
+      if(!fooSelect.is(event.target) && fooSelect.has(event.target).length === 0){
+    	  $(".cs_select").removeClass("active");
+      }else{
+    	  var parent = $(event.target).parent();
+    	  if(parent.hasClass("active")){
+    		  //close
+    		  parent.removeClass("active");
+    	  }else{
+    		  //open and close other
+	    	  $(".cs_select").removeClass("active");
+	    	  parent.addClass("active");
+    	  }
+      }
+ });
+  function goTop(the){
+    var setInter=setInterval(goFn,1);
+    function goFn(){
+      if ( document.querySelector('html').scrollTop<=0) {
+        clearInterval(setInter)
+      }else{
+        document.querySelector('html').scrollTop-=50;
+      }
+    }
+  }
+</script>
+<script type="text/javascript">
+  // 获取天气
+  var tqSTR="";
+  function changeCity(city) {
+     cityCode = encodeURI(city);
+//      $.ajax("http://wthrcdn.etouch.cn/weather_mini?city=" + cityCode, {
+//          dataType : 'jsonp',
+//          crossDomain : true,
+//          success : function(obj) {
+//               console.log(obj)
+//               var today = obj.data.forecast[0];
+//               var lowTemp = today.low.substring(3);
+//               var hightTemp = today.high.substring(3);
+//               // $("#wed").html("北京" + "&nbsp;&nbsp;" + today.type + "&nbsp;&nbsp;" + lowTemp + "~" + hightTemp);
+
+//               tqSTR=city + "&nbsp;&nbsp;" + today.type + "&nbsp;&nbsp;" + lowTemp + "~" + hightTemp;
+//               console.log(city + "&nbsp;&nbsp;" + today.type + "&nbsp;&nbsp;" + lowTemp + "~" + hightTemp);
+//          }
+//      });
+  }
+  changeCity('大同')
+  // 获取标准时间
+  function getDate(item){
+      var week=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+      var myDate = new Date();
+      //获取当前年
+      var year = myDate.getFullYear();
+      //获取当前月
+      var month = myDate.getMonth() + 1;
+      //获取当前日
+      var date=myDate.getDate()
+      //获取星期
+      var weedToday =week[myDate.getDay()];
+
+      var week=myDate.getDay()
+      var h = myDate.getHours(); //获取当前小时数(0-23)
+      var m = myDate.getMinutes(); //获取当前分钟数(0-59)
+      var s = myDate.getSeconds();
+
+     //获取当前时间
+
+     // var now = year + '年' + conver(month) + "月" + conver(date) + "日 " + conver(h) + ':' + conver(m) + ":" + conver(s);
+     var now = year + '年' + conver(month) + "月" + conver(date) + "日 " + weedToday+'&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;' +item;
+     return now;
+  }
+  //日期时间处理
+  function conver(s) {
+    return s < 10 ? '0' + s : s;
+  }
+  function time(){
+    document.querySelector('.week_TQ').innerHTML=getDate(tqSTR)
+  }
+  //显示时间
+  var time=setInterval(time,100)
+
+  $(function(){
+	Cms.siteFlow("", location.href, document.referrer, "true");
+  });
+
+  //点击图标
+  function Link(site_code) {
+    //获取该站点需要纠错页面的url地址
+    var url = getCurrUrl();
+    //跳转至纠错系统填写页面
+    //20190701测试修改  window.open("http://121.43.68.40/exposure/jiucuo.html?site_code=" + site_code + "&url=" + encodeURIComponent(url));
+    window.open("https://zfwzgl.www.gov.cn/exposure/jiucuo.html?site_code=" + site_code + "&url=" + encodeURIComponent(url));
+  }
+  //获取该站点需要纠错页面的url地址
+  function getCurrUrl() {
+    var url = "";
+    if (parent !== window) {
+      try {
+        url = window.top.location.href;
+      } catch (e) {
+        url = window.top.document.referrer;
+      }
+    }
+    if (url.length == 0)
+      url = document.location.href;
+
+    return url;
+  }
+</script>
+<script src="https://auth.mangren.com/boots/ggzyjy.dt.gov.cn/esdToolsInit.js" charset="UTF-8"></script>

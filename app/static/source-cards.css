@@ -1,0 +1,46 @@
+/* Monitoring directory cards, shared by administrators and regular users. */
+#source-catalog-filters{padding:14px;margin-bottom:10px}
+#source-catalog-filters #new-source{margin:0;white-space:nowrap}
+#source-catalog-filters input,#source-catalog-filters select,#source-catalog-filters button{font-size:15px}
+.source-type-navigation .source-kind-options{margin:0}
+.source-type-navigation .topic-tab{font-size:15px;padding:12px 1px}
+.source-type-navigation .topic-tab small{font-size:12px}
+.source-directory-count{font-size:14px}
+.public-source-grid{align-items:stretch;grid-auto-rows:auto;gap:16px}
+.source-card.source-card-compact{display:flex;flex-direction:column;gap:14px;padding:18px;min-width:0;height:auto}
+.source-card-compact .source-status{align-items:flex-start;gap:16px}
+.source-card-compact .source-status h3{flex:1;min-width:0;margin:0;font-size:19px;line-height:1.4;letter-spacing:.1px}
+.source-card-compact .source-status .tag{flex-shrink:0;margin-top:1px;font-size:12px;padding:2px 8px}
+.source-card-body{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px}
+.source-card-main,.source-card-side{min-width:0;display:flex;flex-direction:column;gap:12px}
+.source-card-side{padding-left:16px;border-left:1px solid #edf0e9}
+.source-card-compact p.source-collection-entry,.source-card-compact p.source-collection-logic,.source-card-compact p.source-collection-scope{margin:0;font-size:15px;line-height:1.6;color:var(--ink,#163c35);overflow-wrap:anywhere}
+.source-collection-entry>span,.source-collection-logic>span,.source-collection-scope>span{display:block;margin-bottom:3px;font-size:13px;color:var(--muted,#697b6e)}
+.source-card-compact .source-failure{padding:10px 12px;border:0;border-radius:5px;background:#fcf5f1;color:#824d3a}
+.source-failure h4{display:inline-block;font-size:14px;line-height:1.5;margin:0 10px 5px 0;font-weight:600}
+.source-card-compact .source-failure p.source-kept{display:inline-block;margin:0 0 5px;font-size:13px;line-height:1.6;color:#6d6748}
+.source-failure .source-health-issues{list-style:none;margin:0;padding:0;font-size:13px;line-height:1.6}
+.source-failure .source-health-issues li+li{margin-top:4px}
+.source-failure .source-health-issues strong{font-weight:500}
+.source-issue-details{margin-top:8px;border-top:1px solid #eaded7;padding-top:7px;font-size:13px}
+.source-issue-details>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;list-style:none;cursor:pointer;color:#865e4c}
+.source-issue-details>summary::-webkit-details-marker{display:none}
+.source-issue-details>summary span{transition:transform .15s}
+.source-issue-details[open]>summary span{transform:rotate(180deg)}
+.source-issue-details[open]>summary{margin-bottom:8px}
+.source-card-compact .source-card-actions{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 18px;margin-top:auto;padding-top:9px;border-top:1px solid #edf0e9}
+.source-card-controls{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px 15px;margin-left:auto}
+.source-card-compact .source-card-actions .source-url,.source-card-compact .source-card-actions .text-button{margin:0;padding:0;min-height:23px;font-size:13px;line-height:1.7}
+@media(min-width:2100px){.public-source-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:761px) and (max-width:1100px){.public-source-grid{grid-template-columns:1fr}}
+@media(max-width:1100px){.public-source-grid{grid-auto-rows:auto}.source-card.source-card-compact{height:auto}}
+@media(max-width:640px){
+ .source-card.source-card-compact{padding:14px;gap:10px}
+ .source-card-compact .source-status{gap:10px}
+ .source-card-compact .source-status h3{font-size:17px}
+ .source-card-compact .source-status .tag{font-size:12px}
+ .source-card-body{gap:12px;grid-template-columns:1fr}
+ .source-card-side{padding-left:0;padding-top:12px;border-left:0;border-top:1px solid #edf0e9}
+}
+
+.source-card-links{display:flex;align-items:center;flex-wrap:wrap;gap:6px 13px;min-width:0}.source-card-links .source-list-link{color:#496f5a}

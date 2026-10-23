@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+
+		<title>光大环境招标采购电子交易平台</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="https://zcpt.cebenvironment.com.cn/resource/images/favicon.ico" media="screen" />
+
+		<link rel="stylesheet" type="text/css" href="https://zcpt.cebenvironment.com.cn/resource/css/bootstrap.css">
+
+		<link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/css/public.css">
+
+		<link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/css/index.css">
+
+		<link href="https://zcpt.cebenvironment.com.cn/resource/css/help.css" rel="stylesheet" type="text/css">
+
+		<link href="https://zcpt.cebenvironment.com.cn/resource/css/project.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="https://zcpt.cebenvironment.com.cn/resource/css/nav.css">
+
+	</head>
+
+	<body>
+
+		<input type="hidden" id ="status" name="status" value=""/>
+
+		<input type="hidden" id ="dates"  name="dates"  value="300"/>
+
+		<input type="hidden" id ="tabName" name="tabName" value="招标公告"/>
+
+		<input type="hidden" id ="precise" name="precise" value=""/>
+
+		<input type="hidden" id ="tenderMethod" name="tenderMethod" value=""/>
+
+		<input type="hidden" id ="tenderno" name="tenderno" value=""/>
+
+		<input type="hidden" id ="categoryId" name="categoryId" value="2"/>
+
+		<input type="hidden" id ="categoryIds" name="categoryIds" value=""/>
+
+		<input type="hidden" id ="tenderflag" name="tenderflag" value=""/>
+
+		<div class=" zhaobiaoBox relative">
+
+			<div class="searchbox ">
+
+				<div class="class">
+
+					<div>发布时间:</div>
+
+					<ul>
+
+						<li><a href="javascript:void(0);" onClick="searchByTime(300);" class=claaOn>全部</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTime(0);"        >今天</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTime(3);"        >最近3天</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTime(7);"        >最近7天</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTime(30);"      >最近1个月</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="class">
+
+					<div>筛选条件:</div>
+
+					<ul>
+
+						<li><a href="javascript:void(0);" onClick="searchBysignUp('');"      class=claaOn>全部</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchBysignUp('00');"  >未开始报名</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchBysignUp('01');"  >报名中</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchBysignUp('02');"  >报名结束</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="class">
+
+					<div>分类:</div>
+
+					<ul>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('');"     class=claaOn>全部</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('GDHJ');" >集团总部</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('HBNY');" >环保能源</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('GDSW');" >光大水务</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('LSHB');" >绿色环保</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('ZBZZ');" >装备制造</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('EBET');" >绿色科创</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('STZY');" >生态资源</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('JLJN');" >环境节能</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderno('HJGH');" >环境规划</a></li>
+
+
+
+
+
+					</ul>
+
+				</div>
+
+				<div class="class">
+
+					<div>分类:</div>
+
+					<ul>
+
+						<li><a href="javascript:void(0);" onClick="searchByPrecise('');"               class=claaOn>全部</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByPrecise('工程');" >工程</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByPrecise('货物');" >货物</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByPrecise('服务');" >服务</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="class">
+
+					<div>分类:</div>
+
+					<ul>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderMethod('');"               class=claaOn>全部</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderMethod('00');" >公开招标</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderMethod('05');" >公开询价</a></li>
+
+						<li><a href="javascript:void(0);" onClick="searchByTenderMethod('08');" >公开竞价</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="class">
+
+					<div>关键搜索:</div>
+
+					<ul>
+
+						<li>
+
+							<input style="height:26px;width:180px;" name="goSearch" type="text" id="wordkey" value=""   class="search"/>
+
+							<input style="margin-top:-3px;" type="button" id="searchButton"  class="buttonsearch" onclick="facet();"/>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+
+
+			<div style="position: relative;height: 1000px;">
+
+				<div class="xiangmutitle">项目名称<span>发布日期</span></div>
+
+				
+
+				
+
+				
+
+				<ul class="newslist">
+
+					<li>
+
+						<a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561702.html" title="德州水务年度车辆维修及保养服务询价公告" target="_blank">
+
+							<h1>	<b>【
+
+								公开询比价
+
+								】</b>德州水务年度车辆维修及保养服务询价公告</h1>
+
+							<ul class="newsinfo">
+
+								<li>招标编号：<span>
+
+							
+
+									GDSW-GX-2026-3391
+
+									</span></li>
+
+								<li>招标方式：
+
+									<span>
+
+										公开询比价
+
+									</span>
+
+								</li>
+
+								<li>报名截止时间：<span>2026-10-19</span></li>
+
+							</ul>
+
+							<div class="newsDate">
+
+								<div>2026</div>
+
+								10/14
+
+							</div>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561701.html" title="光大环保能源（惠东）有限公司大门口简易车棚及膜处理车间卷闸门修复服务询价公告" target="_blank">
+
+							<h1>	<b>【
+
+								公开询比价
+
+								】</b>光大环保能源（惠东）有限公司大门口简易车棚及膜处理车间卷闸门修复服务询价公告</h1>
+
+							<ul class="newsinfo">
+
+								<li>招标编号：<span>
+
+							
+
+									HBNY-GX-2026-13313
+
+									</span></li>
+
+								<li>招标方式：
+
+									<span>
+
+										公开询比价
+
+									</span>
+
+								</li>
+
+								<li>报名截止时间：<span>2026-10-20</span></li>
+
+							</ul>
+
+							<div class="newsDate">
+
+								<div>2026</div>
+
+								10/14
+
+							</div>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561700.html" title="光大环保能源（玉林）有限公司综合管理部液晶拼接屏询价公告" target="_blank">
+
+							<h1>	<b>【
+
+								公开询比价
+
+								】</b>光大环保能源（玉林）有限公司综合管理部液晶拼接屏询价公告</h1>
+
+							<ul class="newsinfo">
+
+								<li>招标编号：<span>
+
+							
+
+									HBNY-GX-2026-11607
+
+									</span></li>
+
+								<li>招标方式：
+
+									<span>
+
+										公开询比价
+
+									</span>
+
+								</li>
+
+								<li>报名截止时间：<span>2026-10-20</span></li>
+
+							</ul>
+
+							<div class="newsDate">
+
+								<div>2026</div>
+
+								10/14
+
+							</div>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561697.html" title="光大生物能源（涟水）有限公司叉车租赁服务询价公告" target="_blank">
+
+							<h1>	<b>【
+
+								公开询比价
+
+								】</b>光大生物能源（涟水）有限公司叉车租赁服务询价公告</h1>
+
+							<ul class="newsinfo">
+
+								<li>招标编号：<span>
+
+							
+
+									LSHB-GX-2026-5769
+
+									</span></li>
+
+								<li>招标方式：
+
+									<span>
+
+										公开询比价
+
+									</span>
+
+								</li>
+
+								<li>报名截止时间：<span>2026-10-20</span></li>
+
+							</ul>
+
+							<div class="newsDate">
+
+								<div>2026</div>
+
+								10/14
+
+							</div>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561696.html" title="光大生物能源（涟水）有限公司10月份安环物资询价公告" target="_blank">
+
+							<h1>	<b>【
+
+								公开询比价
+
+								】</b>光大生物能源（涟水）有限公司10月份安环物资询价公告</h1>
+
+							<ul class="newsinfo">
+
+								<li>招标编号：<span>
+
+							
+
+									LSHB-GX-2026-5856
+
+									</span></li>
+
+								<li>招标方式：
+
+									<span>
+
+										公开询比价
+
+									</span>
+
+								</li>
+
+								<li>报名截止时间：<span>2026-10-20</span></li>
+
+							</ul>
+
+							<div class="newsDate">
+
+								<div>2026</div>
+
+								10/14
+
+							</div>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561695.html" title="光大生物能源（涟水）有限公司10月份固废炉备品备件询价公告" target="_blank">
+
+							<h1>	<b>【
+
+								公开询比价
+
+								】</b>光大生物能源（涟水）有限公司10月份固废炉备品备件询价公告</h1>
+
+							<ul class="newsinfo">
+
+								<li>招标编号：<span>
+
+							
+
+									LSHB-GX-2026-5784
+
+									</span></li>
+
+								<li>招标方式：
+
+									<span>
+
+										公开询比价
+
+									</span>
+
+								</li>
+
+								<li>报名截止时间：<span>2026-10-20</span></li>
+
+							</ul>
+
+							<div class="newsDate">
+
+								<div>2026</div>
+
+								10/14
+
+							</div>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561694.html" title="光大生物能源（涟水）有限公司冷干机维修服务询价公告" target="_blank">
+
+							<h1>	<b>【
+
+								公开询比价
+
+								】</b>光大生物能源（涟水）有限公司冷干机维修服务询价公告</h1>
+
+							<ul class="newsinfo">
+
+								<li>招标编号：<span>
+
+							
+
+									LSHB-GX-2026-5773
+
+									</span></li>
+
+								<li>招标方式：
+
+									<span>
+
+										公开询比价
+
+									</span>
+
+								</li>
+
+								<li>报名截止时间：<span>2026-10-20</span></li>
+
+							</ul>
+
+							<div class="newsDate">
+
+								<div>2026</div>
+
+								10/14
+
+							</div>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://zcpt.cebenvironment.com.cn/ebi_bulletin/2026-10-14/561687.html" title="光大环保能源（陵水）有限公司飞灰填埋场车辆（叉车、汽车起重机、挖掘机）装载机及洒水车维修服务询价公告" target="_blank">
+
+							<h1>	<b>【
+
+								公开询比价
+
+								】</b>光大环保能源（陵水）有限公司飞灰填埋场车辆（叉车、汽车起重机、挖掘机）装载机及洒水车维修服务询价公告</h1>
+
+							<ul class="newsinfo">
+
+								<li>招标编号：<span>
+
+							
+
+									HBNY-GX-2026-13292
+
+									</span></li>
+
+								<li>招标方式：
+
+									<span>
+
+										公开询比价
+
+									</span>
+
+								</li>
+
+								<li>报名截止时间：<span>2026-10-19</span></li>
+
+							</ul>
+
+							<div class="newsDate">
+
+								<div>2026</div>
+
+								10/14
+
+							</div>
+
+						</a>
+
+					</li>
+
+				</ul>
+
+<div class="pages">
+
+	 	共<label>19085</label>页 
+
+		    <a  href="javascript:void(0);" onClick="turnPage(1);">首页</a>
+
+			<a  href="javascript:void(0);" onClick="turnPage(1);">上一页</a>
+
+			<a  href="javascript:void(0);" onClick="turnPage(3);">下一页</a>
+
+			<a  href="javascript:void(0);" onClick="turnPage(19085);">末页</a>
+
+		当前页是第<label>2</label>页
+
+</div>
+
+			</div>
+
+		</div>
+
+
+
+			<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.min.js"></script>
+
+		
+
+		
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/bootstrap.js" ></script>
+
+
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.liMarquee.js"></script>
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.SuperSlide.2.1.3.source.js"></script>
+
+<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/gd_environment/js/jquery.SuperSlide.2.1.3.js"></script>
+
+<script type="text/javascript">
+
+    jQuery(".fullSlide").slide({
+
+        titCell: ".hd ul",
+
+        mainCell: ".bd ul",
+
+        effect: "fold",
+
+        autoPlay: true,
+
+        autoPage: true,
+
+        trigger: "click",
+
+        interTime: 5000
+
+    });
+
+    jQuery(".slideBox").slide({
+
+        mainCell: ".bd ul",
+
+        autoPlay: true
+
+    });
+
+    jQuery(".picScroll-left").slide({
+
+        titCell: ".hd ul",
+
+        mainCell: ".bd ul",
+
+        autoPage: true,
+
+        effect: "top",
+
+        autoPlay: true,
+
+        vis: 1,
+
+        trigger: "click"
+
+    });
+
+    jQuery(".douban").slide({
+
+        titCell: ".hd ul",
+
+        mainCell: ".bd ul",
+
+        autoPage: true,
+
+        effect: "left",
+
+        autoPlay: true,
+
+        vis: 5,
+
+        trigger: "click"
+
+    });
+
+</script>
+
+<script type="text/javascript">
+
+    jQuery(".slideTxtBox").slide();
+
+    jQuery(".slideTxtBox2").slide();
+
+</script>
+
+
+
+<script type="text/javascript">
+
+    $(function() {
+
+        $('.listbox').liMarquee({
+
+            direction: 'up',
+
+            scrollamount:30,
+
+        });
+
+    });
+
+</script> 
+
+		<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/js/bootstrap.js"></script>
+
+		<script>
+
+function overallSearch(){
+
+		var word = $("#search").val();
+
+		if(word=="请输入关键词"){
+
+		   word="";
+
+		 }
+
+		 window.location.href="https://zcpt.cebenvironment.com.cn/cms/category/bulletinList.html?dates=300&categoryIds=2,3,4,5,6,8,9,10,11&tabName=招标非招标公告&overallSearch="+word+"&page=1";  	
+
+}
+
+</script>
+
+ 
+
+		<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/js/SuperSlide.2.1.js"></script>
+
+		<script type="text/javascript">
+
+			jQuery(".fullSlide").slide({
+
+				titCell: ".hd ul",
+
+				mainCell: ".bd ul",
+
+				effect: "fold",
+
+				autoPlay: true,
+
+				autoPage: true,
+
+				trigger: "click"
+
+			});
+
+		</script>
+
+		<script type="text/javascript" src="https://zcpt.cebenvironment.com.cn/resource/js/jquery.scrollfollow.js"></script>
+
+		<script>	
+
+	Date.prototype.Format = function(fmt){
+
+		var o =
+
+			{
+
+				"M+" : this.getMonth() + 1, //月份
+
+				"d+" : this.getDate(), //日
+
+				"H+" : this.getHours(), //小时
+
+				"m+" : this.getMinutes(), //分
+
+				"s+" : this.getSeconds(), //秒
+
+				"q+" : Math.floor((this.getMonth() + 3) / 3), //季度
+
+				"S" : this.getMilliseconds() //毫秒
+
+			};
+
+		if (/(y+)/.test(fmt))
+
+			fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+
+		for (var k in o)
+
+			if (new RegExp("(" + k + ")").test(fmt))
+
+			fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+
+		return fmt;
+
+	}
+
+
+
+	Date.prototype.addDays = function(d){
+
+		this.setDate(this.getDate() + d);
+
+	};
+
+
+
+	Date.prototype.minusDays = function(d){
+
+		if(d==3||d==7){
+
+			this.setDate(this.getDate() - d+1);
+
+		}else{
+
+			this.setDate(this.getDate() - d);
+
+		}
+
+	};	
+
+
+
+	Date.prototype.addWeeks = function(w){
+
+		this.addDays(w * 7);
+
+	};
+
+
+
+	Date.prototype.addMonths= function(m){
+
+		var d = this.getDate();
+
+		this.setMonth(this.getMonth() + m);
+
+		if (this.getDate() < d)
+
+		this.setDate(0);
+
+	};
+
+
+
+	Date.prototype.minusMonths= function(m){
+
+		var d = this.getDate();
+
+		this.setMonth(this.getMonth() - m);
+
+		if (this.getDate() < d)
+
+		this.setDate(0);
+
+	};
+
+
+
+	Date.prototype.addYears = function(y){
+
+		var m = this.getMonth();
+
+		this.setFullYear(this.getFullYear() + y);
+
+		if (m < this.getMonth()){
+
+		this.setDate(0);
+
+		}
+
+	};
+
+</script> 
+
+		<script>
+
+	
+
+
+
+			
+
+			//悬浮时间
+
+			$(document).ready(function() {
+
+				$("#sidebar ul").scrollFollow({
+
+					bottomObj: '#stop',
+
+					marginTop: 8,
+
+					marginBottom: 0
+
+				})
+
+			});
+
+			function facet(){
+
+				 var goSearch =  $('#wordkey').val();
+
+					if( '17' ==  $('#categoryId').val() &&  goSearch =='' ){
+
+							$('#tenderno').val(goSearch);
+
+					}
+
+				search();
+
+			}
+
+
+
+			function search(){
+
+				var dates='';
+
+				if($('#dates').val()==''||$('#dates').val()==null){
+
+					dates=300;
+
+				}else{
+
+					dates=parseInt($('#dates').val());
+
+				}
+
+				var time=new Date();
+
+				if(dates==0||dates==3||dates==7){
+
+					time.minusDays(dates);
+
+				}else if(dates==30||dates==90){
+
+					time.minusMonths(parseInt(dates/30));
+
+				}else if(dates==300){
+
+					time.minusMonths(dates);
+
+				}
+
+				var url='https://zcpt.cebenvironment.com.cn/cms/category/iframe.html?searchDate='+time.Format("yyyy-MM-dd")+'&dates='+dates+searchStr();
+
+				window.location.href =url;
+
+			}
+
+
+
+			searchByPrecise=function(precise){
+
+				$('#precise').val(precise);
+
+				search();
+
+			}
+
+
+
+			searchByTenderno=function(tenderno){
+
+				$('#tenderno').val(tenderno);
+
+				search();
+
+			}
+
+
+
+			searchByTenderMethod=function(tenderMethod){
+
+				debugger;
+
+				$('#tenderMethod').val(tenderMethod);
+
+				search();
+
+			}
+
+
+
+			searchBysignUp=function(status){
+
+				$('#status').val(status);
+
+				search();
+
+			}
+
+
+
+			searchByTime=function(dates){
+
+				$('#dates').val(dates);
+
+				search();
+
+			}
+
+
+
+			function searchStr(){
+
+				debugger;
+
+				var str="";
+
+				
+
+							
+
+					var tenderno = $('#tenderno').val();
+
+					 var goSearch =  $('#wordkey').val();
+
+					if( '17' ==  $('#categoryId').val() && tenderno =='' &&  goSearch !='' ){
+
+					 tenderno =   goSearch;
+
+						goSearch = '';
+
+					}
+
+				
+
+				
+
+				str=str+'&categoryId='+$('#categoryId').val()+'&tabName='+$('#tabName').val()+'&precise='+$('#precise').val()+'&status='+$('#status').val()+'&tenderno='+tenderno+'&goSearch='+goSearch+'&tenderMethod='+$('#tenderMethod').val();
+
+				
+
+				return str;
+
+			}
+
+
+
+			function turnPage(page){
+
+				debugger;
+
+				var dates='';
+
+				if($('#dates').val()==''||$('#dates').val()==null){
+
+					dates=300;
+
+				}else{
+
+					dates=parseInt($('#dates').val());
+
+				}
+
+				var time=new Date();
+
+				var json='';
+
+				if(dates==0||dates==3||dates==7){
+
+					time.minusDays(dates);
+
+				}else if(dates==30||dates==90){
+
+					time.minusMonths(parseInt(dates/30));
+
+				}else if(dates==300){
+
+					time.minusMonths(dates);
+
+				}
+
+				var url='https://zcpt.cebenvironment.com.cn/cms/category/iframe.html?.html?searchDate='+time.Format("yyyy-MM-dd")+'&dates='+dates+searchStr();
+
+				window.location.href =url+'&page='+page;
+
+			}
+
+			
+
+		
+
+		
+
+		</script>
+
+	</body>
+
+
+
+</html>
+

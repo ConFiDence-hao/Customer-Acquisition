@@ -1,0 +1,16 @@
+.env
+data/
+__pycache__/
+.pytest_cache/
+.venv/
+seed/companies.json
+
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite*
+*.pem
+*.key
+*.bak_*
+archive/
